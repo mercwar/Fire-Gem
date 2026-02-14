@@ -2,29 +2,60 @@
 <html>
 <head>
     <style>
-        body { margin: 0; padding: 0; overflow: hidden; font-family: monospace; }
-        #taskbar { width: 100%; height: 25px; background: #001A33; border-top: 1px solid #FFD700; display: flex; }
-        #start-btn { background: #FFD700; color: #000; border: none; padding: 0 15px; font-weight: bold; cursor: pointer; }
+        /* ROYAL GOLD & BLUE TASKBAR STYLE */
+        body { margin: 0; padding: 0; overflow: hidden; font-family: 'Courier New', monospace; }
+        
+        #taskbar { 
+            width: 100%; height: 25px; background: #001A33; 
+            border-top: 1px solid #FFD700; display: flex; align-items: center; 
+        }
+
+        #start-btn { 
+            background: #FFD700; color: #000; border: none; 
+            padding: 0 20px; height: 100%; font-weight: bold; 
+            cursor: pointer; font-size: 12px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        }
+        #start-btn:hover { background: #C0C0C0; }
+
         #menu { 
             display: none; position: fixed; bottom: 25px; left: 0; 
-            width: 200px; background: #002244; border: 1px solid #FFD700; 
+            width: 220px; background: #002244; border: 1px solid #FFD700; 
+            box-shadow: 5px -5px 15px rgba(0,0,0,0.8);
         }
-        .item { color: #FFD700; padding: 10px; cursor: pointer; border-bottom: 1px solid #003366; }
-        .item:hover { background: #FFD700; color: #001A33; }
+
+        .menu-item { 
+            color: #FFD700; padding: 12px; cursor: pointer; 
+            border-bottom: 1px solid #003366; font-size: 13px;
+        }
+        .menu-item:hover { background: #FFD700; color: #001A33; }
     </style>
 </head>
 <body>
+
     <div id="menu">
-        <div class="item" onclick="parent.createWindow('BYETHOST', 'https://mercwar.byethost3.com')">> AVIS Surface</div>
-        <div class="item" onclick="parent.createWindow('TERM', 'htdocs/index.html')">> FIRE-GEM Terminal</div>
+        <div class="menu-item" onclick="strike('BYETHOST', 'https://mercwar.byethost3.com')">> RUN AVIS SURFACE</div>
+        <div class="menu-item" onclick="strike('TERMINAL', 'htdocs/index.html')">> RUN FIRE-GEM TERMINAL</div>
     </div>
+
     <div id="taskbar">
-        <button id="start-btn" onclick="toggle()">START</button>
+        <button id="start-btn" onclick="toggleMenu()">START</button>
     </div>
+
     <script>
-        function toggle() {
+        function toggleMenu() {
             const m = document.getElementById('menu');
-            m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+            const isOpen = m.style.display === 'block';
+            m.style.display = isOpen ? 'none' : 'block';
+            // Report to Master Log via AVIS
+            if(!isOpen) parent.AVIS_STRIKE("SWITCH: START_MENU_OPEN", 1);
+        }
+
+        function strike(id, url) {
+            // PIERCE THE OBJECT BOUNDARY
+            parent.AVIS_STRIKE(`EXEC_STRIKE: ${id}`, 2);
+            parent.createWindow(id, url);
+            toggleMenu();
         }
     </script>
 </body>
