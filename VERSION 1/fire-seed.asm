@@ -1,27 +1,36 @@
 ; =============================================================================
 ;  AVIS-CORE // HARDWARE SEED [VERSION 1]
 ;  FILE: fire-seed.asm
-;  PURPOSE: Prepare Memory & Registers for the Net Surface Strike
+;  PURPOSE: Autonomous Seed - No External Dependencies
 ; =============================================================================
-%include "VERSION 1/fire-gem.inc"
 
 section .data
     msg_seed db "AVIS [LLM-LOG-OBJ][SEED] Hardware Primed. HAHA!", 0xa
     len_seed equ 47
+    avis_hdr db "AVIS", 0x01, 0x00
+    hdr_len  equ 6
 
 section .text
     global _start
-    extern FIRE_PROTOCOL_WRAP ; From fire-protocol.o
+    extern FIRE_LOG_STRIKE ; The ONLY link allowed by the dumb shell loop
 
 _start:
-    ; 1. STRIKE THE SEED LOG
+    ; 1. INTERNAL PROTOCOL WRAP
+    lea rdi, [avis_hdr]
+    mov rsi, hdr_len
+    call FIRE_LOG_STRIKE
+
+    ; 2. STRIKE STATUS
     lea rdi, [msg_seed]
     mov rsi, len_seed
-    call FIRE_PROTOCOL_WRAP
+    call FIRE_LOG_STRIKE
 
-    ; 2. REGISTER PRIMING
-    ; Sets up the buffer pointers for fire-net.exe
-    
-    mov rax, SYS_EXIT
+    ; 3. REGISTER PRIMING
+    call SEED_HARDWARE_LOGIC
+
+    mov rax, 60
     xor rdi, rdi
     syscall
+
+SEED_HARDWARE_LOGIC:
+    ret
