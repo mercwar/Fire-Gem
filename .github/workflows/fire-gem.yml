@@ -15,36 +15,18 @@ jobs:
         
       - name: Establish Identity VERSION 1
         run: |
-          # 1. SEEK THE VAULT
-          ls -R
-          
-          # 2. VERIFY AND STRIKE
-          if [ -f "VERSION 1/fire-log.sh" ]; then
-            chmod +x "VERSION 1/fire-log.sh"
-            "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - YML Ignition Verified"
-          else
-            echo "CRITICAL: fire-log.sh MISSING FROM SECTOR VERSION 1"
-            # FORCE FORGE IF MISSING
-            mkdir -p "VERSION 1"
-            echo -e '#!/bin/bash\necho "[AVIS-YML-STRIKE] $1" >> "VERSION 1/fire-gem.log"' > "VERSION 1/fire-log.sh"
-            chmod +x "VERSION 1/fire-log.sh"
-            "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - FORCED IGNITION"
-          fi
-
+          mkdir -p "VERSION 1/fire-log"
+          # FORGE ONLY THE LOG BRIDGE
+          echo '#!/bin/bash' > "VERSION 1/fire-log.sh"
+          echo 'echo "[AVIS-YML-STRIKE] $(date -u): $1" >> "VERSION 1/fire-gem.log"' >> "VERSION 1/fire-log.sh"
+          chmod +x "VERSION 1/fire-log.sh"
+          "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - YML Ignition Verified"
 
       - name: Execute VERSION 1 Chain
         run: |
-          # FORGE BASH STUBS IF MISSING TO PREVENT CHMOD FAIL
-          [ -f "VERSION 1/fire-map.sh" ] && chmod +x "VERSION 1/fire-map.sh"
-          [ -f "VERSION 1/fire-gem.sh" ] && chmod +x "VERSION 1/fire-gem.sh"
-          
-          # TRIGGER THE TRIAD BOOTSTRAP
-          if [ -f "VERSION 1/fire-gem.sh" ]; then
-            ./"VERSION 1/fire-gem.sh"
-          else
-            echo "CRITICAL: fire-gem.sh NOT FOUND IN SECTOR VERSION 1"
-            exit 1
-          fi
+          # THE ONLY TARGET IS THE BOOTSTRAP
+          chmod +x "VERSION 1/fire-gem.sh"
+          "./VERSION 1/fire-gem.sh"
 
       - name: Final Server Sync
         run: |
