@@ -1,0 +1,33 @@
+{
+  "protocol": {
+    "identity": "VERSION 1",
+    "fgeo_version": "1.0.4",
+    "bridge": "fire-macro.exe",
+    "evaluation_mode": "EMULATED_EVAL_FORGE"
+  },
+  "fgeo_macros": [
+    {
+      "id": "STRIKE_CURL_IO",
+      "vector": "0x4000",
+      "type": "CJS_LOCAL",
+      "command": "SWITCH : CURL:IO:POST:MAIL:PROTOCOL"
+    },
+    {
+      "id": "PREP_SEED",
+      "vector": "0x4100",
+      "type": "CJS_SHIPPED",
+      "command": "STRIKE: fire-seed.exe"
+    },
+    {
+      "id": "OPEN_NET",
+      "vector": "0x4200",
+      "type": "CJS_CUSTOM",
+      "command": "STRIKE: fire-net.exe"
+    }
+  ],
+  "buffer_map": {
+    "load_vector": "0x8000",
+    "cjs_shortcut": "fire-gem-asm.inc",
+    "extension_hand": "fire-gem-ext-1.asm"
+  }
+}
