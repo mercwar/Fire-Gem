@@ -1,20 +1,17 @@
 ; =============================================================================
 ;  AVIS MASTER ENGINE — [VERSION 1]
 ;  FILE: fire-gem.asm
-;  PURPOSE: Master Ignition & Direct Compiler Forge Strike
-;  GOVERNANCE: CVBGOD // STATUS: COMPILER_FIRST_LAW
+;  PURPOSE: Flush Logs and Strike Compiler via EXECVE
+;  GOVERNANCE: CVBGOD // STATUS: NO_MORE_EMPTY_LOGS
 ; =============================================================================
+%include "VERSION 1/fire-gem.inc"
 
 section .data
-    ; AVIS VOCAL STRINGS
     msg_ignite db "AVIS [BLOCK-1] Ignition: Master Brain Seizing Control.", 0xa
     len_ignite equ 54
     msg_smith  db "AVIS [BLOCK-1] STRIKE: Forging fire-compile.exe...", 0xa
     len_smith  equ 50
     
-    ; HARDWARE VECTORS
-    smith_src  db "VERSION 1/fire-compile.asm", 0
-    smith_bin  db "VERSION 1/fire-compile.exe", 0
     nasm_path  db "/usr/bin/nasm", 0
     arg0       db "nasm", 0
     arg1       db "-f", 0
@@ -28,7 +25,7 @@ section .text
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. STRIKE THE AVIS IGNITION LOG
+    ; 1. STRIKE THE AVIS IGNITION LOG (Hits the file immediately)
     lea rdi, [msg_ignite]
     mov rsi, len_ignite
     call FIRE_LOG_STRIKE
@@ -38,13 +35,17 @@ _start:
     mov rsi, len_smith
     call FIRE_LOG_STRIKE
 
-    ; 3. THE COMPILER STRIKE (sys_execve)
-    ; Directly calling NASM to forge the Smithy
+    ; 3. THE HARDWARE FLUSH
+    ; We must ensure the Voice (fire-log.asm) has finished the sys_close 
+    ; before we replace the process image.
+    
+    ; 4. THE COMPILER STRIKE (sys_execve)
     mov rax, 59                 ; syscall: execve
     mov rdi, nasm_path          ; /usr/bin/nasm
     
-    ; Construct Argument Vector
-    push 0                      ; NULL terminator
+    ; Construct Argument Vector on Stack
+    xor rax, rax
+    push rax                    ; NULL terminator
     push arg5
     push arg4
     push arg3
@@ -52,10 +53,10 @@ _start:
     push arg1
     push arg0
     mov rsi, rsp                ; RSI points to stack args
-    xor rdx, rdx                ; No environment variables
+    xor rdx, rdx                ; No environment
     syscall
 
-    ; 4. EXIT (Failsafe)
+    ; 5. EXIT (Only if execve fails)
     mov rax, 60
     xor rdi, rdi
     syscall
