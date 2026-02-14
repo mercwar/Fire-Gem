@@ -17,6 +17,7 @@ section .text
 
 _start:
     ; 1. INTERNAL PROTOCOL WRAP (Fused Logic)
+    ; Strike the AVIS Header first
     lea rdi, [avis_hdr]
     mov rsi, hdr_len
     call FIRE_LOG_STRIKE
@@ -29,7 +30,7 @@ _start:
     ; 3. CJS EVALUATION STRIKE
     call CJS_READ_PROTOCOL_INTERNAL
 
-    mov rax, 60
+    mov rax, 60         ; sys_exit
     xor rdi, rdi
     syscall
 
