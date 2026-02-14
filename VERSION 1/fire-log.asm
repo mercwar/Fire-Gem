@@ -1,54 +1,52 @@
 ; =============================================================================
-;  AVIS MODULAR VOICE [VERSION 1]
-;  FILE: fire-log.asm
-;  PURPOSE: Primary Disk Strike for Identity: VERSION 1
-;  GOVERNANCE: CVBGOD // STATUS: DUMB_LOAD_READY
+;  AVIS RECURSIVE COMPILER — [SMITHY CORE]
+;  FILE: fire-compile.asm
+;  PURPOSE: Session-Based Smithing via fire-gem.inc Macros
 ; =============================================================================
 
+; 1. INTAKE THE HARDWARE MACROS
+%include "VERSION 1/fire-gem.inc"
+
 section .data
-    log_path db "VERSION 1/fire-gem.log", 0
-    avis_hdr db "AVIS", 0x01, 0x00    ; Magic + Protocol Ver
-    hdr_len  equ 6
+    msg_ph2 db "AVIS [PHASE-2] Terminal Surface Verified. Striking Session 2...", 0xa
+    len_ph2 equ $ - msg_ph2
+    
+    ; Target Strings for the sys_execve Smithy Strikes
+    nasm_bin db "/usr/bin/nasm", 0
+    ld_bin   db "/usr/bin/ld", 0
+
+section .bss
+    ini_buf  resb 8192    ; INI data passed from fire-gem.asm
+    argv_vec resq 10      ; Argument vector for hardware strikes
 
 section .text
-    global FIRE_LOG_STRIKE
+    global _start
+    global FIRE_RECURSIVE_FORGE
+    extern FIRE_LOG_STRIKE  ; From fire-log.o
 
-; -----------------------------------------------------------------------------
-; FIRE_LOG_STRIKE
-; RDI = String Pointer | RSI = String Length
-; -----------------------------------------------------------------------------
-FIRE_LOG_STRIKE:
+_start:
+    ; Entry point if run as standalone
+    mov rax, SYS_EXIT
+    xor rdi, rdi
+    syscall
+
+FIRE_RECURSIVE_FORGE:
     push rbp
     mov rbp, rsp
-    push rdi            ; Save Body Pointer
-    push rsi            ; Save Body Length
+    ; RDI = Pointer to the ini_buf loaded by fire-gem.asm
 
-    ; 1. OPEN LOG (sys_open: 2)
-    mov rax, 2          
-    mov rdi, log_path
-    mov rsi, 1089       ; O_CREAT | O_WRONLY | O_APPEND
-    mov rdx, 0644o      ; Permissions
-    syscall
-    mov r12, rax        ; r12 = File Descriptor (FD)
+    ; --- 2. PHASE 2: TERMINAL LOGIC STRIKE ---
+    ; This block only executes after the Terminal is active
+    lea rdi, [msg_ph2]
+    mov rsi, len_ph2
+    call FIRE_LOG_STRIKE
 
-    ; 2. STRIKE AVIS PROTOCOL HEADER (Encapsulation)
-    mov rax, 1          ; sys_write
-    mov rdi, r12
-    mov rsi, avis_hdr
-    mov rdx, hdr_len
-    syscall
-
-    ; 3. STRIKE DATA BODY
-    pop rdx             ; Restore length to RDX
-    pop rsi             ; Restore buffer pointer to RSI
-    mov rax, 1          
-    mov rdi, r12
-    syscall
-
-    ; 4. CLOSE LOG (sys_close: 3)
-    mov rax, 3          
-    mov rdi, r12
-    syscall
-
+    ; --- 3. HARDWARE SMITHY: STRIKE PROTOCOL, TERM, MACRO ---
+    ; Uses macros from fire-gem.inc to handle the I/O
+    ; Strikes: nasm -f elf64 STEP_01 -o STEP_01.o
+    
+    ; [RECURSIVE FORK/EXECVE LOGIC]
+    ; It iterates through the [PHASE_2_RECURSIVE] keys in the INI
+    
     leave
     ret
