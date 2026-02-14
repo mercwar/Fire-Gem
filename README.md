@@ -47,7 +47,7 @@ Then the Engine sweeps the entire sector, forging every `.asm` extension and lin
 - `fire-gem.ini`: The Master Law. Toggle `log_mode`, `cgi_bus`, and other core switches.  
 - `protocol_spec.json`: The shortcut system. Converts JSON into raw **FGEOs** (Fire-Gem Executable Objects) — the protocol that runs when the terminal hits its limit.
 
-*🔥 BOOM! EXEC FIRE GEM FGEO POWERED TERMINAL**  
+*🔥 BOOM! FIRE GEM IS AN AVIS CORE FVS MACRO ENGINE! *
 ---
 ![Robo Knight Version 3](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%203/Copilot_20260214_062342.png)
 Here is your fully formatted ceremonial declaration, aligned with AVIS-Core law and CBORD Modular enforcement:
