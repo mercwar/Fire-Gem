@@ -4,113 +4,16 @@
     <meta charset="UTF-8">
     <title>Fire-Gem / AVIS-CORE / MASTER_OS / Robo-Knight</title>
     <link rel="stylesheet" href="htdocs/fire-gem.css">
-    <style>
-        /* ROYAL OS OVERRIDE */
-        body { background: #001122; overflow: hidden; margin: 0; height: 100vh; font-family: 'Courier New', monospace; }
-        
-        /* THE THIN GOLD FILAMENT (START BAR) */
-        #taskbar {
-            position: fixed; bottom: 0; left: 0; width: 100%; height: 25px;
-            background: #002244; border-top: 1px solid #FFD700;
-            display: flex; align-items: center; z-index: 9999;
-        }
-        #start-btn {
-            background: #FFD700; color: #001122; border: none; font-weight: bold;
-            padding: 0 15px; height: 100%; cursor: pointer; font-size: 12px;
-        }
-        
-        /* START MENU */
-        #start-menu {
-            position: fixed; bottom: 26px; left: 0; width: 250px; background: #002244;
-            border: 1px solid #FFD700; display: none; flex-direction: column; z-index: 9998;
-        }
-        .menu-item {
-            color: #FFD700; padding: 10px; text-decoration: none; border-bottom: 1px solid #003366;
-            cursor: pointer; font-size: 14px;
-        }
-        .menu-item:hover { background: #FFD700; color: #002244; }
-
-        /* THE FGEO WINDOW OBJECT */
-        .fgeo-window {
-            position: absolute; border: 1px solid #FFD700; background: #001A33;
-            display: flex; flex-direction: column; min-width: 300px; min-height: 200px;
-            box-shadow: 0 0 15px rgba(255,215,0,0.3); z-index: 100;
-        }
-        .title-bar {
-            background: linear-gradient(90deg, #FFD700, #C0C0C0); color: #001122;
-            padding: 5px; cursor: move; display: flex; justify-content: space-between; font-weight: bold;
-        }
-        .controls span { cursor: pointer; padding: 0 5px; border: 1px solid #001122; margin-left: 2px; }
-        .window-body { flex-grow: 1; border-top: 1px solid #FFD700; position: relative; }
-        iframe { width: 100%; height: 100%; border: none; background: #000; }
-        
-        .minimized { width: 40px !important; height: 40px !important; overflow: hidden; bottom: 30px; position: fixed !important; }
-    </style>
+<link rel="stylesheet" href="htdocs/fire-gem-1.css">
 </head>
 <body>
-
-    <div id="desktop"></div>
-
-    <div id="start-menu">
-        <div class="menu-item" onclick="createWindow('BYETHOST_IFRAME', 'https://mercwar.byethost3.com/index.html')">> AVIS Surface </div>
-        <div class="menu-item" onclick="createWindow('FIRE_GEM_TERM', 'htdocs/index.html')">> FIRE-GEM Terminal</div>
+ <div class="fire-html-1">
+        <object type="text/html" data="htdocs/fire-start.html"></object>
     </div>
 
-    <div id="taskbar">
-        <button id="start-btn" onclick="toggleStart()">START</button>
-    </div>
 
-    <script>
-        function toggleStart() {
-            const m = document.getElementById('start-menu');
-            m.style.display = (m.style.display === 'flex') ? 'none' : 'flex';
-        }
-
-        function createWindow(id, url) {
-            if(document.getElementById(id)) return;
-            const win = document.createElement('div');
-            win.id = id;
-            win.className = 'fgeo-window';
-            win.style.top = '50px'; win.style.left = '100px';
-            win.style.width = '80%'; win.style.height = '70%';
-
-            win.innerHTML = `
-                <div class="title-bar" onmousedown="dragStart(event, '${id}')">
-                    <span>${id}</span>
-                    <div class="controls">
-                        <span onclick="minWin('${id}')">_</span>
-                        <span onclick="maxWin('${id}')">[]</span>
-                        <span onclick="closeWin('${id}')">X</span>
-                    </div>
-                </div>
-                <div class="window-body">
-                    <iframe src="${url}"></iframe>
-                </div>
-            `;
-            document.getElementById('desktop').appendChild(win);
-            toggleStart();
-        }
-
-        // WINDOW CONTROLS
-        function closeWin(id) { document.getElementById(id).remove(); }
-        function minWin(id) { document.getElementById(id).classList.toggle('minimized'); }
-        function maxWin(id) {
-            const w = document.getElementById(id);
-            if(w.style.width === '100%') { w.style.width = '80%'; w.style.height = '70%'; }
-            else { w.style.width = '100%'; w.style.height = 'calc(100vh - 25px)'; w.style.top='0'; w.style.left='0'; }
-        }
-
-        // DRAG LOGIC
-        let activeWin = null;
-        function dragStart(e, id) {
-            activeWin = document.getElementById(id);
-            let offset = [activeWin.offsetLeft - e.clientX, activeWin.offsetTop - e.clientY];
-            document.onmousemove = (ev) => {
-                activeWin.style.left = (ev.clientX + offset[0]) + 'px';
-                activeWin.style.top = (ev.clientY + offset[1]) + 'px';
-            };
-            document.onmouseup = () => { document.onmousemove = null; };
-        }
-    </script>
+    <script src="htdocs/fire-term.js">
+   <script src="htdocs/fire-term-1.js">
+   
 </body>
 </html>
