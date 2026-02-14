@@ -1,4 +1,4 @@
-; fire-log.asm
+; VERSION 1/fire-log.asm
 section .data
     log_path db "VERSION 1/fire-gem.log", 0
 
@@ -8,14 +8,14 @@ section .text
 FIRE_LOG_STRIKE:
     push rbp
     mov rbp, rsp
-    mov r10, rsi
-    mov r11, rdi
+    mov r10, rsi        ; Length
+    mov r11, rdi        ; Buffer address
     mov rax, 2          ; sys_open
     mov rdi, log_path
     mov rsi, 1089       ; O_CREAT|WRONLY|APPEND
     mov rdx, 0644o
     syscall
-    mov rdi, rax
+    mov rdi, rax        ; FD
     mov rax, 1          ; sys_write
     mov rsi, r11
     mov rdx, r10
