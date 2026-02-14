@@ -1,24 +1,18 @@
 #!/bin/bash
-# VERSION 1/fire-map.sh [CVBGOD EDITION]
+# VERSION 1/fire-map.sh
+# MISSION: Inform crawlers of the new HTML-Wrapped AVIS Objects
 
-REPO_URL=$(git config --get remote.origin.url | sed 's/\.git$//' | sed 's/git@github.com:/https:\/\/github.com\//')
-BASE_URL="${REPO_URL}/blob/main"
+BASE_URL="https://mercwar.github.io"
 
-echo "[AVIS-MAP] CVBGOD AUTHORITY: Mapping Vault Artifacts..."
-
+# Force the XML Printout
 cat <<EOF > sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org">
 EOF
 
-# Map the Sealed Vault Artifacts with 1.0 Priority
+# Find every .avis event object
 find "VERSION 1/fire-log" -name "*.avis" | while read -r file; do
-    ENCODED=$(echo "$file" | sed 's/ /%20/g')
-    echo "  <url>" >> sitemap.xml
-    echo "    <loc>${BASE_URL}/${ENCODED}</loc>" >> sitemap.xml
-    echo "    <priority>1.0</priority>" >> sitemap.xml
-    echo "  </url>" >> sitemap.xml
+    echo "  <url><loc>${BASE_URL}/$(basename "$file")</loc><priority>1.0</priority></url>" >> sitemap.xml
 done
 
 echo "</urlset>" >> sitemap.xml
-echo "[AVIS-MAP] Sitemap.xml Sealed by CVBGOD. HAHA!"
