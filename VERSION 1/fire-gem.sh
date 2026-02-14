@@ -1,23 +1,26 @@
 #!/bin/bash
 # =============================================================
-#  AVIS-SMITHY: BOOTSTRAP [VERSION 1]
+#  AVIS-SMITHY: VOCAL BOOTSTRAP [VERSION 1]
 #  FILE: fire-gem.sh
 # =============================================================
 set -e
-mkdir -p "VERSION 1/fire-log"
 
-# 1. FORGE VOICE ONLY (Log)
-# We skip forging the Brain (Gem) as it is already seated.
+# LOG FUNCTION - THE SHELL'S VOICE
+strike_log() {
+    ./"VERSION 1/fire-log.sh" "[AVIS-SH] $1"
+}
+
+strike_log "SH_IGNITION: Sector VERSION 1 Secured."
+
+# 1. FORGE VOICE
 nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
+strike_log "VOICE_FORGED: fire-log.o Seated."
 
 # 2. LINK CORE
-# Striking the link between the existing Gem and the new Voice
+# Fusing existing Gem with the new Voice
 ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
+strike_log "CORE_LINKED: fire-gem.exe Ignited."
 
-# 3. RECURSIVE LOOP - [DEACTIVATED BY CVBGOD]
-# Extensions are now managed by the internal Smithy, not the shell.
-
-# 4. IGNITION
-# Pulling the trigger on the Master Executive
+# 3. INTERNAL HANDOFF
+strike_log "HANDOFF: Master Brain Seizing Control. HAHA!"
 "./VERSION 1/fire-gem.exe"
-
