@@ -1,22 +1,24 @@
 ; =============================================================
 ;  AVIS-CORE // MACRO BRIDGE [VERSION 1]
+;  FILE: fire-macro.asm
 ; =============================================================
 section .data
     avis_hdr db "AVIS", 0x01, 0x00
-    msg_macro db "AVIS [MACRO] Bridge Active.", 0xa
+    msg_macro db "AVIS [MACRO] Bridge Active. HAHA!", 0xa
 
 section .text
     global _start
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; INTERNAL WRAPPER - Stop calling FIRE_PROTOCOL_WRAP
-    lea rdi, [avis_hdr]
-    mov rsi, 6
+    ; 1. INTERNAL WRAP
+    lea rsi, [avis_hdr]
+    mov rdx, 6
     call FIRE_LOG_STRIKE
 
-    lea rdi, [msg_macro]
-    mov rsi, 27
+    ; 2. STRIKE MESSAGE
+    lea rsi, [msg_macro]
+    mov rdx, 33
     call FIRE_LOG_STRIKE
 
     mov rax, 60
