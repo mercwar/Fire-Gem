@@ -1,48 +1,33 @@
 ; =============================================================
-;  AVIS PROTOCOL ENGINE [VERSION 1]
+;  AVIS PROTOCOL ENGINE // EXECUTION WRAPPER
 ;  FILE: fire-protocol.asm
+;  PURPOSE: Encapsulate and Validate Execution Strikes
 ; =============================================================
 
 section .data
-    log_path db "VERSION 1/fire-log/fire-protocol.avis", 0
-    avis_hdr db "AVIS", 0x01, 0x00
-    hdr_len  equ 6
+    msg_exec db "AVIS [LLM-LOG-OBJ][EXEC] Striking Hardware Vector: ", 0
+    len_exec equ $ - msg_exec
 
 section .text
-    global FIRE_PROTOCOL_STRIKE
+    global AVIS_EXEC_WRAP
+    extern FIRE_LOG_STRIKE
 
-FIRE_PROTOCOL_STRIKE:
+AVIS_EXEC_WRAP:
     push rbp
     mov rbp, rsp
-    push rdi
+    ; RDI = Command String Pointer | RSI = Command Length
+    
+    ; 1. LOG THE INTENT (Protocol Audit)
     push rsi
-
-    ; 1. OPEN THE VAULT LOG
-    mov rax, 2          ; sys_open
-    mov rdi, log_path
-    mov rsi, 1089       ; O_CREAT|WRONLY|APPEND
-    mov rdx, 0644o
-    syscall
-    mov r12, rax
-
-    ; 2. STRIKE AVIS HEADER
-    mov rax, 1
-    mov rdi, r12
-    mov rsi, avis_hdr
-    mov rdx, hdr_len
-    syscall
-
-    ; 3. STRIKE BODY
-    pop rdx
+    push rdi
+    lea rdi, [msg_exec]
+    mov rsi, len_exec
+    call FIRE_LOG_STRIKE
+    
+    ; 2. LOG THE COMMAND BODY
+    pop rdi
     pop rsi
-    mov rax, 1
-    mov rdi, r12
-    syscall
-
-    ; 4. CLOSE
-    mov rax, 3
-    mov rdi, r12
-    syscall
-
+    call FIRE_LOG_STRIKE
+    
     leave
     ret
