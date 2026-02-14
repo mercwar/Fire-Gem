@@ -1,0 +1,20 @@
+{
+  "fgeo_wrapper": {
+    "identity": "CYHY_CORE_INSTALL",
+    "version": "1.0.4",
+    "strike_layer": {
+      "compile": {
+        "call": "EXPORT_GCC_COMPILE",
+        "source": "VERSION 1/fire-cyhy.asm",
+        "flags": "-f elf64",
+        "output": "VERSION 1/fire-cyhy.o"
+      },
+      "execute": {
+        "call": "EXPORT_BASH_RUN",
+        "command": "ld VERSION 1/fire-cyhy.o VERSION 1/fire-gem.o -o VERSION 1/fire-cyhy.exe",
+        "chmod": "+x"
+      }
+    },
+    "status": "READY_FOR_FORGE"
+  }
+}
