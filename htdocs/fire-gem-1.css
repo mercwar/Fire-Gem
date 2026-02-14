@@ -1,23 +1,18 @@
-/* =============================================================
-   AVIS-CORE // WINDOW MANAGER
-   FILE: htdocs/fire-term-1.js
-   ============================================================= */
+/* TITLE BAR GRADIENTS AND WINDOWS */
+.fgeo-window {
+    border: 1px solid #C0C0C0; /* SILVER */
+    background: #001A33;
+    box-shadow: 0 0 20px #000;
+}
 
-try {
-    AVIS_LOG("Seating Window Manager Object...", 1);
+.title-bar {
+    background: linear-gradient(90deg, #FFD700, #C0C0C0); /* GOLD TO SILVER */
+    color: #000;
+    font-weight: bold;
+}
 
-    window.createWindow = function(id, url) {
-        AVIS_LOG(`STRIKE: Opening Window [${id}] -> ${url}`, 2);
-        // ... window creation logic ...
-    };
-
-    window.toggleStart = function() {
-        AVIS_LOG("SWITCH: Start Menu Toggled.", 1);
-        const m = document.getElementById('start-menu');
-        if (m) m.style.display = (m.style.display === 'flex') ? 'none' : 'flex';
-    };
-
-    AVIS_LOG("Window Manager Active. HAHA!", 2);
-} catch (e) {
-    AVIS_LOG(`WINDOW_MANAGER_ERR: ${e.message}`, 1);
+.controls span {
+    border: 1px solid #000;
+    padding: 0 5px;
+    background: rgba(192, 192, 192, 0.5);
 }
