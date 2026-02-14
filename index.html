@@ -4,114 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVIS-CORE // MASTER_SURFACE</title>
-    <!-- Corrected CSS Link for AVIS-CORE Surface -->
-<link rel="stylesheet" href="htdocs/fire-gem.css">
-
+    <link rel="stylesheet" href="fire-gem.css">
 </head>
 <body>
 
 <header>
     <h1>AVIS-CORE // IDENTITY: VERSION 1</h1>
     <nav>
-        <a href="https://mercwar.github.io" class="nav-link">HOME</a>
-        <a href="https://github.com" class="nav-link">FIRE-GEM REPO</a>
-        <a href="https://github.com" class="nav-link">CYBORG REPO</a>
-        <a href="https://github.com" class="nav-link">DEOS REPO</a>
+        <a href="https://mercwar.github.io" class="nav-link">FIRE-GEM ENGINE</a>
+        <a href="https://mercwar01.byethost3.com/index.html" class="nav-link">BYETHOST SURFACE</a>
+        <a href="https://github.com" class="nav-link">REPO_FORGE</a>
     </nav>
 </header>
 
 <div id="main-interface">
-    <div class="sector-title">[SECTOR: REPOSITORY BROWSER]</div>
-    <div id="file-browser">
-        <!-- The Little Bot will fetch files here -->
-        <p>Scanning local vault...</p>
-    </div>
+    <aside id="sidebar">
+        <div class="sector-title">[SECTOR: VAULT]</div>
+        <div id="file-browser">Striking GitHub Sitemap...</div>
+    </aside>
 
-    <div class="sector-title">[SECTOR: REFERENCE READER]</div>
-    <div id="reader-controls">
-        <button onclick="loadContent('VERSION 1/fire-gem.ini')" class="nav-link">READ INI</button>
-        <button onclick="loadContent('README.md')" class="nav-link">READ README</button>
-        <button onclick="loadContent('cyhy.xml')" class="nav-link">READ CYHY</button>
-    </div>
-    <div id="reader-surface">
-        <pre id="content-display">Select a resource to strike the reader...</pre>
-    </div>
+    <main id="terminal-fringe">
+        <div class="sector-title">[SECTOR: FIRE-GEM TERMINAL]</div>
+        <div id="reader-surface">
+            <!-- This intakes the GitHub Evaluation through the Portal -->
+            <pre id="content-display">System Seated. Ready for FGEO...</pre>
+        </div>
+
+        <div class="sector-title">[SECTOR: LLM-LOG AUDIT]</div>
+        <div id="llm-audit-surface">
+            <ul id="strike-list"></ul>
+        </div>
+    </main>
 </div>
 
-<footer>
-    STATUS: DETERMINISTIC // [SYNC] High-Precision Seal: COMPLETE. HAHA!
+<footer id="status-bar">
+    STATUS: NOBILITY_ACTIVE // [SYNC] BYETHOST -> GITHUB // HAHA!
 </footer>
 
-<script>
-    // 1. DYNAMIC FILE BROWSER (CRAWLER)
-    async function browseVault() {
-        const browser = document.getElementById('file-browser');
-        try {
-            // Pointing to your sitemap to get real-time file lists
-            const response = await fetch('sitemap.xml');
-            const text = await response.text();
-            const parser = new DOMParser();
-            const xml = parser.parseFromString(text, "text/xml");
-            const locs = xml.getElementsByTagName("loc");
-            
-            browser.innerHTML = '';
-            for (let i = 0; i < locs.length; i++) {
-                let url = locs[i].textContent;
-                let fileName = url.split('/').pop();
-                let link = document.createElement('a');
-                link.className = 'file-item';
-                link.textContent = `> ${fileName}`;
-                link.href = "#";
-                link.onclick = () => loadContent(url);
-                browser.appendChild(link);
-            }
-        } catch (e) {
-            browser.innerHTML = '<p style="color:red">ERROR: Sitemap strike failed. Check Repository Sync.</p>';
-        }
-    }
-
-    // 2. REFERENCE READER (NOVEL STYLE)
-    async function loadContent(path) {
-        const display = document.getElementById('content-display');
-        display.textContent = `Intaking: ${path}...`;
-        try {
-            // Handle relative or full URLs
-            const response = await fetch(path);
-            const text = await response.text();
-            display.textContent = text;
-        } catch (e) {
-            display.textContent = "ERROR: Failed to load resource. Artifact may be locked.";
-        }
-    }
-
-    // Boot Sequence
-    window.onload = browseVault;
-</script>
-<!-- Inside the Reference Reader Section of index.html -->
-<div class="sector-title">[SECTOR: LLM-LOG AUDIT]</div>
-<div id="llm-audit-surface" style="background: #001100; color: #0f0; padding: 10px; border: 1px dashed #0f0;">
-    <ul id="strike-list"></ul>
-</div>
-
-<script>
-    async function auditLog() {
-        const response = await fetch('VERSION 1/fire-gem.log');
-        const text = await response.text();
-        const list = document.getElementById('strike-list');
-        
-        // Parse the AVIS Encapsulated Objects
-        const objects = text.split('AVIS');
-        objects.forEach(obj => {
-            if(obj.includes('[LLM-LOG-OBJ]')) {
-                let entry = document.createElement('li');
-                entry.textContent = `[STRIKE_VERIFIED]: ${obj.replace('[LLM-LOG-OBJ]', '')}`;
-                list.appendChild(entry);
-            }
-        });
-    }
-    // Run audit after file browser
-    setTimeout(auditLog, 1000);
-</script>
-
+<script src="fire-term.js"></script>
 </body>
 </html>
