@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org">
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-compile.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-net.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.exe</loc>
-  </url>
-  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-log/fire-protocol.avis</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-end.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-seed.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/avis-fvs.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-site.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-term.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-macro.exe</loc>
+    <priority>1.0</priority>
   </url>
 </urlset>
