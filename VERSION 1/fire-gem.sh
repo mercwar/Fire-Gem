@@ -5,8 +5,12 @@
 # =============================================================
 set -e
 
+# FORCE TERMINAL ENVIRONMENT FOR PROGRESS BARS
+export TERM=xterm
+
 # INI INTAKE FOR LOGGING PATH
-TXT_FILE=$(grep "TXT_AUDIT=" "VERSION 1/fire-gem.ini" | cut -d'=' -f2)
+INI_FILE="VERSION 1/fire-gem.ini"
+TXT_FILE=$(grep "TXT_AUDIT=" "$INI_FILE" | cut -d'=' -f2)
 
 # PROFESSIONAL AVIS PROGRESS BAR
 avis_progress() {
@@ -26,19 +30,31 @@ avis_progress() {
 }
 
 # 1. INITIALIZE GRID
-clear
 echo "------------------------------------------------------------"
 echo "  AVIS RECURSIVE ENGINE // IDENTITY: JOE TRON"
 echo "------------------------------------------------------------"
-avis_progress "SECTOR_INITIALIZATION"
 mkdir -p "VERSION 1/fire-log"
+touch "$TXT_FILE"
 
-# 2. TRIGGER LINKER
+avis_progress "SECTOR_INITIALIZATION"
+
+# 2. TRIGGER LINKER (STUBBED/ACTIVE)
 avis_progress "HARDWARE_LINKER_STRIKE"
-chmod +x "VERSION 1/fire-link.sh"
-"./VERSION 1/fire-link.sh"
+if [ -f "VERSION 1/fire-link.sh" ]; then
+    chmod +x "VERSION 1/fire-link.sh"
+    "./VERSION 1/fire-link.sh"
+fi
 
 # 3. FINAL IGNITION
 avis_progress "MASTER_BRAIN_IGNITION"
 echo "[AVIS] HANDOFF: HAHA!"
-"./VERSION 1/fire-gem.exe"
+
+# 4. FINAL AUDIT PRINT (So JOE can see the TXT log)
+echo "------------------------------------------------------------"
+echo "  FINAL SH-AUDIT [fire-gem.txt]"
+echo "------------------------------------------------------------"
+cat "$TXT_FILE"
+
+TXT_FILE=$(grep "TXT_AUDIT=" "VERSION 1/fire-gem.ini" | cut -d'=' -f2)
+
+
