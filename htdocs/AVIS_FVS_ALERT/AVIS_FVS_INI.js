@@ -20,29 +20,30 @@
 
 import { MODULE } from "./AVIS_FVS_IMPORT.js";
 import { alertModule } from "./AVIS_FVS_MOD.js";
-
+import { avisAlert } from "./AVIS_FVS_MOD.js";
 // EXPORT: cyborg-friendly wrapper function
 export function AVIS_ALERT(active = false, testMode = false, alertMode = false, alertText = "",sendText = false) {
 
-alert("AVIS TEST :: AVIS_FVS_ALERT_INI FOUND::");
+avisAlert("AVIS TEST :: AVIS_FVS_ALERT_INI FOUND::",sendText);
 
     // Only run if active flag is 1
     if (active === true) {
 
         // TEST MODE
         if (testMode === true) {
-            alert("AVIS TEST :: ALERT MOD ONLINE ::");
+            avisAlert("AVIS TEST :: ALERT MOD ONLINE ::",sendText);
             return;
         }
 
         // NORMAL MODE
-        alertModule(MODULE, false);
+        alertModule(MODULE, false,sendText);
      return;
     }else{
     // alert MODE
       if (alertMode === true){  
-        alert('AVIS ALERT :: alertText ::');
+        avisAlert('AVIS ALERT :: alertText ::',sendText);
     
             }
         }
+
 
