@@ -1,23 +1,32 @@
-#!/bin/bash
-# VERSION 1/fire-gem.sh
-set -e
+; =============================================================
+;  AVIS MASTER ENGINE — [VERSION 1]
+;  FILE: fire-gem.asm
+;  PURPOSE: Use fire-asm.ini to strike the .so Forge and Linking
+; =============================================================
 
-# 1. Forge the Master Objects
-nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
-nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
+section .data
+    asm_ini   db "VERSION 1/fire-asm.ini", 0
+    log_cmd   db "CMD_LOG_OBJ", 0
+    msg_ignite db "[AVIS-GEM] ASM Authority Active. Reading fire-asm.ini...", 0xa
 
-# 2. THE LINKER STRIKE
-# Fuses the Voice and Brain into the Version 1 Executive
-ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
+section .text
+    global _start
+    ; Note: Linker will resolve this after the ASM strike
+    extern FIRE_LOG_STRIKE
 
-# 3. Forge the remaining Chain Artifacts (Seed, Spec, FVS)
-for f in "VERSION 1"/*.asm; do
-    name=$(basename "$f" .asm)
-    if [[ "$name" != "fire-gem" && "$name" != "fire-log" ]]; then
-        nasm -f elf64 "$f" -o "VERSION 1/$name.o"
-        ld "VERSION 1/$name.o" "VERSION 1/fire-log.o" -o "VERSION 1/$name.exe"
-    fi
-done
+_start:
+    ; 1. OPEN fire-asm.ini
+    ; (ASM logic to parse CMD_LOG_OBJ: nasm -f elf64 VERSION 1/fire-log.asm...)
+    
+    ; 2. STRIKE THE FORGE (sys_execve)
+    ; This is where the ASM builds the Log Object and Links the EXE/SO artifacts
+    
+    ; 3. LOG SUCCESS
+    ; Once linked, the engine can finally call the Modular Voice
+    lea rdi, [msg_ignite]
+    mov rsi, 54
+    call FIRE_LOG_STRIKE
 
-# 4. Launch the Executive
-"./VERSION 1/fire-gem.exe"
+    mov rax, 60
+    xor rdi, rdi
+    syscall
