@@ -1,11 +1,17 @@
-    <div id="desktop"></div>
-
-    <div id="start-menu">
-        <div class="menu-item" onclick="createWindow('BYETHOST_IFRAME', 'https://mercwar01.byethost3.com/index.html')">> AVIS Surface </div>
-        <div class="menu-item" onclick="createWindow('FIRE_GEM_TERM', 'htdocs/index.html')">> FIRE-GEM Terminal</div>
-    </div>
-
-    <div id="taskbar">
-        <button id="start-btn" onclick="toggleStart()">START</button>
-    
+<!-- Inside the htdocs/fire-start.html file -->
+<div id="start-menu" style="display:none; position:absolute; bottom:30px; left:0; background:#002244; border:1px solid #FFD700; width:250px;">
+    <div onclick="parent.createWindow('BYETHOST', 'https://mercwar.byethost3.com')" style="color:#FFD700; padding:10px; cursor:pointer;">> AVIS Surface</div>
+    <div onclick="parent.createWindow('TERM', 'htdocs/index.html')" style="color:#FFD700; padding:10px; cursor:pointer;">> FIRE-GEM Terminal</div>
 </div>
+
+<div id="taskbar" style="position:fixed; bottom:0; left:0; width:100%; height:25px; background:#001A33; border-top:1px solid #FFD700;">
+    <button onclick="toggleMenu()" style="background:#FFD700; color:#000; border:none; height:100%; font-weight:bold; cursor:pointer;">START</button>
+</div>
+
+<script>
+    function toggleMenu() {
+        const m = document.getElementById('start-menu');
+        m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+    }
+    // Communication back to the Master OS via 'parent'
+</script>
