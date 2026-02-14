@@ -31,8 +31,8 @@ jobs:
       - name: Execute VERSION 1 Chain
         run: |
           # THE ONLY TARGET IS THE BOOTSTRAP
-          chmod +x "VERSION 1/fire-gem.sh"
-          "./VERSION 1/fire-gem.sh"
+        #  chmod +x "VERSION 1/fire-gem.sh"
+         # "./VERSION 1/fire-gem.sh"
 
       - name: Final Server Sync
         run: |
