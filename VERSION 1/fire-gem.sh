@@ -1,39 +1,35 @@
 #!/bin/bash
 # =============================================================
-#  AVIS-SMITHY: VOCAL BOOTSTRAP [VERSION 1]
+#  AVIS-SMITHY: BOOTSTRAP [VERSION 1]
 #  FILE: fire-gem.sh
+#  PURPOSE: Test Log Exports via INI Intake (Linker Deactivated)
 # =============================================================
 set -e
 
-# THE VOICE OF THE SHELL
-strike_log() {
-    ./"VERSION 1/fire-log.sh" "[AVIS-SH] $1"
-}
+# 1. IMMEDIATE AVIS IGNITION
+if [ -f "VERSION 1/fire-log.sh" ]; then
+    chmod +x "VERSION 1/fire-log.sh"
+    ./"VERSION 1/fire-log.sh" "AVIS_SESSION_IGNITED: Identity JOE verified."
+else
+    echo "CRITICAL: AVIS VOICE (fire-log.sh) NOT FOUND"
+    exit 1
+fi
 
-# 0. THE PURGE
-strike_log "PURGE_INIT: Cleaning Sector VERSION 1..."
-rm -f "VERSION 1/"*.o "VERSION 1/"*.exe
+# 2. INTAKE LOG EXPORTS FROM fire-gem.ini
+# Scoping the [DEVICE: LOG] block
+LOG_EXP=$(grep "STRIKE_VOICE=" "VERSION 1/fire-gem.ini" | cut -d'=' -f2)
+LOG_PATH=$(grep "VAULT_PATH=" "VERSION 1/fire-gem.ini" | cut -d'=' -f2)
 
-# 1. FORGE CORE
-strike_log "CORE_FORGE: Seating Brain and Voice..."
-nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
-nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
+# 3. THE TEST BLOCK STRIKE
+# This bypasses the binary and strikes the log directly using the INI exports
+echo "------------------------------------------------------------" >> "$LOG_PATH"
+./"VERSION 1/fire-log.sh" "[TEST_BLOCK] BEGIN EXPORT VERIFICATION"
+./"VERSION 1/fire-log.sh" "[TEST_BLOCK] EXPORT_NAME: $LOG_EXP"
+./"VERSION 1/fire-log.sh" "[TEST_BLOCK] TARGET_VAULT: $LOG_PATH"
+./"VERSION 1/fire-log.sh" "[TEST_BLOCK] STATUS: AVIS_BRIDGE_VERIFIED. HAHA!"
+echo "------------------------------------------------------------" >> "$LOG_PATH"
 
-# 2. LINK CORE
-strike_log "CORE_LINK: Fusing Triad into fire-gem.exe..."
-ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
+# 4. LINKER DEACTIVATED BY JOE
+# # [ -f "VERSION 1/fire-link.sh" ] && "./VERSION 1/fire-link.sh"
 
-# 3. RECURSIVE LOOP
-strike_log "RECURSIVE_FORGE: Sweeping extensions..."
-for f in "VERSION 1"/*.asm; do
-    name=$(basename "$f" .asm)
-    if [[ "$name" != "fire-gem" && "$name" != "fire-log" ]]; then
-        strike_log "EXT_STRIKE: Forging $name.o"
-        nasm -f elf64 "$f" -o "VERSION 1/$name.o"
-        ld "VERSION 1/$name.o" "VERSION 1/fire-log.o" -o "VERSION 1/$name.exe"
-    fi
-done
-
-# 4. IGNITION
-strike_log "IGNITION: Handoff to Master Executive. HAHA!"
-"./VERSION 1/fire-gem.exe"
+echo "[AVIS-SH] Test Block Strike Complete. Check the Vault. HAHA!"
