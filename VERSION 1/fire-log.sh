@@ -4,7 +4,7 @@
 #  FILE: fire-log.sh
 #  PURPOSE: Allow YAML/SH to record Identity strikes in fire-gem.log
 #  GOVERNANCE: CVBGOD // STATUS: VERIFIED
-# =============================================================================
+# =============================================================
 
 # 1. DEFINE VAULT PATH
 LOG_FILE="VERSION 1/fire-gem.log"
@@ -15,7 +15,7 @@ IDENTITY="[AVIS-YML-STRIKE]"
 MESSAGE=${1:-"Ignition Sequence Verified"}
 
 # 3. STRIKE THE LOG
-# This mimics the AVIS protocol header for consistent audit trails
+# Mimics AVIS protocol for consistent trace auditing
 echo "$IDENTITY $TIMESTAMP: $MESSAGE" >> "$LOG_FILE"
 
 # 4. TERMINAL FEEDBACK
