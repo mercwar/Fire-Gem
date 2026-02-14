@@ -1,96 +1,42 @@
 /* =============================================================
-   AVIS-CORE // TERMINAL SURFACE [VERSION 1]
+   AVIS-CORE // TERMINAL STYLE [VERSION 1]
    FILE: htdocs/fire-gem.css
-   PALETTE: GOLD (#FFD700) | BLUE (#003366) | SILVER (#C0C0C0)
+   PALETTE: GOLD (#FFD700) | ROYAL BLUE (#001A33) | SILVER (#C0C0C0)
    ============================================================= */
 body {
-    background-color: #001A33; /* DEEP ROYAL BLUE BASE */
-    color: #FFD700; /* BRIGHT GOLD TEXT */
+    background-color: #000b1a; /* DEEP BLUE */
+    color: #FFD700; /* GOLD */
     font-family: 'Courier New', monospace;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.2;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6); /* GOLDEN GLOW */
+    margin: 0; padding: 0;
+    overflow: hidden;
 }
 
-header {
-    border-bottom: 3px double #C0C0C0; /* SILVER DOUBLE BORDER */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+#desktop {
+    position: absolute; top: 0; left: 0; width: 100vw;
+    height: calc(100vh - 25px); z-index: 10;
 }
 
-.nav-link {
-    color: #C0C0C0; /* SILVER LINKS */
-    text-decoration: none;
-    margin-right: 15px;
-    border: 1px solid #FFD700; /* GOLD BORDER */
-    padding: 5px 10px;
-    background: rgba(0, 51, 102, 0.5);
+/* THE TASKBAR VESSEL FIX */
+.fire-html-1 {
+    position: fixed; bottom: 0; left: 0; 
+    width: 100%; height: 25px; 
+    z-index: 999999; /* SUPREME LAYER */
+    background: #001A33;
+    border-top: 1px solid #FFD700;
+    box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.5); /* GOLD GLOW */
 }
 
-.nav-link:hover {
-    background: #FFD700;
-    color: #001A33;
+object {
+    width: 100%; height: 100%;
+    border: none;
+    pointer-events: auto; /* ALLOWS THE BUTTON CLICK */
 }
 
-#main-interface {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 20px;
-    border: 2px solid #C0C0C0; /* SILVER FRAME */
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.sector-title {
-    background: linear-gradient(90deg, #FFD700, #C0C0C0); /* GOLD TO SILVER GRADIENT */
-    color: #001A33;
-    padding: 4px 12px;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 10px;
-    border-radius: 2px;
-}
-
-#file-browser {
-    border-right: 1px solid #C0C0C0;
-    height: 80vh;
-    overflow-y: auto;
-}
-
-.file-item {
-    display: block;
-    cursor: pointer;
-    padding: 8px;
-    color: #C0C0C0; /* SILVER FILE NAMES */
-}
-
-.file-item:hover {
-    color: #FFD700; /* TURNS GOLD ON HOVER */
-    background: rgba(255, 215, 0, 0.1);
-}
-
-#reader-surface {
-    background: #000;
-    padding: 15px;
-    border: 1px solid #FFD700;
-    height: 50vh;
-    color: #FFD700; /* GOLD CODE */
-}
-
+/* THE AUDIT SURFACE */
 #llm-audit-surface {
-    margin-top: 20px;
-    border-top: 2px solid #C0C0C0;
-    color: #C0C0C0;
-}
-
-/* NOBILITY SCANLINE (GOLDEN) */
-body::before {
-    content: " ";
-    position: fixed;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background: linear-gradient(rgba(255, 215, 0, 0.03) 50%, rgba(0, 0, 0, 0.1) 50%);
-    background-size: 100% 4px;
-    pointer-events: none;
-    z-index: 999;
+    position: absolute; top: 10px; right: 10px;
+    width: 380px; height: 450px;
+    background: rgba(0, 10, 30, 0.9);
+    border: 1px double #FFD700;
+    z-index: 500;
 }
