@@ -24,10 +24,18 @@ jobs:
 
       - name: Execute VERSION 1 Chain
         run: |
+          # FORCE DIRECTORY AUTHORITY
           mkdir -p "VERSION 1/fire-log"
+          
+          # BUILD MASTER OBJECTS
+          nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
+          nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
+          ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
+          
+          # IGNITION
           chmod +x "VERSION 1/fire-map.sh"
-          chmod +x "VERSION 1/fire-gem.sh"
-          "./VERSION 1/fire-gem.sh"
+          "./VERSION 1/fire-gem.exe"
+
 
       - name: Final Server Sync
         run: |
