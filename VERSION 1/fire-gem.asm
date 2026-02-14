@@ -1,21 +1,16 @@
 ; =============================================================================
-;  AVIS MASTER ENGINE — [VERSION 1]
+;  AVIS MASTER ENGINE — [RECURSIVE EXECUTIVE]
 ;  FILE: fire-gem.asm
-;  PURPOSE: Seize Control, Intake INI, and Strike Recursive Forge
-;  GOVERNANCE: CVBGOD // STATUS: INTERNAL_SMITHY_READY
+;  PURPOSE: Intake INI, Verify Triad, and Handoff to Internal Smithy
 ; =============================================================================
 
 section .data
-    msg_boot  db "AVIS [LLM-LOG-OBJ][GEM] Ignition: Master Brain Seizing Control.", 0xa
-    len_boot  equ $ - msg_boot
-    
-    ini_path  db "VERSION 1/fire-gem.ini", 0
-    
-    ; Internal Handoff Target
-    macro_exe db "VERSION 1/fire-macro.exe", 0
+    ini_path  db "VERSION 1/fire-compile.ini", 0
+    msg_ignite db "AVIS [LLM-LOG-OBJ][GEM] Triad Fusion Verified. Seizing Authority.", 0xa
+    len_ignite equ $ - msg_ignite
 
 section .bss
-    ini_buf   resb 4096
+    ini_buf   resb 8192
 
 section .text
     global _start
@@ -24,44 +19,30 @@ section .text
 
 _start:
     ; 1. STRIKE THE IDENTITY HANDSHAKE
-    ; This proves the Brain is linked to the Voice
-    lea rdi, [msg_boot]
-    mov rsi, len_boot
+    lea rdi, [msg_ignite]
+    mov rsi, len_ignite
     call FIRE_LOG_STRIKE
 
-    ; 2. INTAKE THE REGISTRY (Dumb-Load to Smart-Forge)
+    ; 2. INTAKE THE RECURSIVE BLUEPRINT
     mov rax, 2          ; sys_open
     mov rdi, ini_path
     mov rsi, 0          ; O_RDONLY
     syscall
-    test rax, rax
-    js .error_exit
     mov r12, rax        ; Save FD
 
     mov rax, 0          ; sys_read
     mov rdi, r12
     mov rsi, ini_buf
-    mov rdx, 4096
-    syscall
-    
-    mov rax, 3          ; sys_close
-    mov rdi, r12
+    mov rdx, 8192
     syscall
 
-    ; 3. TRIGGER INTERNAL SMITHY (Recursive Forge)
-    ; This calls the logic in fire-compile.o to forge the extensions
-    ; (Macro, Term, Net, Seed, Spec)
+    ; 3. INTERNAL SMITHY STRIKE
+    ; Calls the code from fire-compile.o which is now inside this binary.
+    ; It evaluates the [EXTENSIONS] sector and builds the paths.
     call FIRE_RECURSIVE_FORGE
 
-    ; 4. THE GRAND HANDOFF (sys_execve)
-    ; Once the smithy is done, the Brain abdicates to the Macro Bridge
-    mov rax, 59         ; sys_execve
-    mov rdi, macro_exe
-    xor rsi, rsi
-    xor rdx, rdx
-    syscall
-
-.error_exit:
-    mov rax, 60         ; sys_exit
-    mov rdi, 1
+    ; 4. TERMINAL HANDOFF
+    ; Once the smithy verifies the loop, we transition to the Terminal Surface
+    mov rax, 60
+    xor rdi, rdi
     syscall
