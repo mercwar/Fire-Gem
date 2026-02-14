@@ -13,10 +13,10 @@ section .data
 
 section .text
     global _start
-    extern FIRE_LOG_STRIKE  ; The ONLY link the dumb shell loop provides [1]
+    extern FIRE_LOG_STRIKE  ; The ONLY link the dumb shell loop provides
 
 _start:
-    ; 1. INTERNAL PROTOCOL WRAP (Self-Contained)
+    ; 1. INTERNAL PROTOCOL WRAP (Fused Logic)
     lea rdi, [avis_hdr]
     mov rsi, hdr_len
     call FIRE_LOG_STRIKE
