@@ -1,32 +1,33 @@
 ; =============================================================================
 ;  AVIS-CORE // CJS JSON READER [VERSION 1]
 ;  FILE: cjs.asm
-;  PURPOSE: Parse JSON Protocol (Local/Shipped/Custom) for FGEO Execution
-;  GOVERNANCE: CVBGOD // STATUS: CJS_EVAL_READY
+;  PURPOSE: Parse JSON Protocol (Local/Shipped/Custom) 
+;  GOVERNANCE: CVBGOD // STATUS: NO_EXTERNAL_DEPENDENCY
 ; =============================================================================
-%include "VERSION 1/fire-gem-asm.inc"
 
 section .data
     msg_cjs  db "AVIS [LLM-LOG-OBJ][CJS] Reading JSON Protocol Strike...", 0xa
     len_cjs  equ 53
-
-section .bss
-    json_buf resb 8192    ; Buffer for the JSON stream
-    fgeo_ptr resq 1       ; Pointer to the current FGEO macro
+    avis_hdr db "AVIS", 0x01, 0x00
+    hdr_len  equ 6
 
 section .text
     global _start
-    global CJS_READ_PROTOCOL
-    extern FIRE_PROTOCOL_WRAP
+    extern FIRE_LOG_STRIKE  ; This is the ONLY link the .sh provides
 
 _start:
-    ; 1. LOG CJS ACTIVITY
+    ; 1. INTERNAL PROTOCOL WRAP (Instead of calling extern)
+    ; Strike Header
+    lea rdi, [avis_hdr]
+    mov rsi, hdr_len
+    call FIRE_LOG_STRIKE
+
+    ; 2. STRIKE THE CJS MESSAGE
     lea rdi, [msg_cjs]
     mov rsi, len_cjs
-    call FIRE_PROTOCOL_WRAP
+    call FIRE_LOG_STRIKE
 
-    ; 2. INTAKE JSON SOURCE
-    ; (Source is passed from the Extension-1 handoff)
+    ; 3. CJS EVALUATION STRIKE
     call CJS_READ_PROTOCOL
 
     mov rax, 60
@@ -34,13 +35,5 @@ _start:
     syscall
 
 CJS_READ_PROTOCOL:
-    push rbp
-    mov rbp, rsp
-
-    ; --- CJS EVALUATION LOGIC ---
-    ; Evaluates JSON keys: id, vector, type, command
-    ; Assembles them into the FGEO Buffer (0x8000)
-    ; This is what the Terminal cannot process on its own.
-    
-    leave
+    ; [JSON EVALUATION LOGIC HERE]
     ret
