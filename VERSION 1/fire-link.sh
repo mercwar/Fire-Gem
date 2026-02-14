@@ -2,7 +2,6 @@
 # =============================================================
 #  AVIS-LINKER // EXPORT FORGE [VERSION 1]
 #  FILE: fire-link.sh
-#  PURPOSE: Fusing LOG, GEM, and COMPILE via INI Law
 # =============================================================
 set -e
 export TERM=xterm
@@ -17,10 +16,9 @@ link_progress() {
     local label=$1
     echo -ne "\r[AVIS-LINK] $label [░░░░░░░░░░] 0%"
     sleep 0.1
-    echo -ne "\r[AVIS-LINK] $label [▓▓▓▓▓▓░░░░] 60%"
-    sleep 0.1
     echo -ne "\r[AVIS-LINK] $label [▓▓▓▓▓▓▓▓▓▓] 100% DONE\n"
-    ./VERSION 1/fire-log.sh "LINKER_STRIKE: $label"
+    # QUOTED BRIDGE CALL - THIS IS THE FIX FOR LINE 23
+    "./VERSION 1/fire-log.sh" "LINKER_STRIKE: $label"
 }
 
 # 1. FORGE THE HARDWARE OBJECTS
@@ -30,7 +28,6 @@ nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
 nasm -f elf64 "VERSION 1/fire-compile.asm" -o "VERSION 1/fire-compile.o"
 
 # 2. THE SUPREME LINK STRIKE
-# Fusing the Triad and resolving the exported symbols
 link_progress "EXECUTING_SYMBOL_FUSION"
 ld "VERSION 1/fire-gem.o" \
    "VERSION 1/fire-log.o" \
@@ -39,6 +36,8 @@ ld "VERSION 1/fire-gem.o" \
 
 # 3. VERIFY EXPORTS (Striking the NM check)
 link_progress "VERIFYING_HARDWARE_VECTORS"
-nm "VERSION 1/fire-gem.exe" | grep -E "$VOICE_EXP|$GCC_EXP" >> "VERSION 1/fire-gem.txt"
+# ENSURING TXT_FILE IS WRAPPED IN QUOTES
+TXT_FILE=$(grep "TXT_AUDIT=" "$INI" | cut -d'=' -f2)
+nm "VERSION 1/fire-gem.exe" | grep -E "$VOICE_EXP|$GCC_EXP" >> "$TXT_FILE"
 
-./VERSION 1/fire-log.sh "LINKER_COMPLETE: Symbols $VOICE_EXP and $GCC_EXP are Seated. HAHA!"
+"./VERSION 1/fire-log.sh" "LINKER_COMPLETE: Symbols Seated. HAHA!"
