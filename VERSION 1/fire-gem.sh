@@ -1,32 +1,29 @@
-; =============================================================
-;  AVIS MASTER ENGINE — [VERSION 1]
-;  FILE: fire-gem.asm
-;  PURPOSE: Use fire-asm.ini to strike the .so Forge and Linking
-; =============================================================
+#!/bin/bash
+# =============================================================================
+#  AVIS-SMITHY: VERSION 1 HARDCODE LOADER
+#  FILE: fire-gem.sh
+# =============================================================================
+set -e
 
-section .data
-    asm_ini   db "VERSION 1/fire-asm.ini", 0
-    log_cmd   db "CMD_LOG_OBJ", 0
-    msg_ignite db "[AVIS-GEM] ASM Authority Active. Reading fire-asm.ini...", 0xa
+echo "[AVIS-SH] Smithy Engaged: Forging VERSION 1 Artifacts..."
 
-section .text
-    global _start
-    ; Note: Linker will resolve this after the ASM strike
-    extern FIRE_LOG_STRIKE
+# 1. Forge the Master Objects (Voice and Brain)
+nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
+nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
 
-_start:
-    ; 1. OPEN fire-asm.ini
-    ; (ASM logic to parse CMD_LOG_OBJ: nasm -f elf64 VERSION 1/fire-log.asm...)
-    
-    ; 2. STRIKE THE FORGE (sys_execve)
-    ; This is where the ASM builds the Log Object and Links the EXE/SO artifacts
-    
-    ; 3. LOG SUCCESS
-    ; Once linked, the engine can finally call the Modular Voice
-    lea rdi, [msg_ignite]
-    mov rsi, 54
-    call FIRE_LOG_STRIKE
+# 2. THE LINKER STRIKE: Fuse Brain and Voice
+ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
 
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+# 3. Forge the remaining Chain Artifacts (FVS, Seed, Spec, Net, Site)
+for f in "VERSION 1"/*.asm; do
+    name=$(basename "$f" .asm)
+    if [[ "$name" != "fire-gem" && "$name" != "fire-log" ]]; then
+        echo "[AVIS-SH] Forging: $name"
+        nasm -f elf64 "$f" -o "VERSION 1/$name.o"
+        ld "VERSION 1/$name.o" "VERSION 1/fire-log.o" -o "VERSION 1/$name.exe"
+    fi
+done
+
+# 4. Handoff to Version 1 Master Engine
+echo "[AVIS-SH] Smithy Complete. Launching Master Engine. HAHA!"
+"./VERSION 1/fire-gem.exe"
