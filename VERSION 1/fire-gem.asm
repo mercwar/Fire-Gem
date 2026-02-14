@@ -1,46 +1,67 @@
-; =============================================================
-;  AVIS MASTER ENGINE — [RECURSIVE HANDOFF]
+; =============================================================================
+;  AVIS MASTER ENGINE — [VERSION 1]
 ;  FILE: fire-gem.asm
-; =============================================================
+;  PURPOSE: Seize Control, Intake INI, and Strike Recursive Forge
+;  GOVERNANCE: CVBGOD // STATUS: INTERNAL_SMITHY_READY
+; =============================================================================
 
 section .data
-    ini_path db "VERSION 1/fire-gem.ini", 0
-    msg_boot db "AVIS [LLM-LOG-OBJ][SMITHY] DUMB_LOAD Verified. Striking RECURSIVE_FORGE...", 0xa
-    len_boot equ $ - msg_boot
+    msg_boot  db "AVIS [LLM-LOG-OBJ][GEM] Ignition: Master Brain Seizing Control.", 0xa
+    len_boot  equ $ - msg_boot
     
-    tag_recur db "[RECURSIVE_FORGE]", 0
-    tag_comp  db "FORGE_01=", 0
+    ini_path  db "VERSION 1/fire-gem.ini", 0
+    
+    ; Internal Handoff Target
+    macro_exe db "VERSION 1/fire-macro.exe", 0
 
 section .bss
-    ini_map  resb 8192
+    ini_buf   resb 4096
 
 section .text
     global _start
-    extern FIRE_LOG_STRIKE
+    extern FIRE_LOG_STRIKE      ; From fire-log.o
+    extern FIRE_RECURSIVE_FORGE ; From fire-compile.o (The Smith)
 
 _start:
-    ; 1. LOG THE HANDOFF
+    ; 1. STRIKE THE IDENTITY HANDSHAKE
+    ; This proves the Brain is linked to the Voice
     lea rdi, [msg_boot]
     mov rsi, len_boot
     call FIRE_LOG_STRIKE
 
-    ; 2. INTAKE INI FOR PHASE 2
-    mov rax, 2          ; open
+    ; 2. INTAKE THE REGISTRY (Dumb-Load to Smart-Forge)
+    mov rax, 2          ; sys_open
     mov rdi, ini_path
     mov rsi, 0          ; O_RDONLY
     syscall
-    mov r12, rax
+    test rax, rax
+    js .error_exit
+    mov r12, rax        ; Save FD
 
-    mov rax, 0          ; read
+    mov rax, 0          ; sys_read
     mov rdi, r12
-    mov rsi, ini_map
-    mov rdx, 8192
+    mov rsi, ini_buf
+    mov rdx, 4096
+    syscall
+    
+    mov rax, 3          ; sys_close
+    mov rdi, r12
     syscall
 
-    ; 3. STRIKE THE COMPILER (FORGE_01)
-    ; Logic scans for FORGE_01= and strikes nasm -f elf64 fire-compile.asm
-    ; Then links and executes fire-compile.exe to finish the vault.
+    ; 3. TRIGGER INTERNAL SMITHY (Recursive Forge)
+    ; This calls the logic in fire-compile.o to forge the extensions
+    ; (Macro, Term, Net, Seed, Spec)
+    call FIRE_RECURSIVE_FORGE
 
-    mov rax, 60
-    xor rdi, rdi
+    ; 4. THE GRAND HANDOFF (sys_execve)
+    ; Once the smithy is done, the Brain abdicates to the Macro Bridge
+    mov rax, 59         ; sys_execve
+    mov rdi, macro_exe
+    xor rsi, rsi
+    xor rdx, rdx
+    syscall
+
+.error_exit:
+    mov rax, 60         ; sys_exit
+    mov rdi, 1
     syscall
