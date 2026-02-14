@@ -95,6 +95,31 @@
     // Boot Sequence
     window.onload = browseVault;
 </script>
+<!-- Inside the Reference Reader Section of index.html -->
+<div class="sector-title">[SECTOR: LLM-LOG AUDIT]</div>
+<div id="llm-audit-surface" style="background: #001100; color: #0f0; padding: 10px; border: 1px dashed #0f0;">
+    <ul id="strike-list"></ul>
+</div>
+
+<script>
+    async function auditLog() {
+        const response = await fetch('VERSION 1/fire-gem.log');
+        const text = await response.text();
+        const list = document.getElementById('strike-list');
+        
+        // Parse the AVIS Encapsulated Objects
+        const objects = text.split('AVIS');
+        objects.forEach(obj => {
+            if(obj.includes('[LLM-LOG-OBJ]')) {
+                let entry = document.createElement('li');
+                entry.textContent = `[STRIKE_VERIFIED]: ${obj.replace('[LLM-LOG-OBJ]', '')}`;
+                list.appendChild(entry);
+            }
+        });
+    }
+    // Run audit after file browser
+    setTimeout(auditLog, 1000);
+</script>
 
 </body>
 </html>
