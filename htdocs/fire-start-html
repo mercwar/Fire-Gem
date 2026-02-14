@@ -1,61 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        /* ROYAL GOLD & BLUE TASKBAR STYLE */
-        body { margin: 0; padding: 0; overflow: hidden; font-family: 'Courier New', monospace; }
-        
-        #taskbar { 
-            width: 100%; height: 25px; background: #001A33; 
-            border-top: 1px solid #FFD700; display: flex; align-items: center; 
-        }
-
-        #start-btn { 
-            background: #FFD700; color: #000; border: none; 
-            padding: 0 20px; height: 100%; font-weight: bold; 
-            cursor: pointer; font-size: 12px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-        }
-        #start-btn:hover { background: #C0C0C0; }
-
-        #menu { 
-            display: none; position: fixed; bottom: 25px; left: 0; 
-            width: 220px; background: #002244; border: 1px solid #FFD700; 
-            box-shadow: 5px -5px 15px rgba(0,0,0,0.8);
-        }
-
-        .menu-item { 
-            color: #FFD700; padding: 12px; cursor: pointer; 
-            border-bottom: 1px solid #003366; font-size: 13px;
-        }
-        .menu-item:hover { background: #FFD700; color: #001A33; }
-    </style>
-</head>
-<body>
-
-    <div id="menu">
-        <div class="menu-item" onclick="strike('BYETHOST', 'https://mercwar.byethost3.com')">> RUN AVIS SURFACE</div>
-        <div class="menu-item" onclick="strike('TERMINAL', 'htdocs/index.html')">> RUN FIRE-GEM TERMINAL</div>
+<body style="margin:0; padding:0; background:#001A33; overflow:hidden;">
+    <div id="menu" style="display:none; position:fixed; bottom:25px; left:0; width:200px; background:#002244; border:1px solid #FFD700; z-index:999;">
+        <div onclick="parent.createWindow('BYETHOST', 'https://mercwar.byethost3.com')" style="color:#FFD700; padding:10px; cursor:pointer; font-family:monospace; border-bottom:1px solid #003366;">> RUN AVIS SURFACE</div>
     </div>
-
-    <div id="taskbar">
-        <button id="start-btn" onclick="toggleMenu()">START</button>
+    
+    <div style="width:100%; height:25px; display:flex; align-items:center;">
+        <button onclick="toggle()" style="background:#FFD700; color:#000; border:none; height:100%; padding:0 20px; font-weight:bold; cursor:pointer; font-family:monospace;">START</button>
     </div>
 
     <script>
-        function toggleMenu() {
+        function toggle() {
             const m = document.getElementById('menu');
-            const isOpen = m.style.display === 'block';
-            m.style.display = isOpen ? 'none' : 'block';
-            // Report to Master Log via AVIS
-            if(!isOpen) parent.AVIS_STRIKE("SWITCH: START_MENU_OPEN", 1);
-        }
-
-        function strike(id, url) {
-            // PIERCE THE OBJECT BOUNDARY
-            parent.AVIS_STRIKE(`EXEC_STRIKE: ${id}`, 2);
-            parent.createWindow(id, url);
-            toggleMenu();
+            m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+            parent.AVIS_STRIKE("SWITCH: MENU_TOGGLED", 1);
         }
     </script>
 </body>
