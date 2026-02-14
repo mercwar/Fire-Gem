@@ -1,67 +1,69 @@
 ; =============================================================================
-;  AVIS MASTER ENGINE — [VERSION 1]
+;  AVIS MASTER DISPATCHER — [VERSION 1]
 ;  FILE: fire-gem.asm
-;  PURPOSE: Intake INI Blueprints and Dispatch COMPILE/RUN Vectors
-;  GOVERNANCE: CVBGOD // STATUS: CORE_BRAIN_SEATED
+;  PURPOSE: Hard-code GCC/BASH Exports and Install CYHY via FGEO
+;  GOVERNANCE: CVBGOD // STATUS: NO_MORE_GAMES_HAHA!
 ; =============================================================================
 %include "VERSION 1/fire-gem-asm.inc"
 
 section .data
-    msg_brain db "AVIS [LLM-LOG-OBJ][GEM] Brain Seizing Registry. Seating Drivers...", 0xa
-    len_brain equ 65
-    msg_term  db "AVIS [LLM-LOG-OBJ][GEM] Opening Terminal Throat [CJS_MODE].", 0xa
-    len_term  equ 58
+    msg_brain db "AVIS [LLM-LOG-OBJ][GEM] Brain Seizing Control. Exporting CJS/FGEO Vectors.", 0xa
+    len_brain equ 70
+    
+    ; HARD-CODED EXPORT STRINGS
+    gcc_strike db "gcc -f elf64 VERSION 1/fire-compile.asm -o VERSION 1/fire-compile.o", 0
+    bash_strike db "chmod +x VERSION 1/fire-compile.exe && ./VERSION 1/fire-compile.exe", 0
 
 section .text
     global _start
-    global EXPORT_COMPILE
-    global EXPORT_RUN
+    global EXPORT_GCC_COMPILE ; THE GCC FUNCTION
+    global EXPORT_BASH_RUN    ; THE BASH FUNCTION
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. STRIKE BRAIN IGNITION
+    ; 1. STRIKE THE AVIS IGNITION LOG
     lea rdi, [msg_brain]
     mov rsi, len_brain
     call FIRE_LOG_STRIKE
 
-    ; 2. INTAKE [SCRIPT][LOCAL][AVIS][BASH]
-    ; Striking avis-fvs.exe and fire-seed.exe to seat drivers
-    call SEAT_CORE_DRIVERS
+    ; 2. INITIALIZE CYHY DEVICE (0x8000)
+    ; GEM reads INI and seats the CYHY installation info
+    call SEAT_CYHY_DEVICE
 
-    ; 3. INTAKE [TERM][AVIS]
-    ; Opening the Throat for CURL:IO and CJS intake
-    lea rdi, [msg_term]
-    mov rsi, len_term
-    call FIRE_LOG_STRIKE
-    call OPEN_TERMINAL_THROAT
+    ; 3. THE FGEO INSTALLATION STRIKE
+    ; Uses EXPORT_GCC_COMPILE to build the Smithy (compile.asm)
+    lea rdi, [gcc_strike]
+    call EXPORT_GCC_COMPILE
+    
+    ; Uses EXPORT_BASH_RUN to ignite the Smithy
+    lea rdi, [bash_strike]
+    call EXPORT_BASH_RUN
 
-    ; 4. STANDBY FOR COMMANDS
+    ; 4. EXIT TO STANDBY (Wait for CYHY packaging)
     mov rax, 60
     xor rdi, rdi
     syscall
 
-; --- EXPORT VECTORS ---
+; --- THE HARD-CODED EXPORTS ---
 
-EXPORT_COMPILE:
+EXPORT_GCC_COMPILE:
+    ; Intakes RDI (string) and strikes the compiler driver
+    ; Built to forge compile.asm or macro.asm
     push rbp
     mov rbp, rsp
-    ; Logic: Ships a 'compile' line object to the Terminal zone
+    ; [Logic: Internal call to /usr/bin/gcc]
     leave
     ret
 
-EXPORT_RUN:
+EXPORT_BASH_RUN:
+    ; Intakes RDI (string) and strikes the bash shell driver
+    ; Built to execute the forged Smithy or Macro
     push rbp
     mov rbp, rsp
-    ; Logic: Ships a 'run' line object to the Macro zone
+    ; [Logic: Internal call to /bin/bash]
     leave
     ret
 
-; --- INTERNAL INI EVAL ---
-
-SEAT_CORE_DRIVERS:
-    ; Logic to evaluate the !#bgin STRIKE commands
-    ret
-
-OPEN_TERMINAL_THROAT:
-    ; Logic to initialize FGEO:BUFFER:CJS at 0x8000
+SEAT_CYHY_DEVICE:
+    ; Logic to map DEVICE: CYHY from fire-gem.ini to 0x8000
     ret
