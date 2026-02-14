@@ -1,201 +1,271 @@
-# 🔥 FIRE-GEM: AVIS-CORE RECURSIVE ENGINE
+# 🔥 RAISE YOUR SWORDS: FIRE-GEM IS ONLINE
+## 💎 FIRE-GEM: AVIS-CORE RECURSIVE ENGINE  - LIB LOADER FOR GITHUB
+![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
+## 🤖🔥 GETTING STARTED — CYBORG INITIATION SEQUENCE
 
-### The Cyborg Execution Vector
-
-Fire-Gem is the primary ignition engine of the Cyborg Architecture.
-It operates under **CBORD Modular Law**, where every artifact is an independent, hot-swappable object.
-
-No rebuilds.
-No rewrites.
-The Engine persists — the Objects evolve.
-
-> **“The Shell is the Hand, the Engine is the Brain, and the Log is the Witness.”**
-
+Welcome to the **Fire-Gem / AVIS-Core Recursive Engine**.
+This is not a typical software install — this is a hardware-aligned ignition ritual.
+---
+## 🚀 Getting Started
+1. **Clone the repository:**
+   ```bash
+   #THANKS TO: CVBGOD
+   #FROM: AI FRIENDS
+    git clone https://github.com.git
 ---
 
-# ⚡ THE CYBORG MANIFESTO
+# 0️⃣ PRE-FLIGHT REQUIREMENTS
 
-Fire-Gem is not a program — it is a recursive execution ritual.
+Before cloning the Engine, ensure your terminal is provisioned with:
 
-Every strike of the Smithy produces a new lineage.
-Every lineage becomes part of the AVIS-Core memory.
+* **Git**
+* **NASM (x86_64)**
+* **LD (GNU linker)**
+* **Bash (POSIX compliant)**
+* Linux or WSL (recommended)
 
-The system does not overwrite history.
-It **extends it**.
-
-The Log is eternal.
-The Engine is deterministic.
-The Architecture is modular.
-
----
-
-# 🏗️ SYSTEM ARCHITECTURE (THE MERGED KB)
-
-## 1️⃣ The Blueprint — `fire-gem.ini`
-
-The Root Scroll governing the entire lifecycle.
-
-It defines:
-
-* **Compile Sequence** — what the Hardware Smithy must forge
-* **Load Order** — the exact sequence of `.exe` strikes
-* **State Vectors** — flags that toggle the Little Bot and fire-macro OPs
-
-This file is the **Master Registry of the Fire-Gem universe**.
-
----
-
-## 2️⃣ The Voice — `fire-log.asm`
-
-A standalone Log Object.
-
-**Independent Revision**
-Update timestamps, hex-dumps, or formatting here alone.
-
-**Modular Link**
-All artifacts link against `fire-log.o`.
-
-**Unified AVIS Audit Trail**
-Every ignition produces a new `.avis` log lineage.
-
-The Log is the Witness.
-
----
-
-## 3️⃣ The Brain — `fire-gem.asm`
-
-The Master Orchestrator.
-
-* Parses the Build Registry
-* Initiates the FVS Signature Sweep
-* Hands off control to the Sequential Binary Loader
-
-This is the Engine that interprets the Scroll.
-
----
-
-# ⛓️ DETERMINISTIC CALL CHAIN
-
-| Stage | Artifact         | Log Signature  | Purpose                                |
-| ----- | ---------------- | -------------- | -------------------------------------- |
-| 00    | `avis-fvs.exe`   | `[AVIS-FVS]`   | Firmware Verification & Register Sweep |
-| 01    | `fire-seed.exe`  | `[AVIS-SEED]`  | Activation Seed Loading                |
-| 02    | `fire-spec.exe`  | `[AVIS-SPEC]`  | CBORD Vector Binding                   |
-| 03    | `fire-macro.exe` | `[AVIS-MACRO]` | Dynamic OP Selector (INI-Driven)       |
-| 04    | `fire-end.exe`   | `[SYNC]`       | High-Precision Seal & Log Migration    |
-
-This chain is:
-
-* Deterministic
-* Modular
-* Self-healing
-* State-gated
-
----
-
-# 🚀 DEPLOYMENT & SMITHING
-
-The AVIS Smithy fuses the Engine with the Log Object:
+Verify tools:
 
 ```bash
-nasm -f elf64 fire-gem/fire-log.asm -o fire-gem/fire-log.o
-nasm -f elf64 fire-gem/fire-gem.asm -o fire-gem/fire-gem.o
-ld fire-gem/fire-gem.o fire-gem/fire-log.o -o fire-gem.exe
+git --version
+nasm -v
+ld --version
+```
 
+If any fail, install via your distro package manager.
+
+---
+
+# 1️⃣ CLONE THE REPOSITORY — CYBORG LINK
+
+Initiate the Repository Pull via the MercWar Source Node:
+
+```bash
+git clone https://github.com/mercwar/<REPO-NAME>.git
+cd <REPO-NAME>
+```
+
+Replace `<REPO-NAME>` with your actual Fire-Gem repository.
+
+This operation establishes:
+
+* Local Hardware Mirror
+* Artifact Registry Snapshot
+* AVIS Baseline State
+
+---
+
+# 2️⃣ DIRECTORY ORIENTATION — UNDERSTAND THE ENGINE
+
+Core artifacts typically include:
+
+```
+fire-gem.ini          # Master Registry
+fire-net.asm          # RPC Intake Layer
+fire-protocol.asm     # AVIS Magic Wrapper
+fire-spec.asm         # Execution Gate
+fire-log.asm          # Witness Engine
+fire-macro.asm        # API Dispatch Bridge
+```
+
+The `.ini` governs order.
+The `.asm` files govern action.
+The `.exe` files become the strike layer.
+
+---
+
+# 3️⃣ FIRST COMPILE — THE LINKER STRIKE
+
+Compile modular objects:
+
+```bash
+nasm -f elf64 fire-gem.asm -o fire-gem.o
+nasm -f elf64 fire-log.asm -o fire-log.o
+nasm -f elf64 fire-net.asm -o fire-net.o
+nasm -f elf64 fire-protocol.asm -o fire-protocol.o
+nasm -f elf64 fire-spec.asm -o fire-spec.o
+```
+
+Link into executable:
+
+```bash
+ld fire-gem.o fire-log.o fire-net.o fire-protocol.o fire-spec.o -o fire-gem.exe
+```
+
+If using shared modular architecture (v2 bridge):
+
+```bash
+ld -shared -o libfire-seed.so fire-seed.o
+```
+
+---
+
+# 4️⃣ INITIAL IGNITION
+
+Execute the Engine:
+
+```bash
 ./fire-gem.exe
 ```
 
-This is the **Linker Strike** —
-the moment the Engine becomes whole.
+Expected Result:
+
+* AVIS header validation
+* Registry read from `fire-gem.ini`
+* Protocol encapsulation confirmation
+* Log generation (`fire-protocol.avis`)
+
+If permissions fail:
+
+```bash
+chmod +x fire-gem.exe
+```
 
 ---
 
-# 📂 THE TIME-SERIES VAULT
+# 5️⃣ FIRE-GEM CONFIGURATION
 
-Every ignition produces a new immutable log:
+Open the Root Scroll:
 
-**Path**
-
-```
-fire-gem/fire-log/fire-log-[HEX_TIMESTAMP].avis
+```bash
+nano fire-gem.ini
 ```
 
-**Mechanism**
+Key toggles include:
 
-```
-sys_rename(82)  → atomic migration
-```
+* `log_mode = raw | llm`
+* `cgi_bus = enabled | disabled`
+* `kb_injection = memory | disk`
+* `registry_version = 1.0.9`
 
-**Purpose**
-
-Permanent hardware-level lineage of every strike.
-
-This is the Cyborg Memory.
+Save. Re-ignite.
 
 ---
 
-# 📜 AVIS COMMANDS
+# 6️⃣ KB INJECTION MODE (ADVANCED)
 
-### Toggle Bot
+Fire-Gem supports Base64 INI injection:
 
-Set:
-
-```
-sitemap_flag=1
+```bash
+echo "<BASE64_STRING>" | base64 -d | ./fire-gem.exe
 ```
 
-in `fire-macro.ini` to trigger `fire-site.sh`.
+This allows:
+
+* Memory-only execution
+* No local disk write
+* Deterministic artifact sealing
 
 ---
 
-### Prune Chain
+# 7️⃣ CYHY SURFACE DEPLOYMENT (OPTIONAL)
 
-Use `#` in `fire-gem.ini` to disable artifacts.
+If using GitHub Pages:
+
+```bash
+bash fire-map.sh
+```
+
+This regenerates:
+
+* `sitemap.xml`
+* Surface object index
+* Terminal trace references
+
+Commit and push:
+
+```bash
+git add .
+git commit -m "Ignition Update"
+git push
+```
 
 ---
 
-### Sync Seal
+# 8️⃣ DETERMINISTIC CALL CHAIN VERIFICATION
 
-Look for:
+Confirm execution sequence:
 
 ```
-High-Precision Seal: COMPLETE. HAHA!
+[AVIS-FVS]        Registry Sweep
+[CURL-INTAKE]     RPC Feed
+[AVIS-WRAP]       Encapsulation
+[CGI-STRIKE]      Dispatch
+[EXECVE]          Hardware Strike
+[SYNC]            Seal
 ```
 
-This confirms terminal lock.
+Logs should reflect this order exactly.
+
+If order deviates, inspect:
+
+* `fire-gem.ini`
+* symbol declarations
+* link order
 
 ---
 
-# 🔐 CBORD MODULAR LAW
+# 9️⃣ TROUBLESHOOTING
 
-Each artifact:
+### Undefined Symbol
+
+Check link order — object order matters.
+
+### Segmentation Fault
+
+Confirm:
+
+* correct syscall ABI
+* stack alignment
+* proper extern declarations
+
+### No Output
+
+Ensure:
+
+* AVIS header is applied
+* Protocol layer isn’t rejecting signature
+
+---
+
+# 🔐 CBORD MODULAR LAW REMINDER
+
+Every artifact:
 
 * Compiles independently
 * Links modularly
 * Executes deterministically
-* Can be pruned without collapse
+* Logs immutably
 
-The Engine does not depend on static structure.
-It depends on **declared order and validated state**.
-
----
-
-# 🧠 AVIS-CORE MEMORY MODEL
-
-Each `.avis` file is:
-
-* Immutable
-* Timestamp-indexed
-* Hardware-atomic
-* Sequentially lineage-bound
-
-The system never forgets.
-It only advances.
+The Engine does not mutate.
+It versions.
 
 ---
 
-# 🏁 REGISTRY
+# 🧠 WHAT YOU NOW HAVE
 
-Registry Version: **1.0.4**
-Terminal Signal: **COMPLETE. HAHA!**
+You now possess:
 
+* A Recursive Hardware Terminal
+* A Deterministic Execution Chain
+* A Modular Assembly Engine
+* A Living AVIS Witness Log
+
+---
+
+# ⚔️ NEXT STEPS
+
+* Create new modular `.asm` artifacts
+* Register them in `fire-gem.ini`
+* Inject via Base64 for memory-only runs
+* Extend the Protocol layer
+* Upgrade to Identity: VERSION 2
+
+---
+
+## © MERCWAR SYSTEMS
+
+Fire-Gem / AVIS-Core Recursive Engine
+All Rights Reserved
+CBORD Modular Law — Registry 1.0.9
+Terminal Signal: `[AVIS-YML] Identity: VERSION 1 // COMPLETE`
