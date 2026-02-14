@@ -16,17 +16,27 @@ jobs:
       - name: Establish Identity VERSION 1
         run: |
           mkdir -p "VERSION 1/fire-log"
-          # Granting voice to the log bridge
+          # VERIFY OR FORGE THE LOG BRIDGE
+          if [ ! -f "VERSION 1/fire-log.sh" ]; then
+            echo "[AVIS-YML] Missing log bridge. Forging local stub..."
+            echo -e '#!/bin/bash\necho "[AVIS-SH] $1" >> "VERSION 1/fire-gem.log"' > "VERSION 1/fire-log.sh"
+          fi
           chmod +x "VERSION 1/fire-log.sh"
-          "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - YML Ignition"
+          "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - YML Ignition Verified"
 
       - name: Execute VERSION 1 Chain
         run: |
-          # Ensuring all hardware stubs are executable
-          chmod +x "VERSION 1/fire-map.sh"
-          chmod +x "VERSION 1/fire-gem.sh"
-          # Triggering the Triad Bootstrap
-          ./"VERSION 1/fire-gem.sh"
+          # FORGE BASH STUBS IF MISSING TO PREVENT CHMOD FAIL
+          [ -f "VERSION 1/fire-map.sh" ] && chmod +x "VERSION 1/fire-map.sh"
+          [ -f "VERSION 1/fire-gem.sh" ] && chmod +x "VERSION 1/fire-gem.sh"
+          
+          # TRIGGER THE TRIAD BOOTSTRAP
+          if [ -f "VERSION 1/fire-gem.sh" ]; then
+            ./"VERSION 1/fire-gem.sh"
+          else
+            echo "CRITICAL: fire-gem.sh NOT FOUND IN SECTOR VERSION 1"
+            exit 1
+          fi
 
       - name: Final Server Sync
         run: |
@@ -35,7 +45,6 @@ jobs:
           git add .
           if ! git diff --staged --quiet; then
             git commit -m "AVIS: Identity VERSION 1 Verified [HAHA!]"
-            # THE REBASE STRIKE: Force-sync to resolve 'cannot lock ref'
             git pull --rebase -X ours origin main
             git push origin main
           fi
