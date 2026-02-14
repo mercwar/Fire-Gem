@@ -1,0 +1,31 @@
+name: AVIS-ZIP-JOB
+identity: fire-gem-zip
+
+on:
+  push:
+    branches: [ main ]
+  repository_dispatch:
+    types: [zip_trigger]
+
+jobs:
+  build-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Node
+        uses: actions/checkout@v4
+
+      - name: Execute Recursive Compression
+        run: |
+          # Define AVIS parameters
+          ZIP_DIR="htdocs/"
+          ZIP_FILE="HTDOCS.ZIP"
+          
+          echo "[AVIS-SH] Targeting Directory: $ZIP_DIR"
+          zip -r "$ZIP_FILE" "$ZIP_DIR"
+          echo "[AVIS-SH] Artifact Sealed: $ZIP_FILE"
+
+      - name: Upload Sealed Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HTDOCS-BUNDLE
+          path: HTDOCS.ZIP
