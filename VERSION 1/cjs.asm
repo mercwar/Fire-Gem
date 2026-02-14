@@ -13,7 +13,7 @@ section .data
 
 section .text
     global _start
-    extern FIRE_LOG_STRIKE  ; The ONLY link the dumb shell loop provides
+    extern FIRE_LOG_STRIKE  ; The ONLY link the dumb shell loop provides [1]
 
 _start:
     ; 1. INTERNAL PROTOCOL WRAP (Self-Contained)
@@ -36,6 +36,6 @@ _start:
 CJS_READ_PROTOCOL_INTERNAL:
     push rbp
     mov rbp, rsp
-    ; [JSON EVALUATION LOGIC SEATED HERE]
+    ; Logic for parsing JSON from fire-gem-asm.inc
     leave
     ret
