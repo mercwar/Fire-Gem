@@ -22,7 +22,7 @@ import { MODULE } from "./AVIS_FVS_IMPORT.js";
 import { alertModule } from "./AVIS_FVS_MOD.js";
 
 // EXPORT: cyborg-friendly wrapper function
-export function AVIS_ALERT(active = false, testMode = false, alertMode = false, alertText = "") {
+export function AVIS_ALERT(active = false, testMode = false, alertMode = false, alertText = "",sendText = false) {
 
 alert("AVIS TEST :: AVIS_FVS_ALERT_INI FOUND::");
 
@@ -45,3 +45,4 @@ alert("AVIS TEST :: AVIS_FVS_ALERT_INI FOUND::");
     
             }
         }
+
