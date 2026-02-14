@@ -1,34 +1,23 @@
 /* =============================================================
-   AVIS TERMINAL ENGINE [VERSION 1]
-   FILE: htdocs/terminal.js
-   PURPOSE: Parse <avis-obj> and Stream fire-gem.log
+   AVIS-CORE // WINDOW MANAGER
+   FILE: htdocs/fire-term-1.js
    ============================================================= */
 
-async function strikeTerminal() {
-    const response = await fetch('../VERSION 1/fire-gem.log');
-    const text = await response.text();
-    const terminalSurface = document.getElementById('avis-terminal');
+try {
+    AVIS_LOG("Seating Window Manager Object...", 1);
 
-    // Clear and Redraw the Surface
-    terminalSurface.innerHTML = '';
-    
-    // Parse the AVIS Encapsulation
-    const lines = text.split('\n');
-    lines.forEach(line => {
-        if (line.includes('<avis-obj')) {
-            const entry = document.createElement('div');
-            entry.className = 'avis-strike';
-            // Extract the Level 2 Content
-            entry.innerHTML = line.replace(/<avis-obj.*?>|<\/avis-obj>/g, '');
-            terminalSurface.appendChild(entry);
-        } else if (line.trim() !== '') {
-            const raw = document.createElement('div');
-            raw.className = 'raw-trace';
-            raw.innerText = line;
-            terminalSurface.appendChild(raw);
-        }
-    });
+    window.createWindow = function(id, url) {
+        AVIS_LOG(`STRIKE: Opening Window [${id}] -> ${url}`, 2);
+        // ... window creation logic ...
+    };
+
+    window.toggleStart = function() {
+        AVIS_LOG("SWITCH: Start Menu Toggled.", 1);
+        const m = document.getElementById('start-menu');
+        if (m) m.style.display = (m.style.display === 'flex') ? 'none' : 'flex';
+    };
+
+    AVIS_LOG("Window Manager Active. HAHA!", 2);
+} catch (e) {
+    AVIS_LOG(`WINDOW_MANAGER_ERR: ${e.message}`, 1);
 }
-
-// Set the Heartbeat for the Net Intake
-setInterval(strikeTerminal, 2000);
