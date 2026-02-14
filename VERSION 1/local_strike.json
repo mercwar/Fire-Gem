@@ -1,0 +1,9 @@
+{
+  "fgeo_strike": {
+    "id": "PHASE_2_INIT",
+    "command": "exec",
+    "target": "fire-macro.exe",
+    "protocol": "CURL:IO:POST",
+    "buffer": "0x8000"
+  }
+}
