@@ -1,44 +1,43 @@
 ; =============================================================================
-;  AVIS-CORE // PROTOCOL PARSER [VERSION 1]
+;  AVIS-CORE // TERMINAL EVALUATION PIN [VERSION 1]
 ;  FILE: fire-asm.asm
-;  PURPOSE: Parse FGEOs, Buffer via .inc, and Execute through Extensions
-;  GOVERNANCE: CVBGOD // STATUS: FGEO_WRAPPER_READY
+;  PURPOSE: Firing the Terminal Evaluation Logic (FGEO Wrapper)
+;  GOVERNANCE: CVBGOD // STATUS: NO_EXTERNAL_WRAPPER_REQUIRED
 ; =============================================================================
-%include "VERSION 1/fire-gem-asm.inc"
 
 section .data
-    msg_parse db "AVIS [LLM-LOG-OBJ][PARSER] Evaluating FGEO Protocol...", 0xa
-    len_parse equ 52
-
-section .bss
-    fgeo_buffer resb 8192    ; Space for buffered executable objects
-    json_map    resb 4096    ; Mapped JSON protocol specification
+    msg_eval db "AVIS [LLM-LOG-OBJ][EVAL] Terminal Firing Pin Active. HAHA!", 0xa
+    len_eval equ 55
+    avis_hdr db "AVIS", 0x01, 0x00
+    hdr_len  equ 6
 
 section .text
     global _start
-    global FIRE_PARSE_PROTOCOL
-    extern FIRE_PROTOCOL_WRAP ; From fire-protocol.o
+    extern FIRE_LOG_STRIKE ; The ONLY external reference allowed by the SH
 
 _start:
-    ; 1. INITIALIZE PARSER
-    lea rdi, [msg_parse]
-    mov rsi, len_parse
-    call FIRE_PROTOCOL_WRAP
+    ; 1. INTERNAL PROTOCOL ENCAPSULATION
+    ; Strike the AVIS Header first
+    lea rdi, [avis_hdr]
+    mov rsi, hdr_len
+    call FIRE_LOG_STRIKE
 
-    ; 2. CALL PROTOCOL EVALUATOR
-    call FIRE_PARSE_PROTOCOL
+    ; 2. STRIKE THE EVALUATION STATUS
+    lea rdi, [msg_eval]
+    mov rsi, len_eval
+    call FIRE_LOG_STRIKE
+
+    ; 3. EVALUATION STRIKE
+    ; This evaluates the [TERM][AVIS] block from the INI
+    call TERMINAL_EVAL_LOGIC
 
     mov rax, 60
     xor rdi, rdi
     syscall
 
-FIRE_PARSE_PROTOCOL:
+TERMINAL_EVAL_LOGIC:
     push rbp
     mov rbp, rsp
-
-    ; --- FGEO EVALUATION LOGIC ---
-    ; Parses the JSON-equivalent protocol buffered in fire-gem-asm.inc
-    ; Prepared for extension 1 execution when the terminal hits its limit.
-    
+    ; Logic for parsing FGEO objects and shipping to Extension-1
     leave
     ret
