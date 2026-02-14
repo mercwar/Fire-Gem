@@ -13,29 +13,18 @@ jobs:
       - name: Install Smithy Tools
         run: sudo apt-get update && sudo apt-get install -y nasm binutils
         
-      - name: Establish Identity: VERSION 1
+      - name: Establish Identity VERSION 1
         run: |
-
-          # Execute this in the YML or Terminal
           mkdir -p "VERSION 1/fire-log"
-
           echo "[AVIS-YML] Identity: VERSION 1" > "VERSION 1/fire-gem.log"
           echo "[AVIS-YML] Status: Path Verified" >> "VERSION 1/fire-gem.log"
 
       - name: Execute VERSION 1 Chain
         run: |
-          # FORCE DIRECTORY AUTHORITY
           mkdir -p "VERSION 1/fire-log"
-          
-          # BUILD MASTER OBJECTS
-          nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
-          nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
-          ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
-          
-          # IGNITION
           chmod +x "VERSION 1/fire-map.sh"
-          "./VERSION 1/fire-gem.exe"
-
+          chmod +x "VERSION 1/fire-gem.sh"
+          ./"VERSION 1/fire-gem.sh"
 
       - name: Final Server Sync
         run: |
