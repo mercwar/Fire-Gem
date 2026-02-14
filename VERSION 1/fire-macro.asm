@@ -1,45 +1,24 @@
-; =============================================================================
+; =============================================================
 ;  AVIS-CORE // MACRO BRIDGE [VERSION 1]
-;  FILE: fire-macro.asm
-;  PURPOSE: Evaluate Terminal SWITCH Commands & Strike GitHub API Bus
-;  GOVERNANCE: CVBGOD // STATUS: NO_EXTERNAL_DEPENDENCY
-; =============================================================================
-%include "VERSION 1/fire-gem-asm.inc"
-
+; =============================================================
 section .data
-    msg_macro db "AVIS [LLM-LOG-OBJ][MACRO] Bridge Active. Evaluating Protocol Switch...", 0xa
-    len_macro equ 68
-    avis_hdr  db "AVIS", 0x01, 0x00
-    hdr_len   equ 6
+    avis_hdr db "AVIS", 0x01, 0x00
+    msg_macro db "AVIS [MACRO] Bridge Active.", 0xa
 
 section .text
     global _start
-    extern FIRE_LOG_STRIKE ; The ONLY link allowed by the dumb shell loop
+    extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. INTERNAL PROTOCOL WRAP (Fused Logic)
-    ; Strike the AVIS Header first
+    ; INTERNAL WRAPPER - Stop calling FIRE_PROTOCOL_WRAP
     lea rdi, [avis_hdr]
-    mov rsi, hdr_len
+    mov rsi, 6
     call FIRE_LOG_STRIKE
 
-    ; 2. STRIKE THE MACRO MESSAGE
     lea rdi, [msg_macro]
-    mov rsi, len_macro
+    mov rsi, 27
     call FIRE_LOG_STRIKE
 
-    ; 3. EXECUTE THE SWITCH
-    call MACRO_STRIKE_LOGIC
-
-    mov rax, 60         ; sys_exit
+    mov rax, 60
     xor rdi, rdi
     syscall
-
-; --- FUSED MACRO LOGIC ---
-MACRO_STRIKE_LOGIC:
-    push rbp
-    mov rbp, rsp
-    ; Logic to execute the forged objects in Extension-2
-    ; Preparing the load for fire-net.exe
-    leave
-    ret
