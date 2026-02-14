@@ -1,56 +1,48 @@
 ; =============================================================================
-;  AVIS VERSION 1 VAULT ARCHITECT
+;  AVIS TERMINAL SEAL — [CVBGOD AUTHORITY]
 ;  FILE: fire-end.asm
-;  PURPOSE: Create VERSION 1/fire-log/ and migrate log via sys_rename
+;  PURPOSE: Final Registry Flush & Vault Migration
 ; =============================================================================
 
 section .data
-    log_dir  db "VERSION 1/fire-log", 0
-    old_name db "VERSION 1/fire-gem.log", 0
-    ; Final path template: VERSION 1/fire-log/fire-log-[HEX].avis
-    prefix   db "VERSION 1/fire-log/fire-log-", 0
-    ext      db ".avis", 0
-    msg_sync db "[SYNC] VERSION 1 Vault Sealed. HAHA!", 0xa
+    vault_path db "VERSION 1/fire-log/CVBGOD-SEAL-", 0
+    old_log    db "VERSION 1/fire-gem.log", 0
+    ext        db ".avis", 0
+    msg_seal   db "[SYNC] CVBGOD AUTHORITY: TERMINAL SEAL COMPLETE. HAHA!", 0xa
 
 section .bss
-    new_name resb 128
-    tv       resq 2      ; timeval struct: [seconds, microseconds]
+    new_path   resb 128
+    tv         resq 2
 
 section .text
     global _start
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; --- 1. CREATE THE VERSION 1 VAULT ---
-    mov rax, 83         ; sys_mkdir
-    mov rdi, log_dir
-    mov rsi, 0755o
-    syscall             ; EEXIST is ignored by kernel
-
-    ; --- 2. FINAL LOG ENTRY VIA MODULAR OBJECT ---
-    lea rdi, [msg_sync]
-    mov rsi, 37
+    ; 1. STRIKE THE FINAL AUTHORITY MESSAGE
+    lea rdi, [msg_seal]
+    mov rsi, 54
     call FIRE_LOG_STRIKE
 
-    ; --- 3. THE TIME STRIKE (sys_gettimeofday) ---
-    mov rax, 96         ; sys_gettimeofday
+    ; 2. GET HIGH-PRECISION TIMESTAMP (sys_gettimeofday: 96)
+    mov rax, 96
     lea rdi, [tv]
     xor rsi, rsi
     syscall
 
-    ; --- 4. CONSTRUCT DYNAMIC PATH ---
-    lea rdi, [new_name]
-    lea rsi, [prefix]
+    ; 3. CONSTRUCT VAULT FILENAME
+    lea rdi, [new_path]
+    lea rsi, [vault_path]
 .copy_pre:
     lodsb
     test al, al
-    jz .load_time
+    jz .add_hex
     stosb
     jmp .copy_pre
 
-.load_time:
-    mov rax, [tv]       ; Load actual seconds from kernel
-    mov rcx, 16         ; Full 64-bit Hex spread
+.add_hex:
+    mov rax, [tv]       ; Load Seconds
+    mov rcx, 16
 .hex_loop:
     rol rax, 4
     mov rbx, rax
@@ -58,7 +50,7 @@ _start:
     add bl, 0x30
     cmp bl, 0x39
     jle .store
-    add bl, 7           ; Adjust for 'A'-'F'
+    add bl, 7
 .store:
     mov [rdi], bl
     inc rdi
@@ -75,13 +67,13 @@ _start:
 .do_rename:
     mov byte [rdi], 0
 
-    ; --- 5. HARDWARE MIGRATION ---
-    mov rax, 82         ; sys_rename
-    mov rdi, old_name
-    lea rsi, [new_name]
+    ; 4. ATOMIC MIGRATION (sys_rename: 82)
+    mov rax, 82
+    mov rdi, old_log
+    lea rsi, [new_path]
     syscall
 
-    ; --- 6. EXIT ---
+    ; 5. EXIT
     mov rax, 60
     xor rdi, rdi
     syscall
