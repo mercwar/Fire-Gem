@@ -16,11 +16,17 @@ jobs:
       - name: Establish Identity VERSION 1
         run: |
           mkdir -p "VERSION 1/fire-log"
-          # FORGE ONLY THE LOG BRIDGE
-          echo '#!/bin/bash' > "VERSION 1/fire-log.sh"
-          echo 'echo "[AVIS-YML-STRIKE] $(date -u): $1" >> "VERSION 1/fire-gem.log"' >> "VERSION 1/fire-log.sh"
+          
+          # 1. CHECK IF BRIDGE EXISTS, IF NOT, FORGE IT
+          if [ ! -f "VERSION 1/fire-log.sh" ]; then
+            echo "[AVIS-YML] fire-log.sh missing. Forging emergency stub..."
+            echo -e '#!/bin/bash\necho "[AVIS-YML-STRIKE] $(date -u): $1" >> "VERSION 1/fire-gem.log"' > "VERSION 1/fire-log.sh"
+          fi
+          
+          # 2. GRANT VOICE AND STRIKE
           chmod +x "VERSION 1/fire-log.sh"
           "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - YML Ignition Verified"
+
 
       - name: Execute VERSION 1 Chain
         run: |
