@@ -1,32 +1,34 @@
 #!/bin/bash
 # =============================================================================
-#  AVIS-SMITHY: DUMB BOOTSTRAP + EXTENSION LOOP [CVBGOD AUTHORITY]
+#  AVIS-SMITHY: DUMB BOOTSTRAP [CVBGOD AUTHORITY]
 #  FILE: fire-gem.sh
+#  PURPOSE: Forge ONLY Log and Gem. No Smithy in the Shell.
 # =============================================================================
 set -e
 
-# 1. FORGE THE MANDATORY CORE (Log and Gem Only)
+# 1. INITIALIZE VAULT
+mkdir -p "VERSION 1/fire-log"
+
+# 2. THE DUMB FORGE: Voice (log) and Brain (gem)
 nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
 nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
 
-# 2. THE DUMB LINKER STRIKE
+# 3. THE DUMB LINKER STRIKE
 # Fuses the Brain and Voice into a single hardware executive.
 ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
 
-# 3. THE RECURSIVE EXTENSION LOOP
-# Sweeps the sector for any .asm extension (ext-1, spec, seed, etc.)
-# FORGES THEM AND LINKS THEM TO THE VOICE.
-echo "[AVIS-SH] Striking Extensions..."
+# 4. THE EXTENSION LOOP (Log-Linked Only)
+# Sweeps for extensions and links them ONLY to the Voice.
+echo "[AVIS-SH] Loading Extensions..."
 for f in "VERSION 1"/*.asm; do
     name=$(basename "$f" .asm)
-    # Skip the Core
     if [[ "$name" != "fire-gem" && "$name" != "fire-log" ]]; then
-        echo "[AVIS-SH] Loading Extension: $name"
         nasm -f elf64 "$f" -o "VERSION 1/$name.o"
-        # Extensions only care about the Voice
         ld "VERSION 1/$name.o" "VERSION 1/fire-log.o" -o "VERSION 1/$name.exe"
     fi
 done
 
-# 4. IGNITION
+# 5. TOTAL HANDOFF TO ASM AUTHORITY
+# fire-gem.exe will now use fire-compile.ini to build the Smith.
+echo "[AVIS-SH] Handoff to fire-gem.exe. HAHA!"
 "./VERSION 1/fire-gem.exe"
