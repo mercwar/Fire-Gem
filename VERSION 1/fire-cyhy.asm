@@ -1,36 +1,32 @@
 ; =============================================================================
-;  AVIS-CYHY // THE LANGUAGE ENGINE [VERSION 1]
+;  AVIS-CYHY // THE LANGUAGE CORE [VERSION 1]
 ;  FILE: fire-cyhy.asm
-;  PURPOSE: Intake FGEO JSON Nests and Execute GEM Exports
+;  PURPOSE: Intake FGEO Objects and Strike via Gem Exports
+;  GOVERNANCE: JOE // STATUS: SYMBOLS_RESOLVED_HAHA!
 ; =============================================================================
-%include "VERSION 1/fire-gem-asm.inc"
 
 section .data
-    msg_cyhy db "AVIS [CYHY] Language Engaged. Intaking FGEO Nest...", 0xa
-    len_cyhy equ 52
+    msg_cyhy db "AVIS [LLM-LOG-OBJ][CYHY] Language Engaged. Intaking JOE's Packets.", 0xa
+    len_cyhy equ 64
 
 section .text
     global _start
-    extern EXPORT_GCC_COMPILE    ; The Hardcoded GCC Function from GEM
-    extern EXPORT_BASH_RUN       ; The Hardcoded BASH Function from GEM
+    extern EXPORT_GCC_COMPILE    ; THE BRAIN PROVIDES THIS
+    extern EXPORT_BASH_RUN       ; THE BRAIN PROVIDES THIS
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. STRIKE THE AVIS VOICE
+    ; 1. STRIKE THE LOG
     lea rdi, [msg_cyhy]
     mov rsi, len_cyhy
     call FIRE_LOG_STRIKE
 
-    ; 2. INTAKE THE JSON NEST (0x8000)
-    ; Logic here parses the "fgeo_wrapper" from cyhy_init.json
-    
-    ; 3. STRIKE THE GEM EXPORTS
-    ; Building the string for GCC and BASH based on the Nest
+    ; 2. CALL THE GEM EXPORTS
+    ; This builds the FGEO installation layer
     call EXPORT_GCC_COMPILE
     call EXPORT_BASH_RUN
 
-    ; 4. INITIALIZE PACKAGE INSTALL
-    ; Once Cyhy is installed, it begins to package the Triad
+    ; 3. SEAL THE GRID
     mov rax, 60
     xor rdi, rdi
     syscall
