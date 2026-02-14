@@ -1,13 +1,28 @@
 #!/bin/bash
-# VERSION 1/fire-gem.sh
+# VERSION 1/fire-gem.sh [CVBGOD AUTHORITY]
 set -e
 
-# 1. Forge the Master Objects
-nasm -f elf64 "VERSION 1/fire-log.asm" -o "VERSION 1/fire-log.o"
-nasm -f elf64 "VERSION 1/fire-gem.asm" -o "VERSION 1/fire-gem.o"
+ASM_INI="VERSION 1/fire-asm.ini"
 
-# 2. LINKER STRIKE
-ld "VERSION 1/fire-gem.o" "VERSION 1/fire-log.o" -o "VERSION 1/fire-gem.exe"
+echo "[AVIS-SH] CVBGOD Smithy: Striking Forge Manifest..."
 
-# 3. HANDOFF
+# 1. Execute the forged NASM and LD commands from the INI
+# Using eval to run the hardware-level strings
+eval $(grep "CMD_LOG_OBJ:" "$ASM_INI" | cut -d':' -f2-)
+eval $(grep "CMD_GEM_OBJ:" "$ASM_INI" | cut -d':' -f2-)
+eval $(grep "CMD_GEM_LNK:" "$ASM_INI" | cut -d':' -f2-)
+eval $(grep "CMD_END_OBJ:" "$ASM_INI" | cut -d':' -f2-)
+eval $(grep "CMD_END_LNK:" "$ASM_INI" | cut -d':' -f2-)
+
+# 2. Sequential Build for the remaining chain
+for f in "VERSION 1"/*.asm; do
+    name=$(basename "$f" .asm)
+    if [[ "$name" != "fire-gem" && "$name" != "fire-log" && "$name" != "fire-end" ]]; then
+        echo "[AVIS-SH] Forging: $name"
+        nasm -f elf64 "$f" -o "VERSION 1/$name.o"
+        ld "VERSION 1/$name.o" "VERSION 1/fire-log.o" -o "VERSION 1/$name.exe"
+    fi
+done
+
+echo "[AVIS-SH] Forge Complete. Ignition sequence start. HAHA!"
 "./VERSION 1/fire-gem.exe"
