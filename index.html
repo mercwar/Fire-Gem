@@ -5,30 +5,53 @@
     <title>Fire-Gem / AVIS-CORE / MASTER_OS / Robo-Knight</title>
     <link rel="stylesheet" href="htdocs/fire-gem.css">
     <link rel="stylesheet" href="htdocs/fire-gem-1.css">
+    
+    <script type="module">
+        /* -------AVIS.FVS-CYBORG ARTIFACT: alert-------------------- */
+        import { AVIS_ALERT } from "./htdocs/AVIS_FVS_ALERT/AVIS_FVS_INI.js";
+        
+        let MSG_SYS_ON = true;
+        let MSG_TEST_ON = true;
+        let MSG_ALERT_OFF = false;
+        let MSG_NULL = "";
+
+        // IGNITE THE CYBORG ALERT
+        AVIS_ALERT(MSG_SYS_ON, MSG_TEST_ON, MSG_ALERT_OFF, MSG_NULL);
+        /* ---------------------------------------------------------- */
+        
+        // Globalize the alert for the rest of the engine
+        window.AVIS_ALERT = AVIS_ALERT;
+    </script>
+
     <style>
-        body { margin: 0; padding: 0; background: #001122; overflow: hidden; }
-        .fire-html-1 {
-            position: fixed; bottom: 0; left: 0; width: 100%; height: 25px;
-            z-index: 10000; pointer-events: none;
-        }
-        /* The Object must have pointer-events auto to allow the button click */
+        body { margin: 0; padding: 0; background: #000b1a; overflow: hidden; height: 100vh; font-family: monospace; }
+        #desktop { position: absolute; top: 0; left: 0; width: 100vw; height: calc(100vh - 25px); z-index: 1; }
+        .fire-html-1 { position: fixed; bottom: 0; left: 0; width: 100%; height: 25px; z-index: 10000; pointer-events: none; }
         object { width: 100%; height: 100%; pointer-events: auto; border: none; }
-        #desktop { 
-            position: absolute; top: 0; left: 0; width: 100vw; 
-            height: calc(100vh - 25px); z-index: 1; 
+        #llm-audit-surface {
+            position: absolute; top: 10px; right: 10px; width: 380px; height: 450px;
+            background: rgba(0, 10, 30, 0.85); border: 1px double #FFD700;
+            padding: 10px; overflow-y: auto; z-index: 500; color: #FFD700;
         }
     </style>
 </head>
 <body>
+
     <div id="desktop"></div>
 
-    <!-- NATIVE UI INCLUDE -->
+    <div id="llm-audit-surface">
+        <div class="sector-title">[SECTOR: AVIS_LOG_AUDIT]</div>
+        <ul id="strike-list"></ul>
+    </div>
+
+    <!-- THE NATIVE UI INCLUDE -->
     <div class="fire-html-1">
         <object type="text/html" data="htdocs/fire-start.html"></object>
     </div>
 
-    <!-- LOGIC TRIAD - CLOSED PROPERLY -->
+    <!-- LOGIC TRIAD - MODULAR STRIKES -->
     <script src="htdocs/fire-term.js"></script>
     <script src="htdocs/fire-term-1.js"></script>
+
 </body>
 </html>
