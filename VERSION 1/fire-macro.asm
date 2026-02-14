@@ -17,22 +17,21 @@ section .text
     extern FIRE_LOG_STRIKE ; The ONLY link allowed by the dumb shell loop
 
 _start:
-    ; 1. INTERNAL PROTOCOL WRAP
+    ; 1. INTERNAL PROTOCOL WRAP (Fused Logic)
+    ; Strike the AVIS Header first
     lea rdi, [avis_hdr]
     mov rsi, hdr_len
     call FIRE_LOG_STRIKE
 
-    ; 2. STRIKE STATUS
+    ; 2. STRIKE THE MACRO MESSAGE
     lea rdi, [msg_macro]
     mov rsi, len_macro
     call FIRE_LOG_STRIKE
 
-    ; 3. EXECUTE COMPILE/RUN MACRO SWITCH
-    ; Intakes "STRIKE: SWITCH : CURL:IO:POST:MAIL:PROTOCOL" from INI
+    ; 3. EXECUTE THE SWITCH
     call MACRO_STRIKE_LOGIC
 
-    ; 4. EXIT
-    mov rax, 60
+    mov rax, 60         ; sys_exit
     xor rdi, rdi
     syscall
 
