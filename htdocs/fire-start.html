@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* FORCE VISIBILITY INSIDE THE OBJECT */
+        body { 
+            margin: 0; padding: 0; overflow: hidden; 
+            background: #001A33; /* ROYAL BLUE */
+            display: flex; align-items: center;
+            height: 25px; width: 100%;
+        }
+        #start-btn { 
+            background: #FFD700; /* BRIGHT GOLD */
+            color: #000; 
+            border: none; 
+            height: 100%; 
+            padding: 0 25px; 
+            font-family: 'Courier New', monospace;
+            font-weight: bold; 
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+            text-transform: uppercase;
+        }
+        #start-btn:hover { background: #C0C0C0; color: #000; }
+        
+        #menu { 
+            display: none; position: fixed; bottom: 25px; left: 0; 
+            width: 250px; background: #002244; border: 1px solid #FFD700; 
+            box-shadow: 5px -5px 15px rgba(0,0,0,0.9);
+            z-index: 100;
+        }
+        .item { 
+            color: #FFD700; padding: 12px; cursor: pointer; 
+            border-bottom: 1px solid #003366; font-size: 13px;
+        }
+        .item:hover { background: #FFD700; color: #001A33; }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="item" onclick="strike('AVIS', 'https://mercwar.byethost3.com')">> RUN AVIS SURFACE</div>
+        <div class="item" onclick="strike('TERM', 'htdocs/index.html')">> RUN FIRE-GEM TERMINAL</div>
+    </div>
+
+    <button id="start-btn" onclick="toggle()">START</button>
+
+    <script>
+        function toggle() {
+            const m = document.getElementById('menu');
+            m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+            parent.AVIS_STRIKE("SWITCH: START_MENU_STRIKE", 1);
+        }
+        function strike(id, url) {
+            parent.createWindow(id, url);
+            toggle();
+        }
+    </script>
+</body>
+</html>
