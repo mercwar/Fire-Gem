@@ -1,42 +1,38 @@
 ; =============================================================
 ;  AVIS MASTER DISPATCHER — [VERSION 1]
 ;  FILE: fire-gem.asm
-;  EXPORTS: GEM_STRIKE_GCC, GEM_STRIKE_BASH
+;  PURPOSE: Intake Root Exports from fire-gem.ini
+;  GOVERNANCE: JOE // STATUS: ROOT_EXPORT_SYNC
 ; =============================================================
+%include "VERSION 1/fire-gem-asm.inc"
+
+section .data
+    msg_ini   db "AVIS [GEM] Seizing Root Exports from fire-gem.ini...", 0xa
+    len_ini   equ 58
+    ini_path  db "VERSION 1/fire-gem.ini", 0
+
 section .text
     global _start
-    global GEM_STRIKE_GCC
-    global GEM_STRIKE_BASH
-    extern FIRE_LOG_STRIKE
+    extern FIRE_LOG_STRIKE  ; Exported from DEVICE:LOG
 
 _start:
-    ; Ignition logic here (Intake fire-gem.ini)
+    ; 1. STRIKE THE INI INTAKE LOG
+    lea rdi, [msg_ini]
+    mov rsi, len_ini
+    call FIRE_LOG_STRIKE
+
+    ; 2. HARDWARE INI SCAN
+    ; Logic to parse STRIKE_VOICE and STRIKE_GCC names
+    call SCAN_ROOT_EXPORTS
+
+    ; 3. STANDBY FOR FGEO FORGE
     mov rax, 60
     xor rdi, rdi
     syscall
 
-GEM_STRIKE_GCC:
+SCAN_ROOT_EXPORTS:
     push rbp
     mov rbp, rsp
-    ; RDI = command string pointer
-    ; STRIKE: /usr/bin/gcc
-    mov rax, 59             ; sys_execve
-    mov rdi, gcc_path
-    ; ... build arg vector ...
-    syscall
+    ; sys_open ini_path -> sys_read -> Map to 0x8000
     leave
     ret
-
-GEM_STRIKE_BASH:
-    push rbp
-    mov rbp, rsp
-    ; STRIKE: /bin/bash
-    mov rax, 59             ; sys_execve
-    mov rdi, bash_path
-    syscall
-    leave
-    ret
-
-section .data
-    gcc_path db "/usr/bin/gcc", 0
-    bash_path db "/bin/bash", 0
