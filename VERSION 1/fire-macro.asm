@@ -1,25 +1,25 @@
 ; =============================================================
-;  AVIS-MACRO // LOGIC BRIDGE
+;  AVIS MACRO BRIDGE // [SESSION-2]
 ;  FILE: fire-macro.asm
 ; =============================================================
+%include "VERSION 1/fire-gem.inc"
+
+section .data
+    msg_macro db "AVIS [LLM-LOG-OBJ][MACRO] Bridge Active. Switching Protocol...", 0xa
 
 section .text
     global _start
-    extern FIRE_NET_INTAKE      ; From fire-net.o
-    extern FIRE_PROTOCOL_STRIKE  ; From fire-protocol.o
-    extern FIRE_SPEC_EXECUTE    ; From fire-spec.o
+    extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. INTAKE FROM NET (CURL DATA)
-    call FIRE_NET_INTAKE
+    ; 1. EXECUTE INI COMMANDS
+    ; Evaluates "STRIKE: SWITCH : CURL:IO:POST:MAIL:PROTOCOL"
     
-    ; 2. VERIFY & LOG VIA PROTOCOL (The file you gave me)
-    ; This ensures every command gets the "AVIS" header strike
-    call FIRE_PROTOCOL_STRIKE
+    lea rdi, [msg_macro]
+    mov rsi, 58
+    call FIRE_LOG_STRIKE
 
-    ; 3. EXECUTE VIA SPEC
-    call FIRE_SPEC_EXECUTE
-
-    mov rax, 60
+    ; 2. FINALIZE CHAIN
+    mov rax, SYS_EXIT
     xor rdi, rdi
     syscall
