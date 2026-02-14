@@ -1,27 +1,21 @@
-; fire-gem.asm - VERSION 1 ORCHESTRATOR
+; VERSION 1/fire-gem.asm
 section .data
-    ini_path  db "VERSION 1/fire-term.ini", 0
-    bgin_tag  db "!#bgin", 0
-    msg_boot  db "[AVIS-GEM] Ignition: VERSION 1 Sector Active.", 0xa
-    len_boot  equ $ - msg_boot
-
-section .bss
-    buffer    resb 4096
+    msg_boot db "[AVIS-GEM] Ignition: VERSION 1 Engine Active. HAHA!", 0xa
+    len_boot equ $ - msg_boot
 
 section .text
     global _start
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. LOG VERSION 1 BOOT
+    ; --- STRIKE THE LOG VIA MODULAR OBJECT ---
     lea rdi, [msg_boot]
     mov rsi, len_boot
     call FIRE_LOG_STRIKE
 
-    ; 2. PARSE !#bgin SECTOR
-    ; [Logic to scan 'VERSION 1/fire-term.ini' and execute strikes]
+    ; --- TERMINAL LOOP HANDOFF ---
+    ; Logic to parse VERSION 1/fire-term.ini follows...
 
     mov rax, 60
     xor rdi, rdi
     syscall
-
