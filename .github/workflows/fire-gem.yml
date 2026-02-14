@@ -24,6 +24,8 @@ jobs:
 
       - name: Execute VERSION 1 Chain
         run: |
+          mkdir -p "VERSION 1/fire-log"
+          chmod +x "VERSION 1/fire-map.sh"
           chmod +x "VERSION 1/fire-gem.sh"
           "./VERSION 1/fire-gem.sh"
 
