@@ -2,44 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVIS-CORE // FIRE-TERM</title>
+    <title>FIRE-GEM // TERMINAL_EVAL</title>
     <link rel="stylesheet" href="fire-gem.css">
+    <style>
+        /* LOCAL OVERRIDE FOR SUB-SURFACE */
+        body { background: #000b1a; color: #FFD700; padding: 10px; overflow-x: hidden; border: none; }
+        .terminal-grid { display: grid; grid-template-rows: 1fr 200px; gap: 10px; height: 95vh; }
+        #reader-surface { border: 1px solid #FFD700; background: #000; height: 100%; overflow-y: auto; }
+        #llm-audit-surface { border: 1px solid #C0C0C0; background: rgba(0, 51, 102, 0.5); overflow-y: auto; }
+        .strike-item { border-left: 3px solid #FFD700; padding-left: 10px; margin: 5px 0; color: #C0C0C0; font-size: 13px; }
+        .gold-alert { color: #FFD700; font-weight: bold; }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>AVIS-CORE // [DEVICE: FIRE_GEM]</h1>
-    <nav id="top-nav">
-        <a href="../" class="nav-link">ROOT</a>
-        <a href="#" onclick="loadContent('VERSION 1/fire-gem.ini')" class="nav-link">READ INI</a>
-        <a href="#" onclick="loadContent('VERSION 1/fire-compile.ini')" class="nav-link">READ COMP</a>
-    </nav>
-</header>
-
-<div id="main-interface">
-    <aside id="sidebar">
-        <div class="sector-title">[VAULT BROWSER]</div>
-        <div id="file-browser">Striking Sitemap...</div>
-    </aside>
-
-    <main id="terminal-core">
-        <div class="sector-title">[TERMINAL EVALUATION SURFACE]</div>
+<div class="terminal-grid">
+    <!-- TOP: EVALUATION SURFACE -->
+    <div id="evaluation-zone">
+        <div class="sector-title">[SECTOR: TERMINAL_THROAT]</div>
         <div id="reader-surface">
-            <pre id="content-display">System Idle. Waiting for FGEO Intake...</pre>
+            <pre id="content-display">> Waiting for FGEO Intake Strike...</pre>
         </div>
+    </div>
 
-        <div class="sector-title">[LIVE LLM-LOG AUDIT]</div>
+    <!-- BOTTOM: LIVE LOG AUDIT -->
+    <div id="audit-zone">
+        <div class="sector-title">[SECTOR: LLM-LOG_AUDIT]</div>
         <div id="llm-audit-surface">
-            <ul id="strike-list"></ul>
+            <div id="strike-list"></div>
         </div>
-    </main>
+    </div>
 </div>
 
-<footer id="status-bar">
-    STATUS: DETERMINISTIC // EMULATION: FGEO // [VERSION 1] HAHA!
-</footer>
+<!-- SCRIPTS LOADED FROM MASTER LOCAL -->
+<script src="terminal.js"></script>
+<script>
+    // Initialize the Sub-Surface Audit
+    setInterval(() => {
+        if(typeof strikeTerminal === 'function') strikeTerminal();
+    }, 2000);
+</script>
 
-<script src="fire-term.js"></script>
 </body>
 </html>
