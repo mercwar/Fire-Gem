@@ -1,32 +1,31 @@
-; =============================================================================
+; =============================================================
 ;  AVIS-CYHY // THE LANGUAGE CORE [VERSION 1]
 ;  FILE: fire-cyhy.asm
-;  PURPOSE: Intake FGEO Objects and Strike via Gem Exports
-;  GOVERNANCE: JOE // STATUS: SYMBOLS_RESOLVED_HAHA!
-; =============================================================================
-
-section .data
-    msg_cyhy db "AVIS [LLM-LOG-OBJ][CYHY] Language Engaged. Intaking JOE's Packets.", 0xa
-    len_cyhy equ 64
-
+;  EXPORTS: CYHY_CALL_COMPILE, CYHY_CALL_RUN
+; =============================================================
 section .text
     global _start
-    extern EXPORT_GCC_COMPILE    ; THE BRAIN PROVIDES THIS
-    extern EXPORT_BASH_RUN       ; THE BRAIN PROVIDES THIS
-    extern FIRE_LOG_STRIKE
+    global CYHY_CALL_COMPILE
+    global CYHY_CALL_RUN
+    extern GEM_STRIKE_GCC
+    extern GEM_STRIKE_BASH
 
 _start:
-    ; 1. STRIKE THE LOG
-    lea rdi, [msg_cyhy]
-    mov rsi, len_cyhy
-    call FIRE_LOG_STRIKE
-
-    ; 2. CALL THE GEM EXPORTS
-    ; This builds the FGEO installation layer
-    call EXPORT_GCC_COMPILE
-    call EXPORT_BASH_RUN
-
-    ; 3. SEAL THE GRID
+    ; Core JSON intake logic
     mov rax, 60
     xor rdi, rdi
     syscall
+
+CYHY_CALL_COMPILE:
+    push rbp
+    mov rbp, rsp
+    call GEM_STRIKE_GCC    ; BRIDGE TO BRAIN
+    leave
+    ret
+
+CYHY_CALL_RUN:
+    push rbp
+    mov rbp, rsp
+    call GEM_STRIKE_BASH   ; BRIDGE TO BRAIN
+    leave
+    ret
