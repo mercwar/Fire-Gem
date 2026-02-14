@@ -1,26 +1,24 @@
 ; =============================================================
-;  AVIS-CORE // MACRO I/O STUB
+;  AVIS-MACRO // LOGIC BRIDGE
 ;  FILE: fire-macro.asm
-;  PURPOSE: Manage Net I/O and handoff to fire-spec
 ; =============================================================
 
 section .text
     global _start
-    extern AVIS_EXEC_WRAP  ; Imported from fire-protocol
-    extern FIRE_NET_INTAKE ; Imported from fire-net
+    extern FIRE_NET_INTAKE      ; From fire-net.o
+    extern FIRE_PROTOCOL_STRIKE  ; From fire-protocol.o
+    extern FIRE_SPEC_EXECUTE    ; From fire-spec.o
 
 _start:
-    ; 1. INTAKE FROM NET
-    ; fire-net parses the ini-objects and returns the command vector
-    call FIRE_NET_INTAKE 
+    ; 1. INTAKE FROM NET (CURL DATA)
+    call FIRE_NET_INTAKE
     
-    ; 2. VALIDATE VIA PROTOCOL
-    ; RDI already contains the command pointer from fire-net
-    call AVIS_EXEC_WRAP
+    ; 2. VERIFY & LOG VIA PROTOCOL (The file you gave me)
+    ; This ensures every command gets the "AVIS" header strike
+    call FIRE_PROTOCOL_STRIKE
 
-    ; 3. HANDOFF TO SPEC (sys_execve or Jump to fire-spec)
-    ; The macro doesn't execute; it just moves to the next sector
-    jmp FIRE_SPEC_EXECUTE 
+    ; 3. EXECUTE VIA SPEC
+    call FIRE_SPEC_EXECUTE
 
     mov rax, 60
     xor rdi, rdi
