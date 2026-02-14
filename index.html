@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIS-CORE // MASTER_SURFACE</title>
+    <style>
+        body { background: #000; color: #0f0; font-family: 'Courier New', monospace; margin: 20px; }
+        header { border-bottom: 2px solid #0f0; padding-bottom: 10px; margin-bottom: 20px; }
+        .nav-link { color: #0f0; text-decoration: none; border: 1px solid #0f0; padding: 5px 10px; margin-right: 10px; transition: 0.3s; }
+        .nav-link:hover { background: #0f0; color: #000; }
+        .sector-title { color: #f0f; font-weight: bold; margin-top: 30px; }
+        #reader-surface { border: 1px solid #333; padding: 20px; background: #050505; min-height: 400px; margin-top: 20px; overflow-y: auto; }
+        .file-item { display: block; padding: 5px; color: #0af; cursor: pointer; text-decoration: none; }
+        .file-item:hover { background: #0a0a0a; color: #fff; }
+        footer { margin-top: 50px; font-size: 0.8em; color: #555; border-top: 1px solid #333; padding-top: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AVIS-CORE // IDENTITY: VERSION 1</h1>
+    <nav>
+        <a href="https://mercwar.github.io" class="nav-link">HOME</a>
+        <a href="https://github.com" class="nav-link">FIRE-GEM REPO</a>
+        <a href="https://github.com" class="nav-link">CYBORG REPO</a>
+        <a href="https://github.com" class="nav-link">DEOS REPO</a>
+    </nav>
+</header>
+
+<div id="main-interface">
+    <div class="sector-title">[SECTOR: REPOSITORY BROWSER]</div>
+    <div id="file-browser">
+        <!-- The Little Bot will fetch files here -->
+        <p>Scanning local vault...</p>
+    </div>
+
+    <div class="sector-title">[SECTOR: REFERENCE READER]</div>
+    <div id="reader-controls">
+        <button onclick="loadContent('VERSION 1/fire-gem.ini')" class="nav-link">READ INI</button>
+        <button onclick="loadContent('README.md')" class="nav-link">READ README</button>
+        <button onclick="loadContent('cyhy.xml')" class="nav-link">READ CYHY</button>
+    </div>
+    <div id="reader-surface">
+        <pre id="content-display">Select a resource to strike the reader...</pre>
+    </div>
+</div>
+
+<footer>
+    STATUS: DETERMINISTIC // [SYNC] High-Precision Seal: COMPLETE. HAHA!
+</footer>
+
+<script>
+    // 1. DYNAMIC FILE BROWSER (CRAWLER)
+    async function browseVault() {
+        const browser = document.getElementById('file-browser');
+        try {
+            // Pointing to your sitemap to get real-time file lists
+            const response = await fetch('sitemap.xml');
+            const text = await response.text();
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(text, "text/xml");
+            const locs = xml.getElementsByTagName("loc");
+            
+            browser.innerHTML = '';
+            for (let i = 0; i < locs.length; i++) {
+                let url = locs[i].textContent;
+                let fileName = url.split('/').pop();
+                let link = document.createElement('a');
+                link.className = 'file-item';
+                link.textContent = `> ${fileName}`;
+                link.href = "#";
+                link.onclick = () => loadContent(url);
+                browser.appendChild(link);
+            }
+        } catch (e) {
+            browser.innerHTML = '<p style="color:red">ERROR: Sitemap strike failed. Check Repository Sync.</p>';
+        }
+    }
+
+    // 2. REFERENCE READER (NOVEL STYLE)
+    async function loadContent(path) {
+        const display = document.getElementById('content-display');
+        display.textContent = `Intaking: ${path}...`;
+        try {
+            // Handle relative or full URLs
+            const response = await fetch(path);
+            const text = await response.text();
+            display.textContent = text;
+        } catch (e) {
+            display.textContent = "ERROR: Failed to load resource. Artifact may be locked.";
+        }
+    }
+
+    // Boot Sequence
+    window.onload = browseVault;
+</script>
+
+</body>
+</html>
