@@ -1,38 +1,23 @@
 ; =============================================================================
-;  AVIS-CORE // MACRO BRIDGE [VERSION 1]
+;  AVIS-MACRO // THE SWITCH
 ;  FILE: fire-macro.asm
-;  PURPOSE: Evaluate Terminal SWITCH Commands & Strike GitHub API Bus
+;  PURPOSE: Running the Compiled Hardware Objects
 ; =============================================================================
-%include "VERSION 1/fire-gem.inc"
-
-section .data
-    msg_macro db "AVIS [LLM-LOG-OBJ][MACRO] Bridge Active. Evaluating Protocol Switch...", 0xa
-    len_macro equ 68
-
-    ; The Hardware Vector for the CURL strike
-    curl_bin  db "/usr/bin/curl", 0
-    arg0      db "curl", 0
-    arg1      db "-X", 0
-    arg2      db "POST", 0
-    ; (Rest of the vector is constructed from the [AVIS_CGI_CONFIG] in the INI)
+%include "VERSION 1/fire-gem-asm.inc"
 
 section .text
     global _start
-    extern FIRE_PROTOCOL_WRAP ; From fire-protocol.o
+    extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. LOG BRIDGE ACTIVATION
-    lea rdi, [msg_macro]
-    mov rsi, len_macro
-    call FIRE_PROTOCOL_WRAP
+    ; 1. EVALUATE COMPILE/RUN SWITCH
+    ; Macro runs the FGEOs currently seated in Extension-2
+    call MACRO_STRIKE_LOGIC
 
-    ; 2. THE DYNAMIC SWITCH
-    ; Macro scans the Terminal Buffer for "SWITCH : CURL:IO"
-    ; It then performs the Phase 3 strike to the GitHub API Bus
-    
-    ; 3. HANDOFF TO NET
-    ; Once the POST is sent, it opens the Net surface for intake
-    
-    mov rax, SYS_EXIT
+    mov rax, 60
     xor rdi, rdi
     syscall
+
+MACRO_STRIKE_LOGIC:
+    ; Hardware execution of forged objects
+    ret
