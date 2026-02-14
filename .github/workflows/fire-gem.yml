@@ -1,0 +1,40 @@
+name: Fire-Gem AVIS Engine
+on: [push, workflow_dispatch]
+
+jobs:
+  avis-ignition:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Root
+        uses: actions/checkout@v4
+
+      - name: Install Smithy Tools
+        run: sudo apt-get update && sudo apt-get install -y nasm binutils
+
+      - name: Forge Master Executive
+        run: |
+          mkdir -p fire-gem/fire-log
+          # Build the Voice (Modular Log Object)
+          nasm -f elf64 fire-gem/fire-log.asm -o fire-gem/fire-log.o
+          # Build the Brain (Master Orchestrator)
+          nasm -f elf64 fire-gem/fire-gem.asm -o fire-gem/fire-gem.o
+          # THE LINKER STRIKE: Fuse Brain and Voice
+          ld fire-gem/fire-gem.o fire-gem/fire-log.o -o fire-gem.exe
+
+      - name: Strike the Surface
+        run: |
+          chmod +x fire-gem/fire-gem.sh
+          ./fire-gem/fire-gem.sh
+
+      - name: Final Server Sync
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -m "AVIS: Hardware Ignition [VERSION 1.0] HAHA!"
+            git pull --rebase -X ours origin main
+            git push origin main
+          fi
