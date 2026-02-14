@@ -1,65 +1,71 @@
-/* AVIS-CORE // AMBER CYBORG THEME */
-body { 
-    background: #0a0a05; 
-    color: #ffb000; 
-    font-family: 'Segoe UI', 'Courier New', monospace; 
-    margin: 20px; 
-    line-height: 1.5;
+/* =============================================================
+   AVIS-CORE // TERMINAL STYLE [VERSION 1]
+   FILE: htdocs/fire-gem.css
+   ============================================================= */
+body {
+    background-color: #000;
+    color: #33FF33; /* PHOSPHOR GREEN */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
 }
-header { 
-    border-bottom: 2px solid #ffb000; 
-    padding-bottom: 15px; 
-    margin-bottom: 20px; 
+
+header {
+    border-bottom: 2px solid #33FF33;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
-.nav-link { 
-    color: #ffb000; 
-    text-decoration: none; 
-    border: 1px solid #ffb000; 
-    padding: 8px 15px; 
-    margin-right: 10px; 
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
-    /* CVBGOD GLOW STRIKE */
-    box-shadow: 0 0 5px rgba(255, 176, 0, 0.3);
+
+.nav-link {
+    color: #33FF33;
+    text-decoration: none;
+    margin-right: 15px;
+    border: 1px solid #33FF33;
+    padding: 5px 10px;
 }
-.nav-link:hover { 
-    background: #ffb000; 
-    color: #000; 
-    box-shadow: 0 0 20px #ffb000, 0 0 40px #ffb000;
+
+.nav-link:hover {
+    background: #33FF33;
+    color: #000;
 }
-.sector-title { 
-    color: #ff4500; 
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold; 
-    margin-top: 30px; 
+
+#main-interface {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
 }
-#reader-surface { 
-    border: 1px solid #332200; 
-    padding: 20px; 
-    background: #050400; 
-    min-height: 400px; 
-    margin-top: 20px; 
+
+.sector-title {
+    background: #33FF33;
+    color: #000;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#file-browser, #reader-surface, #llm-audit-surface {
+    border: 1px solid #33FF33;
+    padding: 10px;
+    min-height: 200px;
+    max-height: 500px;
     overflow-y: auto;
-    border-radius: 8px;
-    white-space: pre-wrap; 
-    box-shadow: inset 0 0 15px rgba(0,0,0,0.8);
 }
-.file-item { 
-    display: block; 
-    padding: 8px; 
-    color: #ffcc00; 
-    cursor: pointer; 
-    text-decoration: none; 
+
+.file-item {
+    display: block;
+    color: #33FF33;
+    text-decoration: none;
+    padding: 2px 0;
 }
-.file-item:hover { 
-    background: #1a1500; 
-    color: #fff; 
+
+.file-item:hover {
+    background: #004400;
 }
-footer { 
-    margin-top: 50px; 
-    font-size: 0.85em; 
-    color: #554400; 
-    border-top: 1px solid #221100; 
-    padding-top: 15px; 
+
+footer {
+    margin-top: 30px;
+    border-top: 1px dashed #33FF33;
+    padding-top: 10px;
+    font-size: 0.8em;
 }
