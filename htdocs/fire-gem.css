@@ -1,0 +1,65 @@
+    /* Dark Slate & Cyan "Cyborg" Theme */
+    body { 
+        background: #0a0b0c; 
+        color: #e0e6ed; 
+        font-family: 'Segoe UI', 'Courier New', monospace; 
+        margin: 20px; 
+        line-height: 1.5;
+    }
+    header { 
+        border-bottom: 2px solid #00aaff; 
+        padding-bottom: 15px; 
+        margin-bottom: 20px; 
+    }
+    .nav-link { 
+        color: #00aaff; 
+        text-decoration: none; 
+        border: 1px solid #00aaff; 
+        padding: 8px 15px; 
+        margin-right: 10px; 
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out; 
+    }
+    .nav-link:hover { 
+        background: #00aaff; 
+        color: #fff; 
+        box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    }
+    .sector-title { 
+        color: #ff00ff; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold; 
+        margin-top: 30px; 
+    }
+    #reader-surface { 
+        border: 1px solid #1a1d21; 
+        padding: 20px; 
+        background: #050506; 
+        min-height: 400px; 
+        margin-top: 20px; 
+        overflow-y: auto;
+        border-radius: 8px;
+        /* Fix: Ensures ASM logs/code don't collapse */
+        white-space: pre-wrap; 
+        box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+    }
+    .file-item { 
+        display: block; 
+        padding: 8px; 
+        color: #5ccfe6; 
+        cursor: pointer; 
+        text-decoration: none; 
+        border-radius: 3px;
+    }
+    .file-item:hover { 
+        background: #161b22; 
+        color: #fff; 
+    }
+    footer { 
+        margin-top: 50px; 
+        font-size: 0.85em; 
+        color: #4b5563; 
+        border-top: 1px solid #1a1d21; 
+        padding-top: 15px; 
+    }
