@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="htdocs/fire-gem.css">
     <link rel="stylesheet" href="htdocs/fire-gem-1.css">
     <style>
-        /* FIX: Ensure the Object vessel allows background interaction */
+        body { margin: 0; padding: 0; background: #001122; overflow: hidden; }
         .fire-html-1 {
             position: fixed; bottom: 0; left: 0; width: 100%; height: 25px;
             z-index: 10000; pointer-events: none;
         }
-        object { width: 100%; height: 100%; pointer-events: auto; }
+        /* The Object must have pointer-events auto to allow the button click */
+        object { width: 100%; height: 100%; pointer-events: auto; border: none; }
         #desktop { 
             position: absolute; top: 0; left: 0; width: 100vw; 
-            height: calc(100vh - 25px); z-index: 1; overflow: hidden; 
+            height: calc(100vh - 25px); z-index: 1; 
         }
     </style>
 </head>
@@ -26,7 +27,7 @@
         <object type="text/html" data="htdocs/fire-start.html"></object>
     </div>
 
-    <!-- LOGIC TRIAD -->
+    <!-- LOGIC TRIAD - CLOSED PROPERLY -->
     <script src="htdocs/fire-term.js"></script>
     <script src="htdocs/fire-term-1.js"></script>
 </body>
