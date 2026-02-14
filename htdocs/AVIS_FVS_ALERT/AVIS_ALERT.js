@@ -1,4 +1,6 @@
-/* -------AVIS.FVS-CYBORG ARTIFACT: alert-------------------- */
+<div name="AVIS_ALERT_BLOCK" id="AVIS_ALERT_BLOCK">
+   <script>
+   /* -------AVIS.FVS-CYBORG ARTIFACT: alert-------------------- */
 import { AVIS_ALERT } from "./AVIS_FVS_ALERT/AVIS_FVS_INI.js";
 /* ---------------------------------------------------------- */
 
@@ -63,6 +65,5 @@ MSG_AVIS_ALERT = AVIS_ALERT(
      import { MSG_AVIS_ALERT } from "./AVIS_FVS_ALERT_MOD.js";
 ========================================================== */
 export { MSG_AVIS_ALERT };
-
-
-If you want, I can also generate a **matching reference card** (like a cheat‑sheet block) you can drop into your repo so every module knows how to call AVIS_ALERT without guessing.
+</scipt>
+</div>
