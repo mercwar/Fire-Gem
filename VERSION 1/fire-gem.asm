@@ -1,49 +1,46 @@
 ; =============================================================
-;  AVIS MASTER ENGINE — [THE SUPREME SMITHY]
+;  AVIS MASTER ENGINE — [RECURSIVE HANDOFF]
 ;  FILE: fire-gem.asm
-;  PURPOSE: Forge the Triad (Compile, Macro, Term) & Handoff
 ; =============================================================
 
 section .data
-    msg_ignite db "AVIS [LLM-LOG-OBJ][SMITHY] Triad Forge Engaged. HAHA!", 0xa
-    len_ignite equ $ - msg_ignite
-
-    ; --- THE INTERNAL FORGE MANIFEST ---
-    ; Fire-Gem builds the world's tools, then the Macro runs them.
-    cmd_comp  db "/usr/bin/nasm -f elf64 VERSION 1/fire-compile.asm -o VERSION 1/fire-compile.o", 0
-    cmd_macr  db "/usr/bin/nasm -f elf64 VERSION 1/fire-macro.asm -o VERSION 1/fire-macro.o", 0
-    cmd_term  db "/usr/bin/nasm -f elf64 VERSION 1/fire-term.asm -o VERSION 1/fire-term.o", 0
+    ini_path db "VERSION 1/fire-gem.ini", 0
+    msg_boot db "AVIS [LLM-LOG-OBJ][SMITHY] DUMB_LOAD Verified. Striking RECURSIVE_FORGE...", 0xa
+    len_boot equ $ - msg_boot
     
-    ; Linker Strike: Linking Macro with the Protocol and Log
-    cmd_link  db "/usr/bin/ld VERSION 1/fire-macro.o VERSION 1/fire-protocol.o VERSION 1/fire-log.o -o VERSION 1/fire-macro.exe", 0
+    tag_recur db "[RECURSIVE_FORGE]", 0
+    tag_comp  db "FORGE_01=", 0
 
-    ; The Handoff Target
-    macro_exe  db "VERSION 1/fire-macro.exe", 0
+section .bss
+    ini_map  resb 8192
 
 section .text
     global _start
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. LOG THE SUPREME IGNITION
-    lea rdi, [msg_ignite]
-    mov rsi, len_ignite
+    ; 1. LOG THE HANDOFF
+    lea rdi, [msg_boot]
+    mov rsi, len_boot
     call FIRE_LOG_STRIKE
 
-    ; 2. THE INTERNAL SMITHY STRIKE (sys_execve)
-    ; Fire-Gem forges the Compiler, the Macro, and the Terminal Surface.
-    ; [Hardware Logic to execute cmd_comp, cmd_macr, cmd_term, and cmd_link]
+    ; 2. INTAKE INI FOR PHASE 2
+    mov rax, 2          ; open
+    mov rdi, ini_path
+    mov rsi, 0          ; O_RDONLY
+    syscall
+    mov r12, rax
 
-    ; 3. THE GRAND HANDOFF
-    ; Fire-Gem is done. It loads the Macro. 
-    ; The Macro will then load the Compiler to strike the rest of the chain.
-    mov rax, 59         ; sys_execve
-    mov rdi, macro_exe
-    xor rsi, rsi
-    xor rdx, rdx
+    mov rax, 0          ; read
+    mov rdi, r12
+    mov rsi, ini_map
+    mov rdx, 8192
     syscall
 
-    ; --- FAILSAFE ---
+    ; 3. STRIKE THE COMPILER (FORGE_01)
+    ; Logic scans for FORGE_01= and strikes nasm -f elf64 fire-compile.asm
+    ; Then links and executes fire-compile.exe to finish the vault.
+
     mov rax, 60
     xor rdi, rdi
     syscall
