@@ -31,11 +31,19 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Stage all artifacts in VERSION 1 (logs, archives, and bins)
+          # 1. Stage all new artifacts (Logs, Exes, Sos)
           git add .
           
+          # 2. Commit the state
           if ! git diff --staged --quiet; then
             git commit -m "AVIS: Hardware Ignition [VERSION 1] HAHA!"
+            
+            # 3. FORCE REBASE: Solve the 'cannot lock ref' by pulling latest first
+            # -X ours tells git to favor local AVIS files if there's a collision
             git pull --rebase -X ours origin main
+            
+            # 4. Push the synchronized chain
             git push origin main
+          else
+            echo "No changes detected. Chain stable."
           fi
