@@ -2,46 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FIRE-GEM // TERMINAL_EVAL</title>
-    <link rel="stylesheet" href="fire-gem.css">
+    <title>Fire-Gem / AVIS-CORE / MASTER_OS</title>
+    <link rel="stylesheet" href="htdocs/fire-gem.css">
+    <link rel="stylesheet" href="htdocs/fire-gem-1.css">
+    <script>
+        /* THE HARDCORE AVIS VOICE */
+        function AVIS_STRIKE(msg, lvl = 2) {
+            const list = document.getElementById('strike-list');
+            if (list) {
+                const entry = document.createElement('li');
+                entry.style.color = (lvl === 1) ? '#C0C0C0' : '#FFD700';
+                entry.innerHTML = `[${new Date().toLocaleTimeString()}] <avis-obj>[VERIFIED]: ${msg}</avis-obj>`;
+                list.prepend(entry);
+            }
+            console.log(`[AVIS-STRIKE] ${msg}`);
+        }
+    </script>
     <style>
-        /* LOCAL OVERRIDE FOR SUB-SURFACE */
-        body { background: #000b1a; color: #FFD700; padding: 10px; overflow-x: hidden; border: none; }
-        .terminal-grid { display: grid; grid-template-rows: 1fr 200px; gap: 10px; height: 95vh; }
-        #reader-surface { border: 1px solid #FFD700; background: #000; height: 100%; overflow-y: auto; }
-        #llm-audit-surface { border: 1px solid #C0C0C0; background: rgba(0, 51, 102, 0.5); overflow-y: auto; }
-        .strike-item { border-left: 3px solid #FFD700; padding-left: 10px; margin: 5px 0; color: #C0C0C0; font-size: 13px; }
-        .gold-alert { color: #FFD700; font-weight: bold; }
+        body { margin: 0; background: #000b1a; overflow: hidden; height: 100vh; }
+        #desktop { position: absolute; width: 100vw; height: calc(100vh - 25px); z-index: 1; }
+        /* FIX: UI Vessel must be visible and at the TOP of the Z-index */
+        .fire-html-1 {
+            position: fixed; bottom: 0; left: 0; width: 100%; height: 25px;
+            z-index: 100000; background: #001A33; /* Royal Blue Base */
+        }
+        object { width: 100%; height: 100%; border: none; }
+        #llm-audit-surface {
+            position: absolute; top: 10px; right: 10px; width: 350px; height: 400px;
+            background: rgba(0, 10, 30, 0.9); border: 1px double #FFD700;
+            padding: 10px; overflow-y: auto; z-index: 50; color: #FFD700;
+        }
     </style>
 </head>
 <body>
+    <div id="desktop"></div>
 
-<div class="terminal-grid">
-    <!-- TOP: EVALUATION SURFACE -->
-    <div id="evaluation-zone">
-        <div class="sector-title">[SECTOR: TERMINAL_THROAT]</div>
-        <div id="reader-surface">
-            <pre id="content-display">> Waiting for FGEO Intake Strike...</pre>
-        </div>
+    <div id="llm-audit-surface">
+        <div style="background:#FFD700;color:#000;font-weight:bold;padding:2px 5px;">[AVIS_LOG_AUDIT]</div>
+        <ul id="strike-list"></ul>
     </div>
 
-    <!-- BOTTOM: LIVE LOG AUDIT -->
-    <div id="audit-zone">
-        <div class="sector-title">[SECTOR: LLM-LOG_AUDIT]</div>
-        <div id="llm-audit-surface">
-            <div id="strike-list"></div>
-        </div>
+    <!-- THE START BAR VESSEL -->
+    <div class="fire-html-1">
+        <object type="text/html" data="htdocs/fire-start.html" onload="AVIS_STRIKE('START_BAR_SEATED', 1)"></object>
     </div>
-</div>
 
-<!-- SCRIPTS LOADED FROM MASTER LOCAL -->
-<script src="terminal.js"></script>
-<script>
-    // Initialize the Sub-Surface Audit
-    setInterval(() => {
-        if(typeof strikeTerminal === 'function') strikeTerminal();
-    }, 2000);
-</script>
-
+    <script src="htdocs/fire-term.js"></script>
+    <script src="htdocs/fire-term-1.js"></script>
+    <script>AVIS_STRIKE("ROBO-KNIGHT_ONLINE", 2);</script>
 </body>
 </html>
