@@ -1,34 +1,24 @@
 ; =============================================================================
-;  AVIS MASTER ENGINE — [PHASED RECURSIVE LOAD]
+;  AVIS MASTER ENGINE — [VERSION 1]
 ;  FILE: fire-gem.asm
 ; =============================================================================
 
 section .data
-    ini_path  db "VERSION 1/fire-compile.ini", 0
-    msg_ph1   db "AVIS [PHASE-1] Striking Compiler with .inc... HAHA!", 0xa
-
-section .bss
-    ini_buf   resb 8192
+    msg_ignite db "AVIS [BLOCK-1] Ignition: Master Brain Seizing Control.", 0xa
+    len_ignite equ 54
 
 section .text
     global _start
-    extern FIRE_LOG_STRIKE
+    extern FIRE_LOG_STRIKE  ; MANDATORY EXTERN
 
 _start:
-    ; 1. INTAKE INI
-    ; [Logic to read fire-compile.ini into ini_buf]
-
-    ; 2. [SESSION 1]: COMPILE THE COMPILER
-    ; Gem executes the STRIKE_COMPILER string from INI
-    ; This uses the fire-gem.inc file during assembly
-    lea rdi, [msg_ph1]
-    mov rsi, 52
+    lea rdi, [msg_ignite]
+    mov rsi, len_ignite
     call FIRE_LOG_STRIKE
-    
-    ; 3. [SESSION 2]: RECURSIVE LOAD
-    ; Only runs after the Terminal has power.
-    ; Gem calls fire-compile.exe to forge Protocol -> Term -> Macro.
+
+    ; [BLOCK-1 Logic to forge the Smithy starts here]
 
     mov rax, 60
     xor rdi, rdi
     syscall
+
