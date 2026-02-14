@@ -1,32 +1,52 @@
-; =============================================================================
-;  AVIS-CORE // PROTOCOL WRAPPER [VERSION 1]
-;  FILE: fire-protocol.asm
-;  PURPOSE: Seal the Void and Populate fire-protocol.avis
-; =============================================================================
-%include "VERSION 1/fire-gem.inc"
+[TERMINAL_SESSION]
+  DEVICE=FIRE_GEM
+  STATUS=ACTIVE
+  EVAL_MODE=FGEO_EMULATION
 
-section .data
-    avis_hdr db "AVIS", 0x01, 0x00
-    msg_seal db "[LLM-LOG-OBJ][PROTOCOL] Session 1 Sealed. Identity Verified.", 0xa
-    len_seal equ 61
+[DEVICE: COMPILER]
+  ; The Master Smithy Driver - The Forge Origin
+  PATH=VERSION 1/fire-compile.exe
+  DRIVER=VERSION 1/avis-fvs-alert.exe
+  VECTOR=0x8000
+  STATUS=IDENTIFIED
 
-section .text
-    global _start
-    extern FIRE_LOG_STRIKE
+[AVIS]
+!#bgin
+  ; 1. IGNITE THE COMPILER DEVICE FIRST
+  LOAD: DEVICE:COMPILER
+  STRIKE: VERSION 1/fire-log.exe
+  STRIKE: VERSION 1/fire-gem.exe
+!#FIRE-END
 
-_start:
-    ; 1. STRIKE THE MAGIC HEADER
-    lea rdi, [avis_hdr]
-    mov rsi, 6
-    call FIRE_LOG_STRIKE
+[SCRIPT][LOCAL][AVIS][BASH]
+!#bgin
+  ; CORE HARDWARE DRIVERS
+  ; Seat these to prime the registers before the Throat opens
+  STRIKE: avis-fvs.exe
+  STRIKE: fire-seed.exe
+  STRIKE: fire-asm.exe   ; The Protocol Evaluation Pin
+  STRIKE: fire-macro.exe ; The Action Bridge
+!#FIRE-END
 
-    ; 2. STRIKE THE IDENTITY SEAL
-    ; This forces data into the .avis / .log file to break the loop
-    lea rdi, [msg_seal]
-    mov rsi, len_seal
-    call FIRE_LOG_STRIKE
+[TERM][AVIS]
+!#bgin
+  ; TERMINAL LOGIC - THE THROAT
+  ; Process CJS objects and hand off to Ext-1 via 0x8000
+  STRIKE: SWITCH : CURL:IO:POST:MAIL:PROTOCOL
+  LOAD: fire-net.exe
+  LOAD: FGEO:BUFFER:CJS
+  RUN: fire-asm.exe
+  CALL: EXTENSION_1
+!#FIRE-END
 
-    ; 3. HANDOFF TO TERMINAL
-    mov rax, 60         ; sys_exit
-    xor rdi, rdi
-    syscall
+[EXTENSIONS]
+  ; THE OVERFLOW VECTOR
+  EXT_FILE_NAME=fire-gem-ext-1
+  EXT_FILE_EXT=.asm
+  EXT_LOAD_VECTOR=0x8000
+  STATUS=EXT_READY_FOR_FORGE
+
+[AVIS_NET_CONFIG]
+  DEVICE=FIRE_NET
+  RPC_PORT=5566
+  PROTOCOL=AVIS_V1_STREAM
