@@ -1,30 +1,24 @@
-; =============================================================================
-;  AVIS-CORE // NET SURFACE [VERSION 1]
+; =============================================================
+;  AVIS-NET // CURL:IO PROTOCOL
 ;  FILE: fire-net.asm
-;  PURPOSE: Handle CURL:IO Post/Mail Protocol Intake
-; =============================================================================
-%include "VERSION 1/fire-gem.inc"
+; =============================================================
+%include "VERSION 1/fire-gem-asm.inc"
 
 section .data
-    msg_net  db "AVIS [LLM-LOG-OBJ][NET] Surface Open. Monitoring Bus...", 0xa
-    len_net  equ 54
-
-section .bss
-    net_buf  resb 4096    ; The Intake Datalake
-
+    curl_cmd db "/usr/bin/curl", 0
+    ; Arguments are intaken from [AVIS_CGI_CONFIG]
+    
 section .text
-    global _start
+    global FIRE_NET_STRIKE
     extern FIRE_PROTOCOL_WRAP
 
-_start:
-    ; 1. OPEN THE EAR
-    lea rdi, [msg_net]
-    mov rsi, len_net
-    call FIRE_PROTOCOL_WRAP
+FIRE_NET_STRIKE:
+    push rbp
+    mov rbp, rsp
 
-    ; 2. INTAKE STREAM
-    ; Logic to read the CURL:IO POST results into net_buf
+    ; --- THE CURL STRIKE ---
+    ; sys_execve to strike the GitHub API Bus
+    ; This is the Mail Protocol you commanded
     
-    mov rax, SYS_EXIT
-    xor rdi, rdi
-    syscall
+    leave
+    ret
