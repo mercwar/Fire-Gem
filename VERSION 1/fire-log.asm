@@ -4,9 +4,9 @@
 ; =============================================================================
 
 section .data
-    log_path db "VERSION 1/fire-gem.log", 0
-    avis_hdr db 0x41, 0x56, 0x49, 0x53    ; "AVIS" Magic Header
-    hdr_len  equ 4
+    log_path db "VERSION 1/fire-log/fire-protocol.avis", 0
+    avis_hdr db "AVIS", 0x01, 0x00
+    hdr_len  equ 6
 
 section .text
     global FIRE_LOG_STRIKE
@@ -14,33 +14,32 @@ section .text
 FIRE_LOG_STRIKE:
     push rbp
     mov rbp, rsp
-    push rdi            ; Save Body Pointer
-    push rsi            ; Save Body Length
+    push rdi
+    push rsi
 
-    ; 1. OPEN VERSION 1 LOG
+    ; 1. OPEN VAULT LOG
     mov rax, 2          ; sys_open
     mov rdi, log_path
     mov rsi, 1089       ; O_CREAT|WRONLY|APPEND
     mov rdx, 0644o
     syscall
-    mov r12, rax        ; r12 = FD
+    mov r12, rax
 
-    ; 2. STRIKE AVIS HEADER (Encapsulation)
-    mov rax, 1          ; sys_write
+    ; 2. STRIKE AVIS HEADER
+    mov rax, 1
     mov rdi, r12
     mov rsi, avis_hdr
     mov rdx, hdr_len
     syscall
 
-    ; 3. STRIKE LOG BODY (The Object/Text)
-    pop rdx             ; Restore Length
-    pop rsi             ; Restore Body Pointer
-    mov rax, 1          ; sys_write
+    ; 3. STRIKE BODY (Text or Object)
+    pop rdx
+    pop rsi
+    mov rax, 1
     mov rdi, r12
     syscall
 
-    ; 4. CLOSE
-    mov rax, 3
+    mov rax, 3          ; sys_close
     mov rdi, r12
     syscall
 
