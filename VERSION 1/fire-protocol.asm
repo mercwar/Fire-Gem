@@ -1,33 +1,32 @@
-; =============================================================
-;  AVIS PROTOCOL ENGINE // EXECUTION WRAPPER
+; =============================================================================
+;  AVIS-CORE // PROTOCOL WRAPPER [VERSION 1]
 ;  FILE: fire-protocol.asm
-;  PURPOSE: Encapsulate and Validate Execution Strikes
-; =============================================================
+;  PURPOSE: Central Encapsulation Logic
+; =============================================================================
 
 section .data
-    msg_exec db "AVIS [LLM-LOG-OBJ][EXEC] Striking Hardware Vector: ", 0
-    len_exec equ $ - msg_exec
+    avis_hdr db "AVIS", 0x01, 0x00
+    hdr_len  equ 6
 
 section .text
-    global AVIS_EXEC_WRAP
-    extern FIRE_LOG_STRIKE
+    global FIRE_PROTOCOL_WRAP  ; THE MISSING LINK
+    extern FIRE_LOG_STRIKE     ; The Voice
 
-AVIS_EXEC_WRAP:
+FIRE_PROTOCOL_WRAP:
     push rbp
     mov rbp, rsp
-    ; RDI = Command String Pointer | RSI = Command Length
     
-    ; 1. LOG THE INTENT (Protocol Audit)
+    ; 1. Strike Header
     push rsi
     push rdi
-    lea rdi, [msg_exec]
-    mov rsi, len_exec
+    lea rdi, [avis_hdr]
+    mov rsi, hdr_len
     call FIRE_LOG_STRIKE
-    
-    ; 2. LOG THE COMMAND BODY
+
+    ; 2. Strike Data
     pop rdi
     pop rsi
     call FIRE_LOG_STRIKE
-    
+
     leave
     ret
