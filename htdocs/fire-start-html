@@ -1,7 +1,7 @@
     <div id="desktop"></div>
 
     <div id="start-menu">
-        <div class="menu-item" onclick="createWindow('BYETHOST_IFRAME', 'https://mercwar.byethost3.com/index.html')">> AVIS Surface </div>
+        <div class="menu-item" onclick="createWindow('BYETHOST_IFRAME', 'https://mercwar01.byethost3.com/index.html')">> AVIS Surface </div>
         <div class="menu-item" onclick="createWindow('FIRE_GEM_TERM', 'htdocs/index.html')">> FIRE-GEM Terminal</div>
     </div>
 
