@@ -1,0 +1,34 @@
+name: AVIS FIRE-ZIP
+on: 
+  workflow_run:
+    workflows: ["Fire-Gem AVIS Engine"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  package-htdocs:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Root
+        uses: actions/checkout@v4
+
+      - name: Install Smithy Tools
+        run: sudo apt-get update && sudo apt-get install -y zip
+
+      - name: THE ZIPPER STRIKE
+        # Pure htdocs packaging. Captures the Gateway without touching your original YML.
+        run: |
+          zip -r htdocs.zip "htdocs/"
+
+      - name: Final Server Sync
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add htdocs.zip
+          if ! git diff --staged --quiet; then
+            git commit -m "AVIS: htdocs.zip Forged [HAHA!]"
+            git push origin main
+          fi
