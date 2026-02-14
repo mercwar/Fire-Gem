@@ -1,33 +1,41 @@
 ; =============================================================================
-;  AVIS-CORE // PROTOCOL EVALUATOR [VERSION 1]
+;  AVIS-CORE // TERMINAL EVALUATION PIN [VERSION 1]
 ;  FILE: fire-asm.asm
-;  PURPOSE: Parse JSON/COM Objects into Terminal-Ready 'exec' Commands
+;  PURPOSE: Firing the Terminal Evaluation Logic (FGEO Wrapper)
+;  GOVERNANCE: CVBGOD // STATUS: NO_EXTERNAL_WRAPPER_REQUIRED
 ; =============================================================================
-%include "VERSION 1/fire-gem-asm.inc"
 
 section .data
-    msg_parse db "AVIS [PARSER] Converting COM Object to Terminal JSON...", 0xa
-    len_parse equ 55
+    msg_eval db "AVIS [LLM-LOG-OBJ][EVAL] Terminal Firing Pin Active. HAHA!", 0xa
+    len_eval equ 55
+    avis_hdr db "AVIS", 0x01, 0x00
+    hdr_len  equ 6
 
 section .text
     global _start
-    global FIRE_PARSE_PROTOCOL
-    extern FIRE_LOG_STRIKE
+    extern FIRE_LOG_STRIKE ; The ONLY link allowed by the dumb shell loop
 
 _start:
-    ; 1. LOG THE PARSE
-    lea rdi, [msg_parse]
-    mov rsi, len_parse
+    ; 1. INTERNAL PROTOCOL WRAP
+    lea rdi, [avis_hdr]
+    mov rsi, hdr_len
     call FIRE_LOG_STRIKE
 
-    ; 2. EVALUATE COM OBJECT
-    ; Converts macro/compile data into the JSON string the Terminal needs
-    call FIRE_PARSE_PROTOCOL
+    ; 2. STRIKE THE EVALUATION STATUS
+    lea rdi, [msg_eval]
+    mov rsi, len_eval
+    call FIRE_LOG_STRIKE
 
-    mov rax, 60
+    ; 3. EVALUATION STRIKE
+    call TERMINAL_EVAL_LOGIC
+
+    mov rax, 60         ; sys_exit
     xor rdi, rdi
     syscall
 
-FIRE_PARSE_PROTOCOL:
-    ; Logic to buffer the JSON into fire-gem-asm.inc
+TERMINAL_EVAL_LOGIC:
+    push rbp
+    mov rbp, rsp
+    ; Logic for parsing FGEO objects and shipping to Extension-1
+    leave
     ret
