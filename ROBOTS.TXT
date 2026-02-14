@@ -1,0 +1,13 @@
+# =============================================================
+#  AVIS-CORE: ROBOTS.TXT
+#  PURPOSE: Direct Search Crawlers to the VERSION 1 Vault
+# =============================================================
+
+User-agent: *
+Allow: /
+
+# Sitemap Authority: Points to the dynamic map built by fire-site.sh
+Sitemap: https://mercwar.github.io
+
+# Prevent crawling of internal Git metadata
+Disallow: /.git/
