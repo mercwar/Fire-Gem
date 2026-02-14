@@ -7,22 +7,20 @@ jobs:
     permissions:
       contents: write
     steps:
-    
       - name: Checkout Root
         uses: actions/checkout@v4
 
       - name: Install Smithy Tools
         run: sudo apt-get update && sudo apt-get install -y nasm binutils
         
+      - name: Establish Identity: VERSION 1
+        run: |
+          mkdir -p "VERSION 1/fire-log"
+          echo "[AVIS-YML] Identity: VERSION 1" > "VERSION 1/fire-gem.log"
+          echo "[AVIS-YML] Status: Path Verified" >> "VERSION 1/fire-gem.log"
+
       - name: Execute VERSION 1 Chain
         run: |
-          # Create the Vault inside VERSION 1
-          mkdir -p "VERSION 1/fire-log"
-          
-          # Initialize the VERSION 1 Audit Trail
-          echo "[AVIS-YML] Identity: VERSION 1" >> "VERSION 1/fire-gem.log"
-          
-          # Trigger the VERSION 1 Smithy
           chmod +x "VERSION 1/fire-gem.sh"
           "./VERSION 1/fire-gem.sh"
 
@@ -30,20 +28,9 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # 1. Capture the forged artifacts (.exe, .o, .avis)
           git add .
-          
-          # 2. Commit the strike
           if ! git diff --staged --quiet; then
-            git commit -m "AVIS: Hardware Ignition [VERSION 1] HAHA!"
-            
-            # 3. THE REBASE STRIKE: Force the lock to open
-            # -X ours favors the AVIS binaries if there's a conflict
+            git commit -m "AVIS: Identity VERSION 1 Verified [HAHA!]"
             git pull --rebase -X ours origin main
-            
-            # 4. Push the synchronized chain
             git push origin main
-          else
-            echo "No changes detected. State is stable."
           fi
