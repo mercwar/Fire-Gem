@@ -2,56 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fire-Gem / AVIS-CORE / MASTER_OS / Robo-Knight</title>
+    <title>Fire-Gem / AVIS-CORE / MASTER_OS</title>
     <link rel="stylesheet" href="htdocs/fire-gem.css">
     <link rel="stylesheet" href="htdocs/fire-gem-1.css">
-    
-    <script type="module">
-        /* -------AVIS.FVS-CYBORG ARTIFACT: alert-------------------- */
-        import { AVIS_ALERT } from "./htdocs/AVIS_FVS_ALERT/AVIS_FVS_INI.js";
-        
-        let MSG_SYS_ON = true;
-        let MSG_TEST_ON = true;
-        let MSG_ALERT_OFF = false;
-        let MSG_NULL = "";
-
-        // IGNITE THE CYBORG ALERT
-        AVIS_ALERT(MSG_SYS_ON, MSG_TEST_ON, MSG_ALERT_OFF, MSG_NULL);
-        /* ---------------------------------------------------------- */
-        
-        // Globalize the alert for the rest of the engine
-        window.AVIS_ALERT = AVIS_ALERT;
+    <script>
+        /* THE HARDCORE AVIS VOICE */
+        function AVIS_STRIKE(msg, lvl = 2) {
+            const list = document.getElementById('strike-list');
+            if (list) {
+                const entry = document.createElement('li');
+                entry.style.color = (lvl === 1) ? '#C0C0C0' : '#FFD700';
+                entry.innerHTML = `[${new Date().toLocaleTimeString()}] <avis-obj>[VERIFIED]: ${msg}</avis-obj>`;
+                list.prepend(entry);
+            }
+            console.log(`[AVIS-STRIKE] ${msg}`);
+        }
     </script>
-
     <style>
-        body { margin: 0; padding: 0; background: #000b1a; overflow: hidden; height: 100vh; font-family: monospace; }
-        #desktop { position: absolute; top: 0; left: 0; width: 100vw; height: calc(100vh - 25px); z-index: 1; }
-        .fire-html-1 { position: fixed; bottom: 0; left: 0; width: 100%; height: 25px; z-index: 10000; pointer-events: none; }
-        object { width: 100%; height: 100%; pointer-events: auto; border: none; }
+        body { margin: 0; background: #000b1a; overflow: hidden; height: 100vh; }
+        #desktop { position: absolute; width: 100vw; height: calc(100vh - 25px); z-index: 1; }
+        /* FIX: UI Vessel must be visible and at the TOP of the Z-index */
+        .fire-html-1 {
+            position: fixed; bottom: 0; left: 0; width: 100%; height: 25px;
+            z-index: 100000; background: #001A33; /* Royal Blue Base */
+        }
+        object { width: 100%; height: 100%; border: none; }
         #llm-audit-surface {
-            position: absolute; top: 10px; right: 10px; width: 380px; height: 450px;
-            background: rgba(0, 10, 30, 0.85); border: 1px double #FFD700;
-            padding: 10px; overflow-y: auto; z-index: 500; color: #FFD700;
+            position: absolute; top: 10px; right: 10px; width: 350px; height: 400px;
+            background: rgba(0, 10, 30, 0.9); border: 1px double #FFD700;
+            padding: 10px; overflow-y: auto; z-index: 50; color: #FFD700;
         }
     </style>
 </head>
 <body>
-
     <div id="desktop"></div>
 
     <div id="llm-audit-surface">
-        <div class="sector-title">[SECTOR: AVIS_LOG_AUDIT]</div>
+        <div style="background:#FFD700;color:#000;font-weight:bold;padding:2px 5px;">[AVIS_LOG_AUDIT]</div>
         <ul id="strike-list"></ul>
     </div>
 
-    <!-- THE NATIVE UI INCLUDE -->
+    <!-- THE START BAR VESSEL -->
     <div class="fire-html-1">
-        <object type="text/html" data="htdocs/fire-start.html"></object>
+        <object type="text/html" data="htdocs/fire-start.html" onload="AVIS_STRIKE('START_BAR_SEATED', 1)"></object>
     </div>
 
-    <!-- LOGIC TRIAD - MODULAR STRIKES -->
     <script src="htdocs/fire-term.js"></script>
     <script src="htdocs/fire-term-1.js"></script>
-
+    <script>AVIS_STRIKE("ROBO-KNIGHT_ONLINE", 2);</script>
 </body>
 </html>
