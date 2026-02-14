@@ -15,14 +15,22 @@ jobs:
         
       - name: Establish Identity VERSION 1
         run: |
-          mkdir -p "VERSION 1/fire-log"
-          # VERIFY OR FORGE THE LOG BRIDGE
-          if [ ! -f "VERSION 1/fire-log.sh" ]; then
-            echo "[AVIS-YML] Missing log bridge. Forging local stub..."
-            echo -e '#!/bin/bash\necho "[AVIS-SH] $1" >> "VERSION 1/fire-gem.log"' > "VERSION 1/fire-log.sh"
+          # 1. SEEK THE VAULT
+          ls -R
+          
+          # 2. VERIFY AND STRIKE
+          if [ -f "VERSION 1/fire-log.sh" ]; then
+            chmod +x "VERSION 1/fire-log.sh"
+            "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - YML Ignition Verified"
+          else
+            echo "CRITICAL: fire-log.sh MISSING FROM SECTOR VERSION 1"
+            # FORCE FORGE IF MISSING
+            mkdir -p "VERSION 1"
+            echo -e '#!/bin/bash\necho "[AVIS-YML-STRIKE] $1" >> "VERSION 1/fire-gem.log"' > "VERSION 1/fire-log.sh"
+            chmod +x "VERSION 1/fire-log.sh"
+            "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - FORCED IGNITION"
           fi
-          chmod +x "VERSION 1/fire-log.sh"
-          "./VERSION 1/fire-log.sh" "Identity: VERSION 1 - YML Ignition Verified"
+
 
       - name: Execute VERSION 1 Chain
         run: |
