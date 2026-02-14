@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Fire-Gem / AVIS-CORE / MASTER_OS / Robo-Knight</title>
+    <!-- Dual-Layer CSS: Core + UI Overrides -->
     <link rel="stylesheet" href="htdocs/fire-gem.css">
-<link rel="stylesheet" href="htdocs/fire-gem-1.css">
+    <link rel="stylesheet" href="htdocs/fire-gem-1.css">
+    <style>
+        /* Ensuring the Object vessel doesn't block the Desktop clicks */
+        .fire-html-1 {
+            position: fixed; bottom: 0; left: 0; width: 100%; height: 300px;
+            z-index: 9999; pointer-events: none;
+        }
+        object { width: 100%; height: 100%; pointer-events: auto; }
+        #desktop { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+    </style>
 </head>
 <body>
- <div class="fire-html-1">
+
+    <!-- THE DESKTOP FOR FGEO WINDOWS -->
+    <div id="desktop"></div>
+
+    <!-- THE NATIVE UI COMPONENT (START MENU / TASKBAR) -->
+    <div class="fire-html-1">
         <object type="text/html" data="htdocs/fire-start.html"></object>
     </div>
 
-
-    <script src="htdocs/fire-term.js">
-   <script src="htdocs/fire-term-1.js">
+    <!-- THE LOGIC STRIKE -->
+    <script src="htdocs/fire-term.js"></script>
+    <script src="htdocs/fire-term-1.js"></script>
    
 </body>
 </html>
