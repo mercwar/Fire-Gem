@@ -1,28 +1,30 @@
-; =============================================================
-;  AVIS-NET // RPC INTAKE
+; =============================================================================
+;  AVIS-CORE // NET SURFACE [VERSION 1]
 ;  FILE: fire-net.asm
-;  PURPOSE: Parse INI Command Objects & Feed Macro
-; =============================================================
+;  PURPOSE: Handle CURL:IO Post/Mail Protocol Intake
+; =============================================================================
+%include "VERSION 1/fire-gem.inc"
 
 section .data
-    ini_path db "VERSION 1/fire-gem.ini", 0
+    msg_net  db "AVIS [LLM-LOG-OBJ][NET] Surface Open. Monitoring Bus...", 0xa
+    len_net  equ 54
 
 section .bss
-    net_buf  resb 1024
+    net_buf  resb 4096    ; The Intake Datalake
 
 section .text
-    global FIRE_NET_INTAKE
     global _start
+    extern FIRE_PROTOCOL_WRAP
 
 _start:
-    ; (Terminal Entry Point for Net Surface)
-    call FIRE_NET_INTAKE
-    mov rax, 60
+    ; 1. OPEN THE EAR
+    lea rdi, [msg_net]
+    mov rsi, len_net
+    call FIRE_PROTOCOL_WRAP
+
+    ; 2. INTAKE STREAM
+    ; Logic to read the CURL:IO POST results into net_buf
+    
+    mov rax, SYS_EXIT
     xor rdi, rdi
     syscall
-
-FIRE_NET_INTAKE:
-    ; 1. OPEN INI & EXTRACT STRIKE_01 (CURL DATA)
-    ; 2. RETURN BUFFER POINTER IN RDI
-    lea rdi, [net_buf]
-    ret
