@@ -1,42 +1,40 @@
-; =============================================================
-;  AVIS RPC INTERFACE
+; =============================================================================
+;  AVIS-NET // RPC SURFACE [VERSION 1]
 ;  FILE: fire-net.asm
-;  PURPOSE: Process RPC terminal events for Fire-Term
-; =============================================================
+; =============================================================================
 
 section .data
-    msg_net  db "[AVIS-NET] RPC Surface Active. Listening for Events...", 0xa
-    len_net  equ $ - msg_net
-    port     dw 0xD944   ; AVIS Port (Example)
-
-section .bss
-    sock_fd  resq 1
-    buffer   resb 1024
+    msg_net   db "AVIS [LLM-LOG-OBJ][AVIS-NET] RPC Surface: BROADCAST_START", 0xa
+    len_net   equ $ - msg_net
+    html_hdr  db "<avis-event class='proc-call'>", 0
+    html_ftr  db "</avis-event>", 0
 
 section .text
     global _start
     extern FIRE_LOG_STRIKE
 
 _start:
-    ; 1. LOG RPC ACTIVATION
+    ; 1. STRIKE THE INITIAL RPC HANDSHAKE
     lea rdi, [msg_net]
     mov rsi, len_net
     call FIRE_LOG_STRIKE
 
-    ; 2. CREATE SOCKET (AF_INET, SOCK_STREAM)
-    mov rax, 41         ; sys_socket
-    mov rdi, 2          ; AF_INET
-    mov rsi, 1          ; SOCK_STREAM
-    xor rdx, rdx
-    syscall
-    mov [sock_fd], rax
-
-    ; 3. BIND & LISTEN
-    ; [Logic to bind port 0xD944 and accept RPC calls]
+    ; 2. SCAN INI FOR LOG_LEVEL (Logic to check GLOBAL_LEVEL=2)
+    ; If Level 2, we wrap in HTML Printouts
     
-    ; 4. PROCESS EVENT
-    ; When a command lands, it strikes the fire-term logic loop.
+    ; 3. THE HTML PRINTOUT STRIKE
+    lea rdi, [html_hdr]
+    mov rsi, 29
+    call FIRE_LOG_STRIKE   ; Every proc call now gets an HTML wrapper
+
+    ; [PROCEDURE CALL LOGIC HERE]
+    ; Every sub-process strike is now a mapped AVIS object
+
+    lea rdi, [html_ftr]
+    mov rsi, 13
+    call FIRE_LOG_STRIKE
 
     mov rax, 60
     xor rdi, rdi
     syscall
+
