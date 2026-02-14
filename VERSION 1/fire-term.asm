@@ -1,21 +1,25 @@
 ; =============================================================
-;  AVIS RECURSIVE SMITHY // [BLOCK-1]
-;  FILE: fire-compile.asm
+;  AVIS TERMINAL SURFACE // [SESSION-2]
+;  FILE: fire-term.asm
 ; =============================================================
 %include "VERSION 1/fire-gem.inc"
 
+section .data
+    msg_term db "AVIS [LLM-LOG-OBJ][TERM] Surface Online. Ready for Seed...", 0xa
+
 section .text
-    global FIRE_RECURSIVE_FORGE
+    global _start
     extern FIRE_LOG_STRIKE
 
-FIRE_RECURSIVE_FORGE:
-    push rbp
-    mov rbp, rsp
-    ; RDI = INI Buffer Pointer
+_start:
+    ; 1. IGNITE TERMINAL I/O
+    lea rdi, [msg_term]
+    mov rsi, 54
+    call FIRE_LOG_STRIKE
+
+    ; 2. CALL SEED (Next in Load Order)
+    ; Terminal prepares the hardware for the Net strike.
     
-    ; 1. EVALUATE [PHASE_2_RECURSIVE]
-    ; 2. CONSTRUCT PATHS FOR PROTOCOL -> TERM -> MACRO
-    ; 3. STRIKE NASM VIA SYS_EXECVE
-    
-    leave
-    ret
+    mov rax, SYS_EXIT
+    xor rdi, rdi
+    syscall
