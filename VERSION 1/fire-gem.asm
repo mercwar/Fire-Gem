@@ -1,48 +1,41 @@
 ; =============================================================================
-;  AVIS MASTER ENGINE — [RECURSIVE EXECUTIVE]
+;  AVIS MASTER ENGINE — [VERSION 1]
 ;  FILE: fire-gem.asm
-;  PURPOSE: Intake INI, Verify Triad, and Handoff to Internal Smithy
+;  PURPOSE: FVS Sweep, Recursive Forge, and Triad Ignition
 ; =============================================================================
 
 section .data
+    msg_fvs   db "AVIS [LLM-LOG-OBJ][FVS] Register Sweep: CLEAN. HAHA!", 0xa
+    len_fvs   equ $ - msg_fvs
     ini_path  db "VERSION 1/fire-compile.ini", 0
-    msg_ignite db "AVIS [LLM-LOG-OBJ][GEM] Triad Fusion Verified. Seizing Authority.", 0xa
-    len_ignite equ $ - msg_ignite
-
-section .bss
-    ini_buf   resb 8192
 
 section .text
     global _start
     extern FIRE_LOG_STRIKE      ; From fire-log.o
-    extern FIRE_RECURSIVE_FORGE ; From fire-compile.o (The Smith)
+    extern FIRE_RECURSIVE_FORGE ; From fire-compile.o
+    extern AVIS_FVS_STRIKE      ; From avis-fvs.o (Hardcoded Load)
 
 _start:
-    ; 1. STRIKE THE IDENTITY HANDSHAKE
-    lea rdi, [msg_ignite]
-    mov rsi, len_ignite
+    ; 1. MANDATORY FVS STRIKE (Register Sweep)
+    call AVIS_FVS_STRIKE
+    lea rdi, [msg_fvs]
+    mov rsi, len_fvs
     call FIRE_LOG_STRIKE
 
-    ; 2. INTAKE THE RECURSIVE BLUEPRINT
-    mov rax, 2          ; sys_open
-    mov rdi, ini_path
-    mov rsi, 0          ; O_RDONLY
-    syscall
-    mov r12, rax        ; Save FD
+    ; 2. INTAKE RECURSIVE BLUEPRINT
+    ; [Logic to read fire-compile.ini into memory]
 
-    mov rax, 0          ; sys_read
-    mov rdi, r12
-    mov rsi, ini_buf
-    mov rdx, 8192
-    syscall
-
-    ; 3. INTERNAL SMITHY STRIKE
-    ; Calls the code from fire-compile.o which is now inside this binary.
-    ; It evaluates the [EXTENSIONS] sector and builds the paths.
+    ; 3. FORGE RECURSIVE TRIAD (Protocol -> Term -> Macro)
     call FIRE_RECURSIVE_FORGE
 
-    ; 4. TERMINAL HANDOFF
-    ; Once the smithy verifies the loop, we transition to the Terminal Surface
+    ; 4. HANDOFF TO MACRO (The Bridge)
+    ; Macro will then load Seed, then Net.
+    mov rax, 59         ; sys_execve
+    mov rdi, "VERSION 1/fire-macro.exe"
+    xor rsi, rsi
+    xor rdx, rdx
+    syscall
+
     mov rax, 60
     xor rdi, rdi
     syscall
