@@ -1,7 +1,9 @@
 <div name="AVIS_ALERT_BLOCK" id="AVIS_ALERT_BLOCK">
-   <script>
+    <!-- MUST BE TYPE="MODULE" FOR IMPORTS TO WORK -->
+    <script type="module">
+
    /* -------AVIS.FVS-CYBORG ARTIFACT: alert-------------------- */
-import { AVIS_ALERT } from "./AVIS_FVS_ALERT/AVIS_FVS_INI.js";
+import { AVIS_ALERT } from "htdocs/AVIS_FVS_ALERT/AVIS_FVS_INI.js";
 /* ---------------------------------------------------------- */
 
 /* -------AVIS.FVS-CYBORG ARTIFACT: alert-------------------- */
@@ -17,7 +19,8 @@ import { AVIS_ALERT } from "./AVIS_FVS_ALERT/AVIS_FVS_INI.js";
    MSG_ID        → identity string
    MSG_AVIS_ALERT→ stores returned alert text
 */
-let MSG_TXT = true;
+let MSG_TERM_ON = true;
+let MSG_TERM_OFF = false;
 let MSG_SYS_ON = true;
 let MSG_SYS_OFF = false;
 let MSG_TEST_ON = true;
@@ -25,14 +28,21 @@ let MSG_TEST_OFF = false;
 let MSG_ALERT_ON  = true;
 let MSG_ALERT_OFF  = false;
 let MSG_NULL  = "";
+let MSG_TEXT  = "Terminal Ping";
 let MSG_ID  = "AVIS.FVS-CYBORG ARTIFACT";
-let MSG_AVIS_ALERT  = "";
 
 /* REFERENCE:
-   AVIS_ALERT(MSG_SYS, MSG_TEST, MSG_ALERT, MSG_TEXT, MSG_TXT)
+   AVIS_ALERT(
+   active = false,
+   testMode = false,
+   alertMode = false,
+   alertText = "",
+   sendText = false
+)
 
-   Example:
-     AVIS_ALERT(true, false, true, "Hello", false)
+Example:
+AVIS_ALERT(MSG_SYS_ON, MSG_TEST_ON, MSG_ALERT_ON, MSG_TEXT, MSG_TERM_OFF);
+AVIS_ALERT(true, false, true, "Hello", false)
 
    Meaning:
      system on,
@@ -45,9 +55,10 @@ MSG_AVIS_ALERT = AVIS_ALERT(
     MSG_SYS_ON,
     MSG_TEST_ON,
     MSG_ALERT_OFF,
-    MSG_NULL,
+    "AVIS_FVS_ALERT INSTALLED!",
     MSG_TXT
 );
+ALERT(MSG_AVIS_ALERT);
 /* ---------------------------------------------------------- */
 
 /* -------AVIS.FVS-CYBORG ARTIFACT: alert-------------------- */
@@ -65,5 +76,9 @@ MSG_AVIS_ALERT = AVIS_ALERT(
      import { MSG_AVIS_ALERT } from "./AVIS_FVS_ALERT_MOD.js";
 ========================================================== */
 export { MSG_AVIS_ALERT };
-</scipt>
+    </script>
 </div>
+
+
+
+

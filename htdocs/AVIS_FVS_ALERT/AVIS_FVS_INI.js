@@ -1,49 +1,35 @@
 /* ==========================================================
-   AVIS.FVS-CYBORG ARTIFACT: AVIS_FVS_ALERT_INI.js
-
-   PURPOSE:
-     - Import MODULE metadata from AVIS_FVS_IMPORT.js
-     - Import alertModule() from AVIS_FVS_MOD.js
-     - Export ieModule() as the cyborg-facing alert wrapper
-     - Provide a clean, publish-safe AVIS alert interface
-
-   LITTLE ROBOT INSTRUCTIONS:
-     1. This file imports:
-          - MODULE      → auto-detected module identity
-          - alertModule → AVIS alert engine
-     2. This file exports:
-          - ieModule(active, testMode=false)
-     3. Usage:
-          ieModule(1);          // normal alert
-          ieModule(1, true);    // test-mode alert
+   AVIS.FVS-CYBORG ARTIFACT: AVIS_FVS_INI.js
+   AIFVS-ARTIFACT
 ========================================================== */
+import { MODULE } from "./AVIS_FVS_EXPORT.js";
+import { alertModule, avisAlert } from "./AVIS_FVS_MOD.js";
+import { AVIS_MSG } from "./AVIS_FVS_IMPORT.js";
+import { AVIS_MSG_ERR } from "./AVIS_FVS_IMPORT.js";
 
-import { MODULE } from "./AVIS_FVS_IMPORT.js";
-import { alertModule } from "./AVIS_FVS_MOD.js";
-import { avisAlert } from "./AVIS_FVS_MOD.js";
-// EXPORT: cyborg-friendly wrapper function
-export function AVIS_ALERT(active = false, testMode = false, alertMode = false, alertText = "",sendText = false) {
+export { MODULE };
+export { AVIS_MSG };
+export { AVIS_MSG_ERR };
 
-avisAlert("AVIS TEST :: AVIS_FVS_ALERT_INI FOUND::",sendText);
+import { AVIS_TERM } from "./AVIS_FVS_IMPORT.js";
 
-    // Only run if active flag is 1
+export function AVIS_ALERT(active= false,testMode = false, alertMode = false,alertText = "",sendText = false) {
+
+ AVIS_TERM(alertText);
+
     if (active === true) {
 
-        // TEST MODE
         if (testMode === true) {
-            avisAlert("AVIS TEST :: ALERT MOD ONLINE ::",sendText);
+            avisAlert("AVIS TEST:: MODE",sendText);
             return;
         }
 
-        // NORMAL MODE
-        alertModule(MODULE, false,sendText);
-     return;
-    }else{
-    // alert MODE
-      if (alertMode === true){  
-        avisAlert('AVIS ALERT :: alertText ::',sendText);
-    
-            }
-        }
+        alertModule(MODULE, false, sendText);
+        return;
+    }
 
+    if (alertMode === true) {
+        avisAlert(`AVIS ALERT :: ${alertText}`, sendText);
+    }
 
+}
