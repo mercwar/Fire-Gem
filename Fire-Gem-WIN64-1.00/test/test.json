@@ -1,0 +1,16 @@
+{
+  "MACRO": {
+    "CMD_STRING": {
+      "SHELL_EXEC": "cmd.exe /c test.exe",
+      "SHELL_BASH": "make all && ./build.sh",
+      "WIN_INET": "curl https://example.com"
+    },
+
+    "CMD_FILE": {
+      "SHELL_SH": "build.sh",
+      "SHELL_BASH_FILE": "scripts/prepare.sh",
+      "SHELL_BAT": "deploy.bat",
+      "SHELL_CMD": "cleanup.cmd"
+    }
+  }
+}
