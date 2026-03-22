@@ -1,0 +1,38 @@
+name: Joe Tron Site Map
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  fire-dispatch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Debug - List Files
+        run: ls -R  # This shows all files so you can verify the path
+        shell: bash
+
+      - name: Prep and Run Site Strike
+        run: |
+          # Use 'find' to locate and chmod scripts even if they are in subdirectories
+          find . -name "fire-site.sh" -exec chmod +x {} +
+          find . -name "fire-end.sh" -exec chmod +x {} +
+          
+          # Execute fire-site.sh (finds it even if it's not in the root)
+          $(find . -name "fire-site.sh")
+        shell: bash
+
+      - name: Run Fire-End Strike
+        run: |
+          # Execute fire-end.sh (finds it even if it's not in the root)
+          $(find . -name "fire-end.sh")
+        shell: bash

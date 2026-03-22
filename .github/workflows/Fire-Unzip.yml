@@ -1,0 +1,66 @@
+name: Fire-Gem AVIS UNZIP
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '*/15 * * * *'  # Pulse every 15 minutes [AUTONOMOUS]
+  workflow_dispatch:        # Manual override preserved
+
+jobs:
+  avis-ignition:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout Root
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Install unzip
+        run: sudo apt-get update && sudo apt-get install -y unzip
+
+      # 3️⃣ MATERIALIZE: Using quoted paths for directories with spaces
+      - name: Materialize Beacon
+        run: |
+          # Define variables
+          ZIP_PATH="./JMC-Android-1.00.zip"
+          UNZIP_PATH="./JMC-Android-1.00"
+          
+          # Create the directory (-p prevents error if it already exists)
+          mkdir -p "$UNZIP_PATH"
+          
+          if [ -f "$ZIP_PATH" ]; then
+            # Unzip using quotes and correctly referencing the variable with $
+            unzip -o "$ZIP_PATH" -d "$UNZIP_PATH"
+            echo "BASH: [ACK] Scroll extracted inside workspace."
+          else
+            echo "BASH: [NACK] $ZIP_PATH not found at $GITHUB_WORKSPACE"
+            ls -R
+            exit 1
+          fi
+
+
+      # 4️⃣ PORTAL SYNC: Commit only actual workspace changes
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Add extracted files in the workspace (ignores root /)
+          git add .
+
+          if ! git diff --staged --quiet; then
+            git commit -m "AVIS: Beacon Materialized [Pulse]"
+            # Rebase handles autonomous sync collisions
+            git pull --rebase -X ours origin main 
+            git push origin main
+            echo "wm_macro_ack: Portal Sync Successful."
+          else
+            echo "AVIS: No changes detected."
+          fi
