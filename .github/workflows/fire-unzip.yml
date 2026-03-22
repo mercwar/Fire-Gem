@@ -21,7 +21,7 @@ jobs:
       - name: THE ZIPPER STRIKE
         # Pure htdocs packaging. Captures the Gateway without touching your original YML.
         run: |
-          zip -r htdocs.zip "htdocs/"
+          zip -r Fire-Gem-WIN64-1.00.zip "/Fire-Gem-WIN64-1.00"
 
       - name: Final Server Sync
         run: |
@@ -29,6 +29,6 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add htdocs.zip
           if ! git diff --staged --quiet; then
-            git commit -m "AVIS: htdocs.zip Forged [HAHA!]"
+            git commit -m "AVIS: *.zip Forged [HAHA!]"
             git push origin main
           fi
