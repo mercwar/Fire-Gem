@@ -126,3 +126,128 @@ Any replication, structural cloning, or protocol mirroring constitutes **derivat
 Fire-Gem Recursive Execution Architecture  
 Cyborg Manifest Registry  
 © 2026 — All Rights Reserved
+🔥 NOW — THE OFFICIAL FIRE‑GEM README.md
+This is clean, professional, and GitHub‑ready.
+
+📘 FIRE‑GEM — Win64 Cyborg AI Engine
+FIRE‑GEM is a Win32/Win64 Cyborg AI Shell, combining:
+
+A neural model selector
+
+A dual‑panel command + AI interface
+
+A full file navigator (TreeView)
+
+A custom AVIS subsystem
+
+A local LLM execution wrapper
+
+A Windows‑native UI (no Electron, no Python runtime)
+
+FIRE‑GEM is built for speed, clarity, and total control over your local AI environment.
+
+🚀 Features
+🔥 AVIS Core
+Custom Win32 message routing
+
+Subclassed edit controls
+
+AVIS logging system
+
+Neural intent processor
+
+Command pipe integration
+
+🧠 Neural Sector
+Model dropdown selector
+
+Hot‑swappable .gguf models
+
+Llama.cpp‑based backend
+
+Real‑time streaming output
+
+📁 File Navigator
+Drive enumeration
+
+Folder expansion
+
+File listing
+
+Right‑click context menu
+
+“Open in fire‑con”
+
+“Open in fire‑term”
+
+“Run in fire‑con”
+
+“Run in fire‑term”
+
+🖥️ UI Layout
+Left: Command console
+
+Right: Neural output
+
+Bottom: Dual input boxes
+
+Left side: TreeView navigator
+
+Model selector listbox
+
+🛠️ Build Instructions (Windows / MinGW64)
+bash
+gcc main.c fire-list.c avis_core.c avis_llama.cpp \
+    -o fire-gem.exe \
+    -lcomctl32 -lshell32 -lshlwapi -lstdc++ -static
+Requirements:
+
+MinGW‑w64
+
+Windows 10+
+
+Common Controls v6
+
+Llama.cpp backend compiled as avis_llama.cpp
+
+📦 Folder Structure
+Code
+FIRE-GEM/
+│
+├── AVIS/
+├── BOX/
+├── CBORD/
+├── CF/
+├── GF/
+├── JSON/
+├── LLM/
+│   ├── BIN/
+│   ├── INCLUDE/
+│   ├── avis_llama.cpp
+│   └── models/
+├── LOG/
+├── MAIN/
+│   ├── main.c
+│   ├── fire-list.c
+│   └── fire-list.h
+└── FIRE-GEM.bat
+🧩 Context Menu Actions
+Action	Description
+Open in fire‑con	Sends path to FIRE‑GEM console
+Open in fire‑term	Opens Windows terminal at path
+Run in fire‑con	Executes file inside FIRE‑GEM
+Run in fire‑term	Runs file in external terminal
+
+🧪 Example Log Output
+Code
+[AVIS] DEPLOYING WIN64 NEURAL ARCHITECTURE...
+[AVIS] COMPILING NEURAL WRAPPER...
+[AVIS] COMPILING FILE NAVIGATOR...
+[AVIS] STITCHING WIN64 BINARY...
+[AVIS] FIRE-GEM ONLINE
+🧙 Author
+mercwar  
+Creator of the AVIS Protocol and FIRE‑GEM Cyborg AI Engine.
+
+📜 License
+MIT License (or whatever you choose).

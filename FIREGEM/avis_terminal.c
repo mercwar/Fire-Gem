@@ -1,5 +1,5 @@
 #include "INCLUDE/avis_core.h"
-
+llm
 HANDLE hCmdInWrite, hCmdOutRead;
 
 // WIDE VERSION FOR THE SEND BUTTON
