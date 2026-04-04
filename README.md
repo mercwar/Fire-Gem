@@ -1,15 +1,14 @@
 ##  🔥FIREGEM💎 Custom LLM "CYBORG", AVIS, Fire-Con GCC UCRT64
 ![BANNER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_072110.png)
-##  BEGIN AVIS *  NOW YOU HAVE THE  🔥💎 AND THE 🤖 AND THE  🌌 THE "CYBER" ⚡ POWER #!fire!end!#
-### THE 🦁 (LION) 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
+####  BEGIN AVIS *  NOW YOU HAVE THE  🔥💎 AND THE 🤖 AND THE  🌌 THE "CYBER" ⚡ POWER #!fire!end!#
 ![ROBOTS.TXT](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_060431.png)
 ## ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE 
 ![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
 # 🤖 NOW — THE OFFICIAL FIRE‑GEM README.md
+### AS IN 'AOL' THE 🦁 (LION) AND THE 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
+### 🔥💎🤖 THE NEW FIRE GEM ROBOT LLMA CPP MOD
 
-### 🔥💎🤖 NEW FIRE GEM ROBOT LLMA CPP MOD
-
-Welcome to the **Fire-Gem / AVIS-Core LLM Engine**.
+Welcome to  **Fire-Gem AN AVIS-Core LLM CONSOLE Engine**.
 ---
 ## 🚀 Getting Started
 1. **Clone the repository:**
@@ -22,11 +21,16 @@ Welcome to the **Fire-Gem / AVIS-Core LLM Engine**.
 ## ⚔️ THE CVBGOD: FIRE-GEM LLM ENGINE  
 *Identity:** `[FIREGEM] // COMPLETE`  
 **Authority:** `CVBGOD`  
+```
+  --- SYSTEM OVERVIEW ---
+[STATUS]   : CALIBRATED
+[SECTOR]   : LLM_MODELS_V2
+[ENGINE]   : LLAMA_CPP_WIN64
+[CODENAME] : FIRE-GEM
+```
+#### The Fire-Gem LLM Engine is a high-speed LOCAL LLM THAT YOU RUN ON YOUR DESKTOP !
 
-  
-The Fire-Gem LLM Engine is a high-speed LOCAL LLM THAT YOU RUN ON YOUR DESKTOP !
-
-THERE IS A CONSOLE INCLUDED AND HAS BACKEND SUPPORT FOR CONSOLE AND HTTP CONNECTIONS
+##### THERE IS A CONSOLE INCLUDED AND HAS BACKEND SUPPORT FOR CONSOLE AND HTTP CONNECTIONS
 ---
 
 ### 🚀 FAST-TRACK IGNITION
@@ -40,10 +44,15 @@ cd Fire-Gem
 
 **2. THE BUILD STRIKE (WHAT IT DOES)**  
 Run the **EXE** and initiate **GCC Fusion**:  
-- **ADD Voice (Log)**  
-- **ADD Brain (Gem)**  
-- **SADD mith (GCC)**  
-
+- **ADD CMD.EXE/BASH.EXE (FIRE)**  
+- **ADD AVIS GGUF (Gem)**  
+- **ADD CVBGOD'S C FILES (GCC)**
+- BIG BANG! EVERYTHING STOPS, EVERYTHING GETS HOT
+- BECAUSE YOU DON'T HAVE TO DO IT ANY MORE, YOU CAN USE YOUR DESKTOP!
+- SEND THOSE OTHER SLOW LLM'S TO THE 'RB' , YOU NEED SPEED ...
+- YOU NEED FIREGEM, PLUS YOU CAN CLICK ON THE FILES IN THE TREE VIEW!
+- JUST RIGHT CLICK AND RUN A BATCH/SHELL FILE, ITS THAT EASY!
+  
 These merge into one supreme executive: `fire-gem.exe`  
 Then the Engine sweeps the entire sector, forging every `.C/H` extension and linking it to the **Global AVIS Voice**.
 
@@ -75,7 +84,8 @@ FIRE‑GEM is a **Windows‑native Cyborg AI Shell**, combining:
 - A full file navigator (TreeView)  
 - A custom AVIS subsystem  
 - A local LLM execution wrapper  
-- A zero‑bloat Win32 UI (no Electron, no Python runtime)
+- A FAST TRACK Win64 UI with NO RUNTIME , [vb,python,java,apache]
+- A C FILE WIN 10 EXE INCLUDED , TESTED IN THE PROJECT DIRECTORY!
 
 FIRE‑GEM is built for **speed**, **clarity**, and **total control** over your local AI environment.
 
