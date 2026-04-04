@@ -155,7 +155,9 @@ FIRE‑GEM gives you **total control** over your local AI environment — fast, 
 git clone https://github.com/mercwar/Fire-Gem.git
 cd Fire-Gem
 ```
+
 ![Robo Knight Version 3](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%203/Copilot_20260214_062342.png)
+
 ---
 ## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
 ---
