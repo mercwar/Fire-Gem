@@ -124,7 +124,8 @@ Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 
 ![IMcvbgod](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%202/ChatGPT%20Image%20Jan%2017%2C%202026%2C%2008_59_38%20PM.png)
 ---
-## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS REAL LIFE CYBORG AI!
+
+## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
 
 **3. LOAD THE BLUEPRINTS (GGUF + CVBGOD'S C FILES)**  
 
@@ -169,7 +170,6 @@ cd Fire-Gem
 ![RK4](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_091119.png)
 
 
-## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
 
 **3. LOAD THE BLUEPRINTS (PURE C WITH LLMA CPP MOD)**  
 
