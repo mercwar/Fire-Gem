@@ -172,7 +172,7 @@ git clone https://github.com/mercwar/Fire-Gem.git
 cd Fire-Gem
 ```
 
-![RK4](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260116_024345.png)
+![RK4](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_091119.png)
 
 
 ## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
