@@ -284,12 +284,14 @@ generate a batch script that deletes empty folders
 - AVIS logging system  
 - Neural intent processor  
 - Command pipe integration  
-
+- FIRE-CON CMD.EXE/BASH.EXE UCRT64 BUILD FOR WINDOWS 1X.X
+  
 ## 🧠 **Neural Sector**
-- Model dropdown selector  
+- Model list selector  
 - Hot‑swappable `.gguf` models  
 - Llama.cpp‑based backend  
 - Real‑time streaming output  
+- FIRE-TERM ASSISTANT WINDOW 
 
 ## 📁 **File Navigator**
 - Drive enumeration  
@@ -300,6 +302,7 @@ generate a batch script that deletes empty folders
   - **Open in fire‑term**
   - **Run in fire‑con**
   - **Run in fire‑term**
+- CVBGOD'S RK EXPLORER (WINDOWS EXPLORER TREEVIEW)
 
 ## 🖥️ **UI Layout**
 - Left: Command console  
