@@ -1,0 +1,44 @@
+AVIS PROJECT SCAN LOG
+Generated: Sat 04/04/2026  0:10:11.59
+Removable Drive: 
+Project Root: \Apache24\htdocs\FIRE-GEM\LLM
+App Root: 
+
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\BIN 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\DATA 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\INCLUDE 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\LOG 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\MODELS 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\SRC 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN\BK 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN\CFG 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN\LOG 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN\midi 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN\TMP 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN\CFG\INI 
+[DIR] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN\CFG\JSON 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\avis_dispatcher.c 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\avis_llama.cpp 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\avis_llama.o 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\AVIS_PRJ_SCAN.BAT 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\avis_terminal.c 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\BUILD_ASSISTANT.bat 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\BUILD_ASSISTANT.sh 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\LLM.7z 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\LLM.zip 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\LLM_2.zip 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\main.c 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\BIN\assistant.exe 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\BIN\AVIS_CORE.exe 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\BIN\AVIS_CORE_CONSOLE.exe 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\BIN\FIREGEM.exe 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\DATA\avis_core.h 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\DATA\robot_memory.xml 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\INCLUDE\avis_core.h 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\LOG\assistant_build.log 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\MODELS\deepseek-coder-1.3b-instruct.Q8_0.gguf 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\MODELS\phi-4-IQ2_XS.gguf 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\MODELS\phi-4-Q4_K.gguf 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\MODELS\qwen2.5-coder-0.5b-q8_0.gguf 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\MODELS\Qwen2.5-Coder-1.5B-Instruct.Q8_0.gguf 
+[FILE] C:\Apache24\htdocs\FIRE-GEM\LLM\MODELS\SmolLM2-135M-Instruct-f16.gguf 

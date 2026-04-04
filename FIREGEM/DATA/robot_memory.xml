@@ -1,0 +1,6 @@
+<AVIS_MEMORY>
+    <NEURAL_CONFIG model="Qwen2.5-Coder-1.5B" bits="Q8_0" />
+    <ROBOT_STATE status="ONLINE" mode="HELP_GUIDE" />
+    <FILESYSTEM_ROOT path="C:\Apache24\htdocs\FIRE-GEM\" />
+    <LAST_ACTION type="BOOT" timestamp="2026-04-03 21:16" />
+</AVIS_MEMORY>
