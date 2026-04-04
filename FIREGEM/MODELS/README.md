@@ -1,4 +1,4 @@
-[Read more](https://github.com/mercwar/Fire-Gem/tree/main/FIREGEM) about the NEW FIRE‑GEM
+[Read more](https://github.com/mercwar/Fire-Gem/tree/main) about the NEW FIRE‑GEM
 
 # 🔥 FIRE‑GEM Model Compatibility Guide  
 ### **Supported GGUF Models + Download Links**
