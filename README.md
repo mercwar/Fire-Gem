@@ -95,12 +95,6 @@ FIRE‑GEM is built for **speed**, **clarity**, and **total control** over your 
 
 # 🛠️ **Build Instructions (Windows / MinGW‑w64)**
 
-```bash
-gcc main.c fire-list.c avis_core.c avis_llama.cpp \
-    -o fire-gem.exe \
-    -lcomctl32 -lshell32 -lshlwapi -lstdc++ -static
-```
-
 ### Requirements
 - MinGW‑w64  
 - Windows 10+  
@@ -109,7 +103,6 @@ gcc main.c fire-list.c avis_core.c avis_llama.cpp \
 
 ---
 
----
 
 # 🧩 **Context Menu Actions**
 
@@ -255,7 +248,6 @@ explain this error:
 generate a batch script that deletes empty folders
 ```
 
----
 
 #### 🧪 Example Log Output
 ---
@@ -316,7 +308,8 @@ generate a batch script that deletes empty folders
 
 # 🛠️ **Build Instructions (Windows / MinGW‑w64)**
 
-```bash
+```
+#bash
 gcc main.c fire-list.c avis_core.c avis_llama.cpp \
     -o fire-gem.exe \
     -lcomctl32 -lshell32 -lshlwapi -lstdc++ -static
