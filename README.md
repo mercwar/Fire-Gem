@@ -1,10 +1,13 @@
 ##  🔥FIREGEM💎 Custom LLM "CYBORG", AVIS, Fire-Con GCC UCRT64
+![BANNER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_072110.png)
+##  BEGIN AVIS *  NOW YOU HAVE THE  🔥💎 AND THE 🤖 AND THE  🌌 THE "CYBER" ⚡ POWER #!fire!end!#
+### THE 🦁 (LION) 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
 ![ROBOTS.TXT](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_060431.png)
-## ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE
+## ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE 
 ![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
 # 🤖 NOW — THE OFFICIAL FIRE‑GEM README.md
+
 ### 🔥💎🤖 NEW FIRE GEM ROBOT LLMA CPP MOD
-#### GETTING STARTED — CYBORG INITIATION SEQUENCE
 
 Welcome to the **Fire-Gem / AVIS-Core LLM Engine**.
 ---
@@ -307,7 +310,8 @@ Requirements:
 - Llama.cpp backend compiled as `avis_llama.cpp`  
 
 ---
-
+![mercwar](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_073913.png)
+---
 # 📂 **Folder Structure**
 
 ```
