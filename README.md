@@ -124,13 +124,13 @@ gcc main.c fire-list.c avis_core.c avis_llama.cpp \
 
 
 🧙 Author
-# Mercwar01 FFF DEMONIZER
+# Mercwar01 FFF DEMONIZER THE CVBGOD
 Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 
 ---
 ![IMHERE](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260307_192859.png)
 ---
-**3. LOAD THE BLUEPRINTS (INI & CJS)**  
+**3. LOAD THE BLUEPRINTS (GGUF + CVBGOD'S C FILES)**  
 
 - `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.
 -  ** VERY EASY TO SEND BASH !
@@ -156,8 +156,9 @@ FIRE‑GEM is a **Windows‑native Cyborg AI Shell** that merges:
 - A **full file navigator (TreeView)**  
 - A **local LLM execution wrapper**  
 - A **custom AVIS subsystem**  
-- A **zero‑bloat Win32 UI** (no Python, no Electron)
-
+- A **Win64 UI** with NO RUNTIME! (VB,JAVA,Python,Apache)
+- A **Right click** that gives you FAST BATCH/SHELL EXEC
+- 
 FIRE‑GEM gives you **total control** over your local AI environment — fast, stable, and fully offline.
 
 ---
@@ -227,10 +228,11 @@ FIRE-GEM.exe
 
 Then:
 
-- Select a model  
-- Use the **right input box** to talk to the robot  
-- Use the **left input box** to run system commands  
-- Use the **file navigator** to browse and execute files
+- Select from lower left your Model File Name that `you downloaded from huggys`!
+- Focus on the **right side editor** to talk to the robot  
+- Focus on the **left side editor ** to ACCESS CMD.EXE 
+- Use the **file navigator** to browse and execute files.
+- All file types EXEC with a right click in the `RK Tree View`
 
 ---
 
@@ -354,12 +356,12 @@ FIRE-GEM/
 
 # 🧙 **Author**
 
-**mercwar01**  FFF DEMONIZER
+**mercwar01** FFF DEMONIZER the CVBGOD...
 Creator of the AVIS Protocol and FIRE‑GEM Cyborg AI Engine.
 
 ---
 
-### 🔥💎🤖 NEXT STRIKE  NETWORKING SUPPORT - NOT INSTALLED
+### 🔥💎🤖 NEXT STRIKE  NETWORKING SUPPORT - pending update
 © MERCWAR SYSTEMS — COPYWRIGHT & OWNERSHIP DECLARATION
 
 **Fire-Gem / AVIS-Core Recursive Engine**  
