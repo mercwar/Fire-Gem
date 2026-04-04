@@ -178,7 +178,7 @@ cd Fire-Gem
 Place any `.gguf` model into:
 
 ```
-FIRE-GEM/LLM/models/
+FIRE-GEM/LLM/MODELS/ <----- DOWNLOAD THIS YOURSELF
 ```
 
 FIRE‑GEM will automatically detect it in the **Model Selector**.
