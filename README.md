@@ -1,10 +1,10 @@
-#  🔥FIREGEM💎 Custom LLM "CYBORG", AVIS, Fire-Con GCC UCRT64
+##  🔥FIREGEM💎 Custom LLM "CYBORG", AVIS, Fire-Con GCC UCRT64
 ![ROBOTS.TXT](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_060431.png)
-# ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE
+## ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE
 ![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
 
-## 🔥💎🤖 NEW FIRE GEM ROBOT
-### GETTING STARTED — CYBORG INITIATION SEQUENCE
+### 🔥💎🤖 NEW FIRE GEM ROBOT
+#### GETTING STARTED — CYBORG INITIATION SEQUENCE
 
 Welcome to the **Fire-Gem / AVIS-Core LLM Engine**.
 ---
@@ -197,6 +197,8 @@ FIRE‑GEM will automatically detect it in the **Model Selector**.
   [https://huggingface.co/microsoft/Phi-4-GGUF](https://huggingface.co/microsoft/Phi-4-GGUF)
 
 ---
+
+[Read more](https://github.com/mercwar/Fire-Gem/tree/main/FIREGEM/MODELS) about MODELS
 
 ## **3. Run FIRE‑GEM**
 
