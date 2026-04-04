@@ -1,8 +1,0 @@
-{
-    "MACRO": {
-        "script": "inline",
-        "CMD_STRING": {
-            "SHELL_BASH": "mkdir -p test/exe && cp -f test.exe test/exe/"
-        }
-    }
-}
