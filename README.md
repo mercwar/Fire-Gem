@@ -3,7 +3,7 @@
 ## ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE
 ![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
 
-### 🔥💎🤖 NEW FIRE GEM ROBOT
+### 🔥💎🤖 NEW FIRE GEM ROBOT LLMA CPP MOD
 #### GETTING STARTED — CYBORG INITIATION SEQUENCE
 
 Welcome to the **Fire-Gem / AVIS-Core LLM Engine**.
@@ -159,7 +159,7 @@ cd Fire-Gem
 ---
 ## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
 ---
-**3. LOAD THE BLUEPRINTS (INI & CJS)**  
+**3. LOAD THE BLUEPRINTS (PURE C WITH LLMA CPP MOD)**  
 
 - `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.
 -  ** VERY EASY TO SEND BASH !
@@ -238,7 +238,7 @@ generate a batch script that deletes empty folders
 
 #### 🧪 Example Log Output
 ---
-**3. LOAD THE BLUEPRINTS (INI & CJS)**  
+**3. LOAD THE BLUEPRINTS (ALL CVBGOD'S C FILES!)**  
 
 - `[AVIS]` DEPLOYING WIN64 NEURAL ARCHITECTURE...
 -  ** VERY EASY TO SEND BASH !
