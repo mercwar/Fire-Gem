@@ -1,61 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/ROBOTS.TXT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-site.sh</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/index.html</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/README.md</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-unzip.yml</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-WIN64-1.00.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/index.html</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/fire-term.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/fire-gem-1.css</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/fire-start.html</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/AVIS_FVS_ALERT/Readme.md</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/AVIS_FVS_ALERT/AVIS_FVS_INI.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/AVIS_FVS_ALERT/AVIS_ALERT.html</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/AVIS_FVS_ALERT/AVIS_FVS_INCLUDE.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/AVIS_FVS_ALERT/AVIS_FVS_IMPORT.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/AVIS_FVS_ALERT/AVIS_FVS_MOD.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/AVIS_FVS_ALERT/AVIS_FVS_EXPORT.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/fire-gem.css</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs/fire-term-1.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/LICENSE</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/sitemap.xml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-site.yml</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/Fire-Unzip.yml</loc>
@@ -64,231 +19,507 @@
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-gem.yml</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-site.yml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/ROBOTS.TXT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-unzip.yml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/LICENSE</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-end.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/fire-end.sh</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%202/Readme.md</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%202/Readme.md</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/htdocs.zip</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/json_loader.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-site.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/macro_builder.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/macro_runner.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-compile.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-dirlist.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-term.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/FFF_DARKCOMM.bat</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem-ext-1.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-dirlist.inc</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/avis-fvs.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/ini_loader.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-log.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/FFF_DARKCOMM.sh</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-compile.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/ini_loader.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-protocol.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-json.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/protocol_spec.json</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-vtbl.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-net.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/FFF_DARKCOMM.log</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-spec.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem.ini</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fg_term.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.ini</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-ini.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/AVIS.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/wndproc.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem-txt.log</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/wndproc.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-log/fire-gem.log</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-log/fire-protocol.avis</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-exec.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-end.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-main.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-end.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem.exe</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-compile.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire_gem.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-asm.ini</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-asm.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/LOAD_CONFIG.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-macro.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-seed.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI.tmp</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem-asm.inc</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/CONFIG_ROOT.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/avis-fvs.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI.bak</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.inc</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/SAVE_LOG.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-log.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/MUSIC.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-net.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/LOG/ACK_AI_OP.LOG</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-seed.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/BAK_CONFIG.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-site.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/CREATE_STRUCT.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-macro.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/CONFIG_PATH.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-net.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/midi/JP-YGATC.mid</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-term.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/inc.ini</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/cjs.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN_EXEC.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-asm.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/SCAN_DIR.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-protocol.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/LOG_CONFIG.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-ignite-compile.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/SCAN_FILE.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/AVIS.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/AVIS_REM_DRV.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-spec.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/AVIS_PRJ_SCAN/INTRO.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-cyhy.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-window.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/local_strike.json</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/build/fire-gem-dialog.o</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/build/fire-gem-json.o</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/build/fire-gem-main.o</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem-ext-1.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/build/fire-gem-window.o</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-compile.ini</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/build/fire-gem-ini.o</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-map.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/build/fire-gem-exec.o</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/cjs.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/macro_runner.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.txt</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fg_log.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-site.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/fire-dl.sh</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-term.ini</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/copy_test.ini</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-term.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/FFF_DARKCOMM.bat</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem.log</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/copy.json</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/cjs.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/copy_test.json</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-link.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test.sh</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/avis-fvs.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test.ini</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/cyhy_init.json</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test.json</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-site.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test/exe/fire.gem.avis</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-asm.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test/exe/fire-gem.exe</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-end.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test/exe/project_history.avis</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-spec.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test/exe/CYHY-CMT.exe</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-ignite-compile.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test/exe/test.exe</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-site.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test.log</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-macro.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-log.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/test/test.exe</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/AVIS.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/JSON.JSON</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-ignite-compile.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-console.asm</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-cyhy.ini</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire_gem.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-seed.asm</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fg_types.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/VERSION%201/fire-gem-ext-1.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-dialog.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fg_log.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fire-gem-dispatch.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/json_loader.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/fg_term.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00/macro_builder.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/Fire-Gem-WIN64-1.00.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-macro.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-asm.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-log/fire-protocol.avis</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-log/fire-gem.log</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem-ext-1.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/avis-fvs.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-seed.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-end.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/AVIS.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-compile.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-site.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-protocol.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-ignite-compile.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-site.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-net.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-term.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-spec.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.inc</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-log.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-ignite-compile.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-map.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem-ext-1.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-end.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/avis-fvs.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-asm.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-compile.ini</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.ini</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-term.ini</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/AVIS.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-asm.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/cjs.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/cjs.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-seed.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-term.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/cjs.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/protocol_spec.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-net.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem-ext-1.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-seed.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-spec.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-asm.ini</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-term.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-spec.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-macro.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-ignite-compile.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/cyhy_init.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-site.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.log</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-protocol.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/AVIS.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-site.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-net.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-cyhy.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-compile.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-log.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem-txt.log</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-end.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-macro.asm</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-cyhy.ini</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-link.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/avis-fvs.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-compile.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-log.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem-asm.inc</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/fire-gem.txt</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/VERSION%201/local_strike.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/fire-gem-1.css</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/fire-term.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/index.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/fire-term-1.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/fire-gem.css</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/fire-start.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/AVIS_FVS_ALERT/AVIS_FVS_IMPORT.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/AVIS_FVS_ALERT/AVIS_FVS_MOD.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/AVIS_FVS_ALERT/AVIS_ALERT.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/AVIS_FVS_ALERT/AVIS_FVS_INCLUDE.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/AVIS_FVS_ALERT/AVIS_FVS_EXPORT.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/AVIS_FVS_ALERT/Readme.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/tmp/htdocs/AVIS_FVS_ALERT/AVIS_FVS_INI.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/README.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/sitemap.xml</loc>
   </url>
 </urlset>
