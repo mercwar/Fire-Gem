@@ -130,9 +130,9 @@ Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 **3. LOAD THE BLUEPRINTS (GGUF + CVBGOD'S C FILES)**  
 
 - `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.
--  ** VERY EASY TO SEND BASH !
+- ✨ VERY EASY TO SEND BASH !
 - `TREEVIEW`: The Master Law, CONSOLE EXPANSION .
--  **  TREEVIEW RESPONDS TO OPEN SHELL IN LIVE IN CONSOLE.  
+- ✨ TREEVIEW RESPONDS TO OPEN SHELL IN LIVE IN CONSOLE.  
 - `TERMINAL`: The LLM WILL TALK TO YOU HERE ONCE YOU LOAD THE GGUF.
 - `LISTBOX` l YOUR LLMS MODELS WILL SHOW HERE
 - *🔥 BOOM! FIRE GEM IS AN AVIS CORE FVS MACRO ENGINE! *
@@ -146,13 +146,13 @@ Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 
 FIRE‑GEM is a **Windows‑native Cyborg AI Shell** that merges:
 
-- A **neural model selector**  
-- A **dual‑panel command + AI interface**  
-- A **full file navigator (TreeView)**  
-- A **local LLM execution wrapper**  
-- A **custom AVIS subsystem**  
-- A **Win64 UI** with NO RUNTIME! (VB,JAVA,Python,Apache)
-- A **Right click** that gives you FAST BATCH/SHELL EXEC
+- RK **neural model selector**  
+- RK **dual‑panel command + AI interface**  
+- RK **full file navigator (TreeView)**  
+- RK **local LLM execution wrapper**  
+- RK **custom AVIS subsystem**  
+- RK **Win64 UI** with NO RUNTIME! (VB,JAVA,Python,Apache)
+- RK **Right click** that gives you FAST BATCH/SHELL EXEC
 
 FIRE‑GEM gives you **total control** over your local AI environment — fast, stable, and fully offline.
 
@@ -174,9 +174,9 @@ cd Fire-Gem
 **3. LOAD THE BLUEPRINTS (PURE C WITH LLMA CPP MOD)**  
 
 - `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.
--  ** VERY EASY TO SEND BASH !
+-  ✨ VERY EASY TO SEND BASH !
 - `TREEVIEW`: The Master Law, CONSOLE EXPANSION .
--  **  TREEVIEW RESPONDS TO OPEN SHELL IN LIVE IN CONSOLE.  
+-  ✨  TREEVIEW RESPONDS TO OPEN SHELL IN LIVE IN CONSOLE.  
 - `TERMINAL`: The LLM WILL TALK TO YOU HERE ONCE YOU LOAD THE GGUF.
 - `LISTBOX` l YOUR LLMS MODELS WILL SHOW HERE
 - *🔥 BOOM! FIRE GEM IS AN AVIS CORE FVS MACRO ENGINE! *
@@ -195,22 +195,22 @@ FIRE‑GEM will automatically detect it in the **Model Selector**.
 
 ### ✔ Supported Models (Direct Downloads)
 
-- **SmolLM2‑135M‑Instruct‑f16.gguf**  
+- ✨ **SmolLM2‑135M‑Instruct‑f16.gguf**  
   [https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF)
 
-- **SmolLM‑135M‑Instruct_Q3_K_M.gguf**  
+- ✨ **SmolLM‑135M‑Instruct_Q3_K_M.gguf**  
   [https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF)  
   *(Scroll to the Q3_K_M file.)*
 
-- **Qwen2.5‑Coder‑1.5B‑Instruct.Q8_0.gguf**  
+- ✨ **Qwen2.5‑Coder‑1.5B‑Instruct.Q8_0.gguf**  
   [https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF)
 
-- **phi‑4‑IQ2_XS.gguf**  
+- ✨ **phi‑4‑IQ2_XS.gguf**  
   [https://huggingface.co/microsoft/Phi-4-GGUF](https://huggingface.co/microsoft/Phi-4-GGUF)
 
 ---
 
-[Read more](https://github.com/mercwar/Fire-Gem/tree/main/FIREGEM/MODELS) about MODELS
+### ✨ [Read more](https://github.com/mercwar/Fire-Gem/tree/main/FIREGEM/MODELS) about MODELS
 
 ## **3. Run FIRE‑GEM**
 
@@ -444,4 +444,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
-🎭 AI BY FFF DEMONIZER 🧛‍♀️
+🎭 AI ✨ BY ✨ FFF DEMONIZER 🧛‍♀️
