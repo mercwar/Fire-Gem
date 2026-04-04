@@ -153,7 +153,7 @@ FIRE‑GEM is a **Windows‑native Cyborg AI Shell** that merges:
 - A **custom AVIS subsystem**  
 - A **Win64 UI** with NO RUNTIME! (VB,JAVA,Python,Apache)
 - A **Right click** that gives you FAST BATCH/SHELL EXEC
-- 
+
 FIRE‑GEM gives you **total control** over your local AI environment — fast, stable, and fully offline.
 
 ---
