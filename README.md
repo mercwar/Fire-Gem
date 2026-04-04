@@ -128,7 +128,9 @@ gcc main.c fire-list.c avis_core.c avis_llama.cpp \
 Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 
 ---
-![IMHERE](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260307_192859.png)
+
+![IMcvbgod](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%202/ChatGPT%20Image%20Jan%2017%2C%202026%2C%2008_59_38%20PM.png)
+
 ---
 **3. LOAD THE BLUEPRINTS (GGUF + CVBGOD'S C FILES)**  
 
@@ -140,11 +142,9 @@ Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 - `LISTBOX` l YOUR LLMS MODELS WILL SHOW HERE
 - *🔥 BOOM! FIRE GEM IS AN AVIS CORE FVS MACRO ENGINE! *
   
----
----
+
 ## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
----
----
+
 # 🔥 **FIRE‑GEM — Win64 Cyborg AI Engine**  
 ### **Neural Console • File Navigator • Local LLM Shell • AVIS Subsystem**
 
@@ -167,16 +167,16 @@ FIRE‑GEM gives you **total control** over your local AI environment — fast, 
 
 ## **1. Clone the Repository**
 
-```bash
+```
 git clone https://github.com/mercwar/Fire-Gem.git
 cd Fire-Gem
 ```
 
 ![RK3](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%203/Copilot_20260214_062342.png)
 
----
+
 ## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
----
+
 **3. LOAD THE BLUEPRINTS (PURE C WITH LLMA CPP MOD)**  
 
 - `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.
