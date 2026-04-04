@@ -207,7 +207,7 @@ FIRE‑GEM will automatically detect it in the **Model Selector**.
 Launch:
 
 ```
-fire-gem.exe
+FIRE-GEM.exe
 ```
 
 Then:
