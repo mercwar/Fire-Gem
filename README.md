@@ -43,17 +43,9 @@ Run the **EXE** and initiate **GCC Fusion**:
 These merge into one supreme executive: `fire-gem.exe`  
 Then the Engine sweeps the entire sector, forging every `.C/H` extension and linking it to the **Global AVIS Voice**.
 
-**3. LOAD THE BLUEPRINTS (INI & CJS)**  
-- `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.  VERY EASY TO SEND BASH !
-- `TREEVIEW`: The Master Law, CONSOLE EXPANSION , TREEVIEW RESPONDS TO OPEN SHELL LIVE IN CONSOLE.  
-- `TERMINAL`: The LLM WILL TALK TO YOU HERE ONCE YOU LOAD THE GGUF.
-- `LISTBOX` l YOUR LLMS MODELS WILL SHOW HERE
-*🔥 BOOM! FIRE GEM IS AN AVIS CORE FVS MACRO ENGINE! *
----
-![Robo Knight Version 3](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%203/Copilot_20260214_062342.png)
----
-## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
----
+
+![IMHERE](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_055412.png)
+
 
 ### 🏆 WHY THIS ENGINE DESTROYS THE REST
 
@@ -123,14 +115,29 @@ Code
 [AVIS] FIRE-GEM ONLINE
 🧙 Author
 mercwar  
-Creator of the AVIS Protocol and FIRE‑GEM Cyborg AI Engine.
+Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 
 ---
+![IMHERE](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260307_192859.png)
+---
+**3. LOAD THE BLUEPRINTS (INI & CJS)**  
 
+- `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.
+-  ** VERY EASY TO SEND BASH !
+- `TREEVIEW`: The Master Law, CONSOLE EXPANSION .
+-  **  TREEVIEW RESPONDS TO OPEN SHELL IN LIVE IN CONSOLE.  
+- `TERMINAL`: The LLM WILL TALK TO YOU HERE ONCE YOU LOAD THE GGUF.
+- `LISTBOX` l YOUR LLMS MODELS WILL SHOW HERE
+- *🔥 BOOM! FIRE GEM IS AN AVIS CORE FVS MACRO ENGINE! *
+  
+---
+---
+## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
+---
+---
 # 🔥 **FIRE‑GEM — Win64 Cyborg AI Engine**  
 ### **Neural Console • File Navigator • Local LLM Shell • AVIS Subsystem**
 
-`https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png`
 
 FIRE‑GEM is a **Windows‑native Cyborg AI Shell** that merges:
 
@@ -153,7 +160,20 @@ FIRE‑GEM gives you **total control** over your local AI environment — fast, 
 git clone https://github.com/mercwar/Fire-Gem.git
 cd Fire-Gem
 ```
+![Robo Knight Version 3](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%203/Copilot_20260214_062342.png)
+---
+## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
+---
+**3. LOAD THE BLUEPRINTS (INI & CJS)**  
 
+- `CONSOLE`: Tells the SYSTEM how to forge the world. Add new `.C` files here.
+-  ** VERY EASY TO SEND BASH !
+- `TREEVIEW`: The Master Law, CONSOLE EXPANSION .
+-  **  TREEVIEW RESPONDS TO OPEN SHELL IN LIVE IN CONSOLE.  
+- `TERMINAL`: The LLM WILL TALK TO YOU HERE ONCE YOU LOAD THE GGUF.
+- `LISTBOX` l YOUR LLMS MODELS WILL SHOW HERE
+- *🔥 BOOM! FIRE GEM IS AN AVIS CORE FVS MACRO ENGINE! *
+  
 ---
 
 ## **2. Add Your Models**
@@ -306,7 +326,7 @@ FIRE-GEM/
 
 # 🧙 **Author**
 
-**mercwar**  
+**mercwar01**  FFF DEMONIZER
 Creator of the AVIS Protocol and FIRE‑GEM Cyborg AI Engine.
 
 ---
