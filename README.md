@@ -32,7 +32,7 @@ Welcome to  **Fire-Gem AN AVIS-Core LLM CONSOLE Engine**.
 ```
 #### The Fire-Gem LLM Engine is a high-speed LOCAL LLM THAT YOU RUN ON YOUR DESKTOP !
 
-##### THERE IS A CONSOLE INCLUDED AND HAS BACKEND SUPPORT FOR CONSOLE AND HTTP CONNECTIONS
+##### THERE IS AN ASSISTANT TERMINAL INCLUDED AND HAS BACKEND SUPPORT FOR THE CONSOLE AND HTTP CONNECTIONS
 ---
 
 ### 🚀 FAST-TRACK IGNITION
@@ -124,7 +124,7 @@ gcc main.c fire-list.c avis_core.c avis_llama.cpp \
 
 
 🧙 Author
-mercwar  
+# Mercwar01 FFF DEMONIZER
 Creator of the AVIS Protocol and NOW FIREGEM, THE Cyborg LLM AI Engine.
 
 ---
@@ -417,7 +417,7 @@ Any replication, structural cloning, or protocol mirroring constitutes **derivat
 **MERCWAR SYSTEMS**  
 Fire-Gem Recursive Execution Architecture  
 Cyborg Manifest Registry  
-© 2026 — All Rights Reserved
+© FFF RK 2026 — All Rights Reserved
 
 # 📜 **Copyright**
 
@@ -443,4 +443,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
-
+🎭 AI BY FFF DEMONIZER 🧛‍♀️
