@@ -172,7 +172,7 @@ git clone https://github.com/mercwar/Fire-Gem.git
 cd Fire-Gem
 ```
 
-![RK3](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%203/Copilot_20260214_062342.png)
+![RK4](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260116_024345.png)
 
 
 ## IT'S ALOT TO SMILE ABOUT, CVBGOD NOW HAS A REAL LIFE CYBORG!
@@ -274,6 +274,7 @@ generate a batch script that deletes empty folders
 - 💎 BOOM! IT'S AS SMART AS YOU MAKE IT TO BE! I AM CVBGOD, AND I HAVE GIVEN IT TO YOU!
   
 ---
+![rkbnr](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_090041.png)
 
 # 💎 **Core Features**
 
