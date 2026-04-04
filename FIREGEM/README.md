@@ -1,4 +1,106 @@
+--- THE SINGULARITY (ABSTRACT DATA) ---
+💠 🌀 🕳️ 🫧 🌐 🌀 🧿 🪬 🎐 🔮 🏺 🪁 🧿 🌀 💠
+
+--- THE ARCANE MECHANISM (C/ASM CORE) ---
+🎛️ 🎚️ 📟 🎞️ 📽️ 💈 ⏳ ⌛ ⚖️ 🦯 🔗 ⛓️ 🧲 🧯 🛡️
+🗝️ 🗿 🏺 📜 🕯️ 🏮 🪔 🎐 🎏 🎎 🎑 🌌 🌠 🎆 🎇
+
+--- THE CRYPTID BIOLOGY (DEMONIZER ELITE) ---
+🧞 🧞‍♂️ 🧞‍♀️ 🧚 🧚‍♂️ 🧚‍♀️ 🧝 🧝‍♂️ 🧝‍♀️ 🧛 🧛‍♂️ 🧛‍♀️ 🧟 🧟‍♂️ 🧟‍♀️
+🦄 🐉 🐲 🦖 🦕 🦗 🦂 🕷️ 🕸️ 🦎 🐍 🐢 🐊 🐙 🦑
+
+--- THE REFINED SHINE (LUXURY FX) ---
+💎 💍 👑 🏮 🎐 🪄 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐 
+💎 💠 🌌 🌠 🎇 🎆 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐 
+
+--- THE UNKNOWN OPERATOR (VOID SECTOR) ---
+👤 👥 🫂 👣 🧠 👁️‍🗨️ 🗨️ 🗯️ 💭 🕳️ 🫧 🧿 🪬 🗝️ 🗝️
+--- THE ELDRITCH SIGNALS (ANCIENT DATA) ---
+🪬 🧿 📿 🏺 🗝️ 📜 🗿 🏮 🎎 🎏 🎐 🎑 🏮 🕯️ 🕯️
+
+--- THE "FIRE-GEM" MINERAL SECTOR ---
+🧪 🧬 🌡️ ⚗️ 🧫 🪨 🪵 🐚 🧊 🪐 🌑 🌒 🌔 🌕 🌖 
+
+--- THE OBSOLETE TECH (LEGACY C/ASM) ---
+📟 📠 🎞️ 📽️ 📺 📻 🕰️ ⌛ ⏳ ⚖️ 🦯 💈 🚪 🏮 🎛️
+
+--- THE CRYPTID & MYTHIC (DEMONIZER ELITE) ---
+🧞 🧞‍♂️ 🧞‍♀️ 🧚 🧚‍♂️ 🧚‍♀️ 🧝 🧝‍♂️ 🧝‍♀️ 🧜 🧜‍♂️ 🧜‍♀️ 🧙 🧙‍♂️ 🧙‍♀️
+🧱 🕸️ 🕷️ 🦂 🐉 🐲 🦖 🦕 🦄 🦓 🦒 🐃 🐂 🐄 🐏
+
+--- THE SHINE REFINED (METALLIC) ---
+💠 💎 💍 👑 🎐 🪄 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐
+--- THE ARTIFACTS (HIDDEN & ANCIENT) ---
+🏺 📜 🗿 🏛️ 🕯️ 🏮 🧱 🪨 🪵 🦴 🐚 🕸️ ⏳ ⌛ 🗝️ 🗝️
+
+--- THE EXOTIC ELEMENTS (RARE MATERIALS) ---
+💎 💠 🧿 🔮 🎐 💈 🪐 ☄️ 🪄 🧬 🧪 ⚗️ 🫧 🌑 🌖 🔭
+
+--- THE DEEP MACHINE (LEGACY ARCHITECTURE) ---
+💾 💿 📼 🎞️ 📽️ 📟 📠 📺 📻 🕰️ ⌛ 🎛️ 🎙️ 🎚️ ⚙️ 🔩
+
+--- THE OCCULT & ELDRITCH (RARE DEMONIZER) ---
+👁️‍🗨️ 🔱 🪬 🃏 🎴 🎭 🧶 ♟️ 🧿 🔮 📜 🕯️ 🥀 🌑 🗝️ 🗝️
+
+--- THE BIOLOGICAL SYNTH (RARE CYBORG) ---
+🧬 🧫 🧪 ⚗️ 🧠 👁️ 🦴 🦷 🩸 🩹 💉 🫀 🫁 🦾 🦿 🧠
+
+--- THE CYBERNETIC (CHROME & CIRCUITRY) ---
+🦾 🦿 🧠 ⚙️ 🔌 🔋 📡 💻 ⌨️ 🖱️ 🖲️ 💾 💿 📼 📽️
+📡 🔭 🔬 🧬 🌡️ 💉 🩹 🩺 🦾 ⚙️ 🦿 🤖 🤖 🤖 🦾
+
+--- THE HYBRID (FLESH + MACHINE) ---
+👤 🦾 🦿 🧬 🧠 👁️ 🫀 🫁 🦴 🩸 🩹 💉 🧬 👁️‍🗨️ 📡
+⚙️ 🦾 ⚙️ 🦾 ⚙️ 🦾 ⚙️ 🦾 ⚙️ 🦾 ⚙️ 🦾 ⚙️ 🦾 ⚙️ 🦾
+
+--- THE SENTINEL (FIRE-GEM DEFENSE) ---
+🛡️ ⚔️ 🛡️ 🏹 🏰 🧿 💎 ✨ 🦾 🛡️ ⚔️ 🛡️ 🏹 🏰 🧿 💎
+🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿 🧿
+
+--- THE SHINE PROTOCOL (HIGH-END FX) ---
+✨ 🌟 💫 ⚡ 💠 💎 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐 🎐
+✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨
+--- THE CELESTIAL (DIVINE & HOLY) ---
+😇 👼 👼‍♂️ 👼‍♀️ 🕊️ ☁️ ⛅ 🌤️ 🌦️ 🌈 🌟 ✨ ☀️ 🤍 🔱
+⛪ 🏛️ 🕯️ 📖 📜 🎐 💎 🛡️ ⚔️ 🛡️ 🏰 🎐 💎 ☀️ 🤍
+
+--- THE CYBER-PALADIN (ASCENT OF THE LION) ---
+🛡️ 🗡️ 🛡️ ⚔️ 🏹 🏰 🦁 👑 🏹 🛡️ ⚔️ 🏰 🦁 👑 🏹
+🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁 🦁
+
+--- THE SERAPHIM SECTOR ---
+🕊️ ✨ 🕯️ 🕊️ ✨ 🕯️ 🕊️ ✨ 🕯️ 🕊️ ✨ 🕯️ 🕊️ ✨ 🕯️
+🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️ 🌤️
+
+--- THE RADIANT LIGHT ---
+💡 🔦 🕯️ 🏮 🌅 🌄 ☀️ 🌕 🌙 🌠 🎇 🎆 💎 🧿 🎐
+✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨
 LLM EMOJI CODES!
+--- THE ABYSS (ANCIENT & ELDRITCH) ---
+🐙 👁️ 🪬 ⛓️ 🧱 🕸️ 🌑 🌑 🌫️ 🏚️ 🗝️ 🧿 📜 🕯️ 🥀 🌘
+
+--- THE INFERNO (DEMONIZER SECTOR) ---
+🔥 🧨 🧨 🧨 💥 ☄️ 🌋 🏜️ 🛡️ 🔱 ⚔️ 🏹 🩸 🗡️ 🛡️ 💀
+👺 👹 👿 😈 🧟 🧛 🧞 🧞‍♂️ 🧞‍♀️ 🎭 🌋 🌪️ 🌬️ ⛈️ 🌑
+
+--- THE SHADOW WEAPONS ---
+🗡️ ⚔️ 🏹 🛡️ 🪓 🔨 ⚒️ 🛠️ ⛏️ ⛓️ 🔱 🛡️ 🗡️ ⚔️ 🏹 🛡️
+🏹 🛡️ 🏹 🛡️ 🏹 🛡️ 🏹 🛡️ 🏹 🛡️ 🏹 🛡️ 🏹 🛡️ 🏹 🛡️
+
+--- THE DARK PALADIN EMBLEMS ---
+🖤 ⛓️ 🦾 ⚙️ 🦿 🤖 🔱 ⚔️ 🛡️ 🏰 🔱 ⚔️ 🛡️ 🏰 🔱 ⚔️
+🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱 🔱
+--- THE UNDERWORLD (CHAOS & DEVILRY) ---
+😈 👿 👹 👺 💀 ☠️ 🦴 👻 🧛 🧛‍♂️ 🧛‍♀️ 🧟 🧟‍♂️ 🧟‍♀️
+🔥 ☄️ 🌋 🥀 🌑 🕸️ ⛓️ 🩸 🗡️ ⚔️ ⚰️ 🪦 🏺 🖤 🏚️
+
+--- THE "DEMONIZER" ALIAS SECTOR ---
+🔱 👁️‍🗨️ 🎴 🃏 🎭 🏮 🏮 🌫️ 🌪️ 🌬️ 🌩️ ⛈️ 🌑 🌑
+🦂 🐍 🕷️ 🦇 🦗 🐉 🐲 🧝‍♂️ 🧝‍♀️ 🧙‍♂️ 🧙‍♀️ 🌑 🌑 🌑
+
+--- DARK KNIGHT / CYBER-PALADIN ---
+🛡️ 🗡️ 🛡️ ⛓️ 🖤 🦾 ⚙️ 🦿 🤖 🔱 ⚔️ 🏹 🏰 🌑 🌑
+
 --- POWER & ENERGY ---
 ⚡ 🔌 🔋 🌋 🦾 ⚙️ 🧠 🚀 👑 💥 🦁 🗡️ 🌀 ✨ 💎 🧿
 
