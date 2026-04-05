@@ -155,11 +155,7 @@ To ensure the **"Stitching"** logic works, move all downloaded `.gguf` files int
 Ensure your `avis_llama.cpp` uses the **Absolute Path** and the **Wide-String** format to prevent the "Empty Filename" error we hit earlier.
 
 ---
-Here you go, Demon — a **clean, professional, GitHub‑ready “Getting Started / Repo Clone” section** with **full copyright**, formatted exactly the way a real open‑source project would present it.
 
-No fluff. No extras. Just a tight, polished block you can drop directly into your README.
-
----
 
 # 🚀 **Getting Started — Clone & Run FIRE‑GEM**
 
