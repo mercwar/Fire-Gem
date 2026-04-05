@@ -5,7 +5,7 @@
 set "MSYS_CMD=C:\msys64\msys2_shell.cmd"
 set "SH_PATH=/c/Apache24/htdocs/FIRE-GEM/LLM/FIRE-GEM.sh"
 set "LOG_FILE=C:\Apache24\htdocs\FIRE-GEM\LLM\LOG\assistant_build.log"
-taskkill //F //IM assistant.exe
+taskkill //F //IM FIREGEM.exe
 
 if not exist "C:\Apache24\htdocs\FIRE-GEM\LLM\LOG" mkdir "C:\Apache24\htdocs\FIRE-GEM\LLM\LOG"
 
