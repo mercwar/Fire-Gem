@@ -191,24 +191,126 @@ Place any `.gguf` model into:
 FIRE-GEM/LLM/MODELS/ <----- DOWNLOAD THIS YOURSELF
 ```
 
-FIRE‑GEM will automatically detect it in the **Model Selector**.
+# 📦 **Supported GGUF Models**
 
-### ✔ Supported Models (Direct Downloads)
+This project includes support for multiple lightweight and mid‑range language models in **GGUF** format.  
+These models are optimized for local inference, low‑RAM environments, and fast startup times.
 
-- ✨ **SmolLM2‑135M‑Instruct‑f16.gguf**  
-  [https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF)
+Below is a curated list of recommended models, grouped by family and capability.
 
-- ✨ **SmolLM‑135M‑Instruct_Q3_K_M.gguf**  
-  [https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF)  
-  *(Scroll to the Q3_K_M file.)*
-
-- ✨ **Qwen2.5‑Coder‑1.5B‑Instruct.Q8_0.gguf**  
-  [https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF)
-
-- ✨ **phi‑4‑IQ2_XS.gguf**  
-  [https://huggingface.co/microsoft/Phi-4-GGUF](https://huggingface.co/microsoft/Phi-4-GGUF)
+# 🔗 **Model Download Links**
 
 ---
+
+### SmolLM family
+
+- [SmolLM2-135M-Instruct-f16.gguf](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct-GGUF/resolve/main/SmolLM2-135M-Instruct-f16.gguf)
+
+
+ - [SmolLM-135M-Instruct_Q3_K_M.gguf](https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct-GGUF/resolve/main/SmolLM-135M-Instruct_Q3_K_M.gguf)
+
+
+ - [SmolLM-135M.Q2_K.gguf](https://huggingface.co/HuggingFaceTB/SmolLM-135M-GGUF/resolve/main/SmolLM-135M.Q2_K.gguf)
+
+---
+
+### Qwen2.5 Coder family
+
+- [Qwen2.5-Coder-1.5B-Instruct.Q8_0.gguf](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-1.5B-Instruct.Q8_0.gguf)
+
+- [qwen2.5-coder-0.5b-q8_0.gguf](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-GGUF/resolve/main/qwen2.5-coder-0.5b-q8_0.gguf)
+
+- [Qwen2.5-Coder-0.5B-f16.gguf](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-GGUF/resolve/main/Qwen2.5-Coder-0.5B-f16.gguf)
+
+---
+
+### Phi-4 family
+
+- [phi-4-Q4_K.gguf](https://huggingface.co/microsoft/phi-4-GGUF/resolve/main/phi-4-Q4_K.gguf)
+
+- [phi-4-IQ2_XS.gguf](https://huggingface.co/microsoft/phi-4-GGUF/resolve/main/phi-4-IQ2_XS.gguf)
+
+
+---
+
+## 🔹 **SmolLM Family (Lightweight / Fast / Low‑RAM)**
+
+| Model File | Description |
+|-----------|-------------|
+| **SmolLM2-135M-Instruct-f16.gguf** | Full‑precision f16 version of SmolLM2‑135M. Best quality among the 135M variants. |
+| **SmolLM-135M-Instruct_Q3_K_M.gguf** | Quantized Q3_K_M version for extremely low RAM usage. Ideal for embedded or minimal systems. |
+| **SmolLM-135M.Q2_K.gguf** | Ultra‑small Q2_K quantization. Fastest load times and lowest memory footprint. |
+
+SmolLM models are ideal for:
+- Bootstrapping FIRE‑GEM  
+- Fast command execution  
+- Lightweight reasoning  
+- Running on low‑end hardware  
+
+---
+
+## 🔹 **Qwen2.5 Coder Family (Coding‑Optimized Models)**
+
+| Model File | Description |
+|-----------|-------------|
+| **Qwen2.5-Coder-1.5B-Instruct.Q8_0.gguf** | High‑quality Q8_0 quantization of the 1.5B coding model. Excellent for code generation and debugging. |
+| **qwen2.5-coder-0.5b-q8_0.gguf** | Smaller 0.5B variant with Q8_0 quantization. Good balance of speed and coding ability. |
+| **Qwen2.5-Coder-0.5B-f16.gguf** | Full‑precision f16 version of the 0.5B coder model. Higher accuracy than quantized versions. |
+
+Qwen2.5 Coder models are ideal for:
+- FIRE‑GEM coding tasks  
+- Interpreter logic  
+- Script generation  
+- Debugging and refactoring  
+
+---
+
+## 🔹 **Phi‑4 Family (Reasoning / General AI)**
+
+| Model File | Description |
+|-----------|-------------|
+| **phi-4-Q4_K.gguf** | Q4_K quantization of Phi‑4. Strong reasoning with moderate memory usage. |
+| **phi-4-IQ2_XS.gguf** | IQ2‑XS ultra‑compressed version. Extremely small, ideal for rapid loading and testing. |
+
+Phi‑4 models are ideal for:
+- General reasoning  
+- Natural language tasks  
+- FIRE‑GEM explanation and analysis layers  
+
+---
+
+## 📁 **Model Directory Structure**
+
+Place all `.gguf` files inside:
+
+```
+/MODELS/
+```
+
+Example:
+
+```
+MODELS/
+ ├── SmolLM2-135M-Instruct-f16.gguf
+ ├── SmolLM-135M-Instruct_Q3_K_M.gguf
+ ├── SmolLM-135M.Q2_K.gguf
+ ├── Qwen2.5-Coder-1.5B-Instruct.Q8_0.gguf
+ ├── qwen2.5-coder-0.5b-q8_0.gguf
+ ├── Qwen2.5-Coder-0.5B-f16.gguf
+ ├── phi-4-Q4_K.gguf
+ └── phi-4-IQ2_XS.gguf
+```
+
+---
+
+## 🚀 **Model Switching**
+
+FIRE‑GEM automatically detects all `.gguf` files in the `MODELS` directory.  
+You can switch models at runtime using:
+
+```
+AVIS_SwitchNeuralModel(L"modelname.gguf");
+```
 
 ### ✨ [Read more](https://github.com/mercwar/Fire-Gem/tree/main/FIREGEM/MODELS) about MODELS
 
