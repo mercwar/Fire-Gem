@@ -11,7 +11,7 @@
 ##### AND .. AS IN 'AOL' THE 🦁 (LION) AND THE 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
 ##### 🔥💎🤖 THE NEW FIRE GEM ROBOT LLMA CPP MOD
 
-##### Welcome to  **Fire-Gem AN AVIS-Core LLM CONSOLE Engine**.
+##### Welcome to  **Fire-Gem, AN AVIS-Core LLM CONSOLE Engine**.
 ---
 ## 🚀 Getting Started
 1. **Clone the repository:**
