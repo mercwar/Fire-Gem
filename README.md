@@ -7,11 +7,11 @@
 ![BANNER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_072110.png)
 ## ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE 
 ![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
-# 🤖 NOW — THE OFFICIAL FIRE‑GEM README.md
-### AND .. AS IN 'AOL' THE 🦁 (LION) AND THE 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
-### 🔥💎🤖 THE NEW FIRE GEM ROBOT LLMA CPP MOD
+#### 🤖 NOW — THE OFFICIAL FIRE‑GEM README.md
+##### AND .. AS IN 'AOL' THE 🦁 (LION) AND THE 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
+##### 🔥💎🤖 THE NEW FIRE GEM ROBOT LLMA CPP MOD
 
-Welcome to  **Fire-Gem AN AVIS-Core LLM CONSOLE Engine**.
+##### Welcome to  **Fire-Gem AN AVIS-Core LLM CONSOLE Engine**.
 ---
 ## 🚀 Getting Started
 1. **Clone the repository:**
