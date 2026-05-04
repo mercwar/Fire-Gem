@@ -1,12 +1,19 @@
 ##  🔥 FIREGEM RKU 💎 
 #### ✨ Custom LLM "CYBORG", AVIS, Fire-Con GCC UCRT64
+
 ![ROBOTS.TXT](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_060431.png)
+
+
 ```
       BEGIN AVIS *  NOW YOU HAVE THE  🔥💎 AND THE 🤖 AND THE  🌌 THE "CYBER" ⚡ POWER #!fire!end!#
 ```
+
 ![BANNER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_072110.png)
+
 ## ⚔️ RAISE YOUR SWORDS: FIRE-GEM LLM IS ONLINE 
+
 ![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
+
 #### 🤖 NOW * THE OFFICIAL FIRE‑GEM README.md *
 ##### AND .. AS IN 'AOL' THE 🦁 (LION) AND THE 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
 ##### 🔥💎🤖 THE NEW FIRE GEM ROBOT LLMA CPP MOD
@@ -371,6 +378,7 @@ generate a batch script that deletes empty folders
 ###### 💎 BOOM! IT'S AS SMART AS YOU CREATE IT TO BE! I AM CVBGOD, AND I HAVE GIVEN IT TO YOU!
   
 ---
+
 ![rkbnr](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_090041.png)
 
 # 💎 **Core Features**
