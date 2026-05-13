@@ -1,0 +1,14 @@
+/* FILE: AVIS.datalake */
+/* PATH: /Constellation/AVIS.datalake */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: CONSTELLATION_DATALAKE_CONFIG
+   PURPOSE: Defines AVIS-Datalake layer structure.
+   AUTHOR: Demon
+   ------------------------------------------------------------ */
+
+[DATALAKE]
+LAYERS = 6
+BASE = RESOURCE_LAYER
+TOP = ROBOT_INTELLIGENCE_EVOLUTION

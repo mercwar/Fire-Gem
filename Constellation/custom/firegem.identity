@@ -1,0 +1,16 @@
+/* FILE: firegem.identity */
+/* PATH: /Fire-Gem/Constellation/custom/firegem.identity */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: FIREGEM_IDENTITY
+   PURPOSE: Defines Fire-Gem identity inside AVIS ecosystem.
+   AUTHOR: Demon
+   ------------------------------------------------------------ */
+
+[IDENTITY]
+NAME = FIRE-GEM
+ROLE = LIGHTWEIGHT_AI_ENGINE
+GENERATION = 1
+FAMILY = AVIS_TECHNICAL_CORE
+PROTOCOL = AI.PROTOCOL

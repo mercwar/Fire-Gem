@@ -1,0 +1,15 @@
+/* FILE: firegem.version */
+/* PATH: /Fire-Gem/Constellation/custom/firegem.version */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: FIREGEM_VERSION_FILE
+   PURPOSE: Defines Fire-Gem version lineage for Constellation.
+   AUTHOR: Demon
+   ------------------------------------------------------------ */
+
+[VERSION]
+MAJOR = 1
+MINOR = 0
+PATCH = 0
+TAG = FIREGEM_ENGINE_V1

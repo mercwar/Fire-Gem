@@ -1,0 +1,19 @@
+/* FILE: AVIS.publish.schema */
+/* PATH: /Constellation/AVIS.publish.schema */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: CONSTELLATION_PUBLISH_SCHEMA
+   PURPOSE: Defines schema rules for publishing intelligence
+            models into the AVIS-Datalake.
+   AUTHOR: Demon
+   ------------------------------------------------------------ */
+
+[PUBLISH_RULES]
+REQUIRE_VALIDATION = TRUE
+REQUIRE_MODEL      = TRUE
+REQUIRE_VERSION    = TRUE
+REQUIRE_REPO_NAME  = TRUE
+
+[STRUCTURE]
+MODEL_EXTENSION = .model

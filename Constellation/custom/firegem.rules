@@ -1,0 +1,25 @@
+/* FILE: firegem.rules */
+/* PATH: /Fire-Gem/Constellation/custom/firegem.rules */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: FIREGEM_RULESET
+   PURPOSE: Fire-Gem-specific Constellation override rules.
+   AUTHOR: Demon
+   NOTES: Fire-Gem is a lightweight AI engine with memory,
+          protocol law, and intercept chain behavior.
+   ------------------------------------------------------------ */
+
+[RULES]
+ENFORCE_AI_PROTOCOL = TRUE
+ENFORCE_MEMORY_SYSTEM = TRUE
+ALLOW_DYNAMIC_THOUGHT = TRUE
+SCAN_MODE = DEEP
+REDUCE_MODE = SAFE
+VALIDATION_LEVEL = ENGINE_STRICT
+
+[BEHAVIOR]
+PRIORITIZE_INTERCEPT_CHAIN = TRUE
+PRIORITIZE_MEMORY_FILE = TRUE
+PRIORITIZE_MODEL_FILE = TRUE
+PRIORITIZE_PROTOCOL = TRUE

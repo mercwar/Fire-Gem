@@ -1,0 +1,29 @@
+/* FILE: firegem.graph */
+/* PATH: /Fire-Gem/Constellation/custom/firegem.graph */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: FIREGEM_GRAPH_MAP
+   PURPOSE: Defines Fire-Gem’s internal semantic graph for
+            Constellation robots.
+   AUTHOR: Demon
+   NOTES: Mirrors the Fire-Gem Engine + Memory + Protocol system.
+   ------------------------------------------------------------ */
+
+[GRAPH]
+NODE:ROOT = /Fire-Gem/
+NODE:ENGINE = /Fire-Gem/engine/
+NODE:MODEL = /Fire-Gem/model/
+NODE:MEMORY = /Fire-Gem/memory/
+NODE:PROTOCOL = /Fire-Gem/protocol/
+NODE:INTERCEPT = /Fire-Gem/intercept/
+NODE:DISPATCH = /Fire-Gem/dispatch/
+
+[LINKS]
+ROOT -> ENGINE
+ENGINE -> MODEL
+ENGINE -> MEMORY
+ENGINE -> PROTOCOL
+PROTOCOL -> INTERCEPT
+INTERCEPT -> DISPATCH
+DISPATCH -> ROOT

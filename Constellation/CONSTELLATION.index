@@ -1,0 +1,18 @@
+/* FILE: CONSTELLATION.index */
+/* PATH: /Constellation/CONSTELLATION.index */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: CONSTELLATION_INDEX
+   PURPOSE: Defines the Constellation pipeline order.
+   AUTHOR: Demon
+   ------------------------------------------------------------ */
+
+[INDEX]
+SCANNER = constellation.c
+REDUCER = constellation_reduce.c
+AUTOBUILD = constellation_autobuild.c
+LINKER = constellation_linker.c
+VALIDATOR = constellation_validator.c
+
+CUSTOM = /Constellation/custom/

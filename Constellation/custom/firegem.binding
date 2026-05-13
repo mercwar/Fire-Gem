@@ -1,0 +1,28 @@
+/* FILE: firegem.binding */
+/* PATH: /Fire-Gem/Constellation/custom/firegem.binding */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: FIREGEM_KNOWLEDGE_BINDING
+   PURPOSE: Defines how Fire-Gem binds repo data into AVIS
+            intelligence layers.
+   AUTHOR: Demon
+   NOTES: Mirrors the Fire-Gem memory + protocol + model system.
+   ------------------------------------------------------------ */
+
+[BINDING]
+MEMORY_FILE_PRIORITY = HIGH
+MODEL_FILE_PRIORITY = HIGH
+INTERCEPT_CHAIN = TRUE
+AI_PROTOCOL_ALIGNMENT = TRUE
+DYNAMIC_THOUGHT = TRUE
+SHORT_TERM_MEMORY = TRUE
+LONG_TERM_MEMORY = TRUE
+
+[LAYERS]
+L1 = RAW_ENGINE_ATOMS
+L2 = PROTOCOL_INTERCEPT
+L3 = MEMORY_RECALL
+L4 = MODEL_ALIGNMENT
+L5 = THOUGHT_GENERATION
+L6 = INTELLIGENCE_MODEL

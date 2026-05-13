@@ -1,0 +1,14 @@
+/* FILE: PUBLISH.index */
+/* PATH: /Constellation/PUBLISH.index */
+
+/* ------------------------------------------------------------
+   AVIS.HEADER
+   ROLE: CONSTELLATION_PUBLISH_INDEX
+   PURPOSE: Defines the publish pipeline entry point.
+   AUTHOR: Demon
+   ------------------------------------------------------------ */
+
+[PUBLISH]
+PROGRAM = constellation_publisher.c
+SCHEMA  = AVIS.publish.schema
+TARGET  = /AVIS-DATALAKE/
