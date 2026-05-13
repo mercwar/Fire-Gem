@@ -1,38 +1,56 @@
-name: Joe Tron Site Map
+# /* AVIS_COORD: AVIS://GITHUB/WORKFLOW/XML_GEN/1.0 */
+# /* ROLE: Automated XML Sentinel Dispatch */
+
+name: "JOE-TRON :: XML-SITEMAP-DISPATCH"
 
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'sitemap.xml'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  fire-dispatch:
+  map_repository:
+    name: "JOE-TRON :: Recursive XML Mapping"
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    if: github.actor != 'github-actions[bot]'
 
     steps:
-      - name: Checkout Repository
+      - name: "SENTINEL :: Checkout Authority"
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Debug - List Files
-        run: ls -R  # This shows all files so you can verify the path
-        shell: bash
-
-      - name: Prep and Run Site Strike
+      - name: "SENTINEL :: Execute fire-site.sh"
         run: |
-          # Use 'find' to locate and chmod scripts even if they are in subdirectories
-          find . -name "fire-site.sh" -exec chmod +x {} +
-          find . -name "fire-end.sh" -exec chmod +x {} +
+          chmod +x ./fire-site.sh
+          ./fire-site.sh
+
+      - name: "SENTINEL :: Commit XML Artifact"
+        run: |
+          git config --global user.name "Sentinel-Bot"
+          git config --global user.email "bot@cvbgod.sentinel"
           
-          # Execute fire-site.sh (finds it even if it's not in the root)
-          $(find . -name "fire-site.sh")
-        shell: bash
-
-      - name: Run Fire-End Strike
-        run: |
-          # Execute fire-end.sh (finds it even if it's not in the root)
-          $(find . -name "fire-end.sh")
-        shell: bash
+          # Stage the map
+          git add sitemap.xml
+          
+          # Check for changes
+          if ! git diff --staged --quiet; then
+            git commit -m "sitemap.xml updated [recursive map] [skip ci]"
+            
+            # Clean workspace for rebase
+            git stash --include-untracked || true
+            
+            # Synchronize with main
+            git pull --rebase origin main
+            
+            # Final Dispatch
+            git push origin main
+            echo "wm_macro_ack: XML dispatched to Audit Surface."
+          else
+            echo "AVIS: No structural shifts detected. Pulse steady."
+          fi
