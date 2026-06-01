@@ -2,91 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fire-Gem / AVIS-CORE / MASTER_OS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercwar Gateway Hub</title>
     <style>
-        body { margin: 0; background: #000b1a; overflow: hidden; height: 100vh; font-family: monospace; }
-        #desktop { position: absolute; width: 100vw; height: calc(100vh - 25px); z-index: 1; }
-        /* The main strike surface for your htdocs alert */
-        #alert-surface { position: absolute; width: 100%; height: 50%; top: 0; z-index: 10; pointer-events: none; }
-        .fire-html-1 {
-            position: fixed; bottom: 0; left: 0; width: 100%; height: 25px;
-            z-index: 100000; background: #001A33; border-top: 1px solid #00aaff;
+        /* Modern Industrial Dark Theme Design */
+        :root {
+            --bg-color: #070b10;
+            --container-bg: #0d131a;
+            --accent-cyan: #00f3ff;
+            --border-color: #1a2636;
+            --text-muted: #64748b;
         }
-        #llm-audit-surface {
-            position: absolute; top: 10px; right: 10px; width: 350px; height: 400px;
-            background: rgba(0, 10, 30, 0.95); border: 1px double #FFD700;
-            padding: 10px; overflow-y: auto; z-index: 50; color: #FFD700; font-size: 12px;
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        #strike-list { list-style: none; padding: 0; margin: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* Centered Gateway Layout Container */
+        .gateway-container {
+            max-width: 1000px;
+            width: 100%;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 
+                        0 0 30px rgba(0, 243, 255, 0.03);
+            text-align: center;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Subtle glow hover effect when tracking over the image asset area */
+        .gateway-container:hover {
+            border-color: rgba(0, 243, 255, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 
+                        0 0 40px rgba(0, 243, 255, 0.08);
+        }
+
+        /* Clickable Entry Link Anchor Box Styling */
+        .gateway-link {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            border-radius: 8px;
+            overflow: hidden;
+            outline: none;
+        }
+
+        /* Banner Graphic Element Constraints */
+        .gateway-banner {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Micro-interaction zoom effect on hover */
+        .gateway-link:hover .gateway-banner {
+            transform: scale(1.01);
+        }
+
+        /* Footer System Metadata Badge */
+        .gateway-footer {
+            margin-top: 16px;
+            font-size: 0.75rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
     </style>
-    <script>
-
-        function AVIS_STRIKE(msg, lvl = 2) {
-
-            const list = document.getElementById('strike-list');
-            if (list) {
-                const entry = document.createElement('li');
-                entry.style.color = (lvl === 1) ? '#C0C0C0' : '#FFD700';
-                entry.style.borderBottom = "1px solid #111";
-                entry.innerHTML = `[${new Date().toLocaleTimeString()}] <b style="color:#0af">VERIFIED:</b> ${msg}`;
-                list.prepend(entry);
-            }
-            console.log(`[AVIS-STRIKE] ${msg}`);
-        }
-        
-    </script>
-
-    <!-- MUST BE TYPE="MODULE" FOR IMPORTS TO WORK -->
-<!-- AVIS-CYBORG ARTIFACT: CORE_IGNITION -->
-<!-- AVIS-CYBORG ARTIFACT: CORE_IGNITION -->
-
-<script type="module">
-
-    /* ---------------------------------------------------------- */
-    /* IMPORT REQUIRES TYPE="MODULE" TO RESOLVE PATHS             */
-    /* ---------------------------------------------------------- */
-    
-    import { AVIS_MSG } from "./htdocs/AVIS_FVS_ALERT/AVIS_FVS_INI.js";
-    import { AVIS_ALERT } from "./htdocs/AVIS_FVS_ALERT/AVIS_FVS_INI.js";
-  
-    let MSG_TERM_ON = true;
-    let MSG_TERM_OFF = false;
-    let MSG_SYS_ON = true;
-    let MSG_SYS_OFF = false;
-    let MSG_TEST_ON = true;
-    let MSG_TEST_OFF = false;
-    let MSG_ALERT_ON  = true;
-    let MSG_ALERT_OFF  = false;
-    let MSG_NULL  = "";
-    let MSG_TEXT  = "Terminal Ping";
-    let MSG_ID  = "AVIS.FVS-CYBORG ARTIFACT";
-
- 
-AVIS_ALERT(MSG_SYS_OFF, MSG_TEST_OFF, MSG_ALERT_OFF, MSG_TEXT, MSG_TERM_ON);
-alert(AVIS_MSG);
-
-</script>
-
-
-
-
-    <!--    <object id="avis-fvs-strike" type="text/html" data="htdocs/AVIS_FVS_ALERT/AVIS_ALERT.html"></object>
-   -->
 </head>
 <body>
 
-    
-    <div id="desktop"></div>
+    <!-- Central Interactive Gateway Frame -->
+    <div class="gateway-container">
+        
+        <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html" class="gateway-link">
+            <img 
+                src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
+                alt="Mercwar Constellation" 
+                class="gateway-banner"
+            />
+        </a>
 
-    <div id="llm-audit-surface">
-        <div style="background:#FFD700;color:#000;font-weight:bold;padding:2px 5px;text-align:center;">[AVIS_LOG_AUDIT]</div>
-        <ul id="strike-list"></ul>
+        <!-- System Node Identifier Line -->
+        <div class="gateway-footer">
+            [ SECURE GATEWAY INGRESS NODE // READY ]
+        </div>
+
     </div>
 
-    <div class="fire-html-1">
-        <object type="text/html" data="htdocs/fire-start.html" onload="AVIS_STRIKE('START_BAR_SEATED', 1)"></object>
-    </div>
-
-    <script>AVIS_STRIKE("ROBO-KNIGHT_ONLINE", 2);</script>
 </body>
 </html>
