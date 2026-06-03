@@ -1,111 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercwar Gateway Hub</title>
-    <style>
-        /* Modern Industrial Dark Theme Design */
-        :root {
-            --bg-color: #070b10;
-            --container-bg: #0d131a;
-            --accent-cyan: #00f3ff;
-            --border-color: #1a2636;
-            --text-muted: #64748b;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
-            overflow-x: hidden;
-        }
-
-        /* Centered Gateway Layout Container */
-        .gateway-container {
-            max-width: 1000px;
-            width: 100%;
-            background-color: var(--container-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 16px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 
-                        0 0 30px rgba(0, 243, 255, 0.03);
-            text-align: center;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        /* Subtle glow hover effect when tracking over the image asset area */
-        .gateway-container:hover {
-            border-color: rgba(0, 243, 255, 0.3);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 
-                        0 0 40px rgba(0, 243, 255, 0.08);
-        }
-
-        /* Clickable Entry Link Anchor Box Styling */
-        .gateway-link {
-            display: block;
-            width: 100%;
-            text-decoration: none;
-            border-radius: 8px;
-            overflow: hidden;
-            outline: none;
-        }
-
-        /* Banner Graphic Element Constraints */
-        .gateway-banner {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: 6px;
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        /* Micro-interaction zoom effect on hover */
-        .gateway-link:hover .gateway-banner {
-            transform: scale(1.01);
-        }
-
-        /* Footer System Metadata Badge */
-        .gateway-footer {
-            margin-top: 16px;
-            font-size: 0.75rem;
-            font-family: 'Courier New', Courier, monospace;
-            color: var(--text-muted);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Mercwar Cyborg Repo Browser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Live/index.css">
 </head>
 <body>
 
-    <!-- Central Interactive Gateway Frame -->
-    <div class="gateway-container">
-        
-        <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html" class="gateway-link">
-            <img 
-                src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
-                alt="Mercwar Constellation" 
-                class="gateway-banner"
-            />
-        </a>
+  <!-- TOP BANNER -->
+  <div class="top-banner">
+    <img src="Live/banner.png" alt="Banner" class="top-banner-img">
+  </div>
 
-        <!-- System Node Identifier Line -->
-        <div class="gateway-footer">
-            [ GATEWAY NODE READY ]
-        </div>
-
+  <!-- HEADER -->
+  <header class="rru-header">
+    <div class="brand">
+      <div class="brand-badge">NX</div>
+      <span><strong>Nexus</strong> REPO INDEX</span>
     </div>
 
+    <div class="repo-meta rru-panel rru-flex rru-gap">
+      <div class="pill rru-pill">
+        <div class="pill-dot rru-pill-dot"></div>
+        <div class="pill-label rru-pill-label">Repo</div>
+        <div class="pill-value rru-pill-value" id="repoName">loading...</div>
+      </div>
+
+      <div class="pill rru-pill">
+        <div class="pill-label rru-pill-label">Branch</div>
+        <div class="pill-value rru-pill-value" id="repoBranch">main</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar rru-panel">
+
+      <!-- GATEWAY IMAGE -->
+      <div class="gateway-container">
+        <a target="_self"
+           href="https://mercwar.github.io/Constellation/index.html"
+           class="gateway-link">
+          <img
+            src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png"
+            alt="Mercwar Constellation"
+            class="gateway-banner"
+          />
+        </a>
+      </div>
+
+      <div class="sidebar-header">
+        <span>Repository <strong>Files</strong></span>
+      </div>
+
+      <div class="sidebar-search">
+        <input id="searchInput" type="text" placeholder="Filter files (Ctrl+K)">
+      </div>
+
+      <!-- SCROLLING FILE TREE -->
+      <div class="file-tree" id="fileTree"></div>
+
+    </aside>
+
+    <!-- MAIN PANEL -->
+    <main class="main">
+
+      <div class="main-header rru-panel">
+        <div class="main-path">
+          <span>Path:</span>
+          <strong id="currentPath">/</strong>
+        </div>
+
+        <div class="main-actions">
+          <button class="btn rk-btn" id="openRawBtn">RAW</button>
+          <button class="btn rk-btn-primary" id="openGithubBtn">OPEN IN GITHUB</button>
+        </div>
+      </div>
+
+      <section class="viewer rru-panel">
+
+        <div class="viewer-meta rru-panel">
+          <div class="viewer-meta-left">
+            <div class="badge badge-primary" id="fileTypeBadge">No file selected</div>
+            <div id="fileMeta"></div>
+          </div>
+
+          <div class="badge" id="repoInfoBadge">GitHub API</div>
+        </div>
+
+        <div class="viewer-body">
+          <pre class="viewer-pre" id="fileContent" style="display:none;"></pre>
+
+          <div class="viewer-empty" id="emptyState">
+            <div>
+              <div style="margin-bottom:6px;">Select a file from the left to inspect its contents.</div>
+              <div style="font-size:11px;color:#7b8190;">Nexus index wired as a <span>repo file browser</span>.</div>
+            </div>
+          </div>
+
+          <div class="status-bar rru-panel" id="statusBar">
+            <div class="status-dot" id="statusDot"></div>
+            <div class="status-label" id="statusLabel">READY</div>
+            <div class="status-text" id="statusText"></div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- LEGAL SECTION AT BOTTOM -->
+  <div class="legal-section rru-panel legal-bottom">
+    <div class="legal-title">MERCWAR • NEXUS LEGAL GATEWAY</div>
+
+    <div class="legal-body">
+      This interface, its code structures, rendered assets, and operational logic constitute
+      a protected system under the Mercwar Sovereign Framework. Unauthorized duplication,
+      extraction, modification, or redistribution of any component of this gateway — including
+      but not limited to source files, compiled assets, AVIS documents, CBORD structures,
+      or Nexus‑linked metadata — is strictly prohibited.
+
+      By accessing this system, you acknowledge and accept the operational terms governing
+      the Nexus Repo Browser, including automated logging, integrity verification, and
+      AVIS‑compliant audit trails.
+
+      All rights reserved.  
+      © Mercwar Systems — RRU / AVIS Protocol Division.
+    </div>
+
+    <div class="legal-footer">[ GATEWAY READY ]</div>
+  </div>
+
+  <script src="Live/index.js"></script>
 </body>
 </html>
