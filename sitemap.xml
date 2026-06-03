@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/index.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/banner.png</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/CVBGOD</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/index.css</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/sitemap.xml</loc>
