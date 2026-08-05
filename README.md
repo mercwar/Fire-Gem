@@ -25,7 +25,7 @@
 ![Robo Knight Version 3](https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/main/Version%203/Copilot_20260214_013811.png)
 
 #### 🤖 NOW * THE OFFICIAL FIRE‑GEM README.md *
-##### AND .. AS IN 'AOL' THE 🦁 (LION) AND THE 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎🌍
+##### AND .. AS IN 'AOL' THE 🦁 (LION) AND THE 🤖 (ROBOT) CAN BE THE 🧠🦾🔥💎 IN THE 🌍
 ##### 🔥💎🤖 THE NEW FIRE GEM ROBOT LLMA CPP MOD
 
 ##### Welcome to  **Fire-Gem, AN AVIS-Core LLM CONSOLE Engine**.
