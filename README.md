@@ -15,7 +15,7 @@
 
 
 ```
-      BEGIN AVIS *  NOW YOU HAVE THE  🔥💎 AND THE 🤖 AND THE  🌌 WITH THE "CYBER" ⚡ POWER #!fire!end!#
+      BEGIN AVIS *  NOW YOU HAVE THE  🔥💎 AND THE 🤖 AND THE  🌍 WITH THE "CYBER" ⚡ POWER #!fire!end!#
 ```
 
 ![BANNER](https://github.com/mercwar/Robo-Knight-Gallery/blob/main/Version%204/Copilot_20260404_072110.png)
