@@ -1,4 +1,5 @@
 
+ChatGPT Image Sep 1, 2026, 03_19_26 PM
 # FireGem V2
 
 ## 🔥 Overview
