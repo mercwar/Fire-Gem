@@ -8,7 +8,7 @@
 
 ---
 
-## 🔥 ...And now, the Official Fire-Gem-v2  Readme 💎 
+## 🔥 ...And now, the Official Fire-Gem v2  Readme 💎 
 
 
 <img 
@@ -19,6 +19,7 @@
 
 
 ## 🔥 Overview
+
 FireGem V2 is a Windows‑based lightweight engine that integrates **GGUF models** with a custom **Win32 UI**. It streamlines loading, managing, and running local LLM models using the **llama.cpp** backend, with a focus on simplicity, portability, and a self‑contained build system.
 
 ---
@@ -33,20 +34,27 @@ FireGem V2 is a Windows‑based lightweight engine that integrates **GGUF models
 ---
 
 ------------------------------
+
 ## 💎 Operations & Compilation Guide 💎
+<img
     src="../images/ChatGPT%20Image%20Sep%201%2C%202026%2C%2003_19_26%20PM.png" 
     alt="Fire-Gem-v2" 
     style="width:100%; height:auto;"
 />
 
-## **This guide provides the exact operational steps to: **
+# 
+
+## ***This guide provides the exact operational steps to:***
 
 - configure 
 - build  
 - run  
-- FireGem V2 Win64.
+- FireGem V2 Win64
+
+#
+
 <img 
-    src="../images/ChatGPT%20Image%20Sep%201%2C%202026%2C%2003_19_26%20PM.png" 
+    src="../images/image_ad9c05cb.png" 
     alt="Fire-Gem-v2" 
     style="width:100%; height:auto;"
 />
