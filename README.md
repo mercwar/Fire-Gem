@@ -8,7 +8,17 @@
 
 ---
 
-##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here💎 
+##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
+
+<a target="_self" title="CLICK HERE to ENTER the Tutorial FREE!" href="Fire-Gem-v2/readme.md">
+<img 
+    src="images/image_c2c30bf3.png" 
+    alt="Fire-Gem-v2" 
+    style="width:100%; height:auto;"
+/>
+</a>
+
+
 #### ✨ Goto the [Tutorial](Fire-Gem-v2/readme.md)
 
 - Built in pure C, no cpp files this time!
