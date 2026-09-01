@@ -8,6 +8,20 @@
 
 ---
 
+##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here💎 
+#### ✨ Goto the [Tutorial](Fire-Gem-v2/readme.md)
+
+- Built in pure C, no cpp files this time!
+- Light weight for windows 11
+- Fast response 
+- Built with MSVC
+- Open source the same as Fire Gem v1
+- Mini LM Studio style list and chat box
+- No need to move your *.gguf files, use a json file to point to them unlike Fire Gem v1
+- Instant local llm in 1 file (wrapper).
+- All of the libs are included in the zip, exe included, run the build batch or the run batch after you extract
+- Update your models.json file and CLICK RU, THATS IT !
+
 ##  🔥 FIREGEM RKU 💎 
 #### ✨ Custom LLM "CYBORG", AVIS, Fire-Con GCC UCRT64
 
