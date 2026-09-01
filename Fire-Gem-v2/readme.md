@@ -8,7 +8,7 @@
 
 ---
 
-##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
+## 🔥 ...And now, the Official Fire-Gem-v2  Readme 💎 
 
 
 <img 
@@ -17,8 +17,6 @@
     style="width:100%; height:auto;"
 />
 
-
-# FireGem V2
 
 ## 🔥 Overview
 FireGem V2 is a Windows‑based lightweight engine that integrates **GGUF models** with a custom **Win32 UI**. It streamlines loading, managing, and running local LLM models using the **llama.cpp** backend, with a focus on simplicity, portability, and a self‑contained build system.
@@ -34,97 +32,96 @@ FireGem V2 is a Windows‑based lightweight engine that integrates **GGUF models
 
 ---
 
-## 📂 Repository Structure
-```
-C:\ggml_clean\
-  ├── build.bat          # Compilation script
-  ├── firegem.exe        # Built executable
-  ├── models.json        # Model list configuration
-  ├── json_loader.c/.h   # JSON parsing module
-  ├── ui_main.c/.h       # Win32 UI module
-  ├── llm_wrapper.c/.h   # llama.cpp wrapper module
-  ├── main.c             # Application entry point
-  ├── cJSON\             # cJSON dependency
-  ├── include\           # llama.cpp + ggml headers
-  └── lib\               # Prebuilt libraries (llama.lib, ggml.lib, etc.)
-```
+------------------------------
+## 💎 Operations & Compilation Guide 💎
+    src="../images/ChatGPT%20Image%20Sep%201%2C%202026%2C%2003_19_26%20PM.png" 
+    alt="Fire-Gem-v2" 
+    style="width:100%; height:auto;"
+/>
 
----
+## **This guide provides the exact operational steps to: **
 
-## ⚙️ Build Instructions
-1. Install **Visual Studio 2022 Build Tools** with MSVC.  
-2. Clone llama.cpp and build it to produce `llama.lib` and `ggml` libraries.  
-3. Clone cJSON and place `cJSON.c` and `cJSON.h` in the `cJSON` folder.  
-4. Run `build.bat` inside `C:\ggml_clean` to compile FireGem.  
+- configure 
+- build  
+- run  
+- FireGem V2 Win64.
+<img 
+    src="../images/ChatGPT%20Image%20Sep%201%2C%202026%2C%2003_19_26%20PM.png" 
+    alt="Fire-Gem-v2" 
+    style="width:100%; height:auto;"
+/>
 
----
+------------------------------
+## 🛠️ Step 1: Prepare the Windows Environment
+You need the native Microsoft C++ compiler toolchain (cl.exe) to build this project without relying on bloated dependencies.
 
-## 🚀 Usage
-- Edit `models.json` to list your GGUF models.  
-- Launch `firegem.exe`.  
-- Select a model from the UI list box.  
-- FireGem initializes llama.cpp with the chosen model and provides an interactive session.  
+   1. Download and open the Visual Studio 2022 Installer.
+   2. Select the Desktop development with C++ workload.
+   3. Verify that the MSVC v143 build tools and Windows 11 SDK components are checked on the right-hand configuration panel.
+   4. Complete the installation and restart your system if prompted.
 
----
+------------------------------
+## 📂 Step 2: Establish the Workspace Structure
+Open a Windows Command Prompt (cmd.exe) and execute the following block to create the standardized file sandbox:
 
-## 📑 Example `models.json` 
-#### Modify this file yourself with your local *.gguf files on disk
-```json
-[
-    {
-        "filename": "phi-4-IQ2_XS.gguf",
-        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
-        "type": "GGUF File",
-        "date_modified": "3/29/2026 8:11 PM",
-        "size": "4.17 GB"
-    },
-    {
-        "filename": "phi-4-Q4_K.gguf",
-        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
-        "type": "GGUF File",
-        "date_modified": "3/16/2026 5:31 AM",
-        "size": "8.43 GB"
-    },
-    {
-        "filename": "Qwen2.5-Coder-0.5B-f16.gguf",
-        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
-        "type": "GGUF File",
-        "date_modified": "4/4/2026 4:19 AM",
-        "size": "948 MB"
-    },
-    {
-        "filename": "qwen2.5-coder-0.5b-q8_0.gguf",
-        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
-        "type": "GGUF File",
-        "date_modified": "4/3/2026 7:14 PM",
-        "size": "506 MB"
-    },
-	    {
-        "filename": "qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
-        "path": "E:\\models",
-        "type": "GGUF File",
-        "date_modified": "4/4/2026 4:23 AM",
-        "size": "1.1 MB"
-    },
-    {
-        "filename": "Qwen2.5-VL-7B-Instruct-UD-IQ1_M.gguf",
-        "path": "E:\\models",
-        "type": "GGUF File",
-        "date_modified": "4/4/2026 4:30 AM",
-        "size": "2.2 GB"
-    }
-]
-```
+mkdir C:\ggml_clean
+mkdir C:\ggml_clean\cJSON
+mkdir C:\ggml_clean\include
+mkdir C:\ggml_clean\lib
 
----
+------------------------------
+## 📦 Step 3: Extract and Stage Dependencies
+FireGem relies on two external components: llama.cpp for tensor math and cJSON for reading your model lists.
+## 1. Compile llama.cpp
 
-## 📜 License
-FireGem V2 is distributed under the MIT License. See LICENSE file for details.
+   1. Clone the repository to your disk: git clone https://github.com C:\llama_source
+   2. Open a terminal inside that folder and run CMake to build the optimized libraries:
+   
+   cmake -B build -S . -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DLLAMA_BUILD_EXAMPLES=OFF
+   cmake --build build --config Release
+   
+   3. Move the Assets:
+   * Move the generated static libraries (llama.lib, ggml.lib, and any variant sub-libs like ggml-base.lib) into C:\ggml_clean\lib\.
+      * Move all core engine headers (.h files) from the source include directories into C:\ggml_clean\include\.
+   
+## 2. Stage cJSON
 
----
+   1. Download cJSON.c and cJSON.h directly from the [Official cJSON GitHub](https://github.com/DaveGamble/cJSON).
+   2. Save both files directly inside C:\ggml_clean\cJSON\.
 
-## 🙌 Credits
-- Built on [llama.cpp](https://github.com/ggerganov/llama.cpp)  
-- Uses [cJSON](https://github.com/DaveGamble/cJSON)  
+------------------------------
+## ⚡ Step 4: Execute the Compilation Matrix
+Create an automated build script named build.bat inside C:\ggml_clean\. This script loads the compiler shell, sets up optimizations, includes your header structures, and links the native Windows graphical subsystems (user32, gdi32) alongside your engine libraries:
 
----
+@echo off
+:: Initialize the x64 native MSVC compiler tools environment variables
+call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+
+echo [*] Compiling FireGem V2 Release Architecture...
+cl.exe /O2 /W3 /MT /EHsc main.c json_loader.c ui_main.c llm_wrapper.c cJSON\cJSON.c /I. /I.\include /link /LIBPATH:.\lib llama.lib ggml.lib user32.lib gdi32.lib shell32.lib /OUT:firegem.exe
+
+if %ERRORLEVEL% EQU 0 (
+    echo [─── SUCCESS ───] Target binary generated: firegem.exe
+)
+pause
+
+------------------------------
+## 🏃 Step 5: Configure Inventory and Launch
+Before firing up the interface, the app needs to know where your model weights are saved on your computer.
+
+   1. Create a file named models.json inside C:\ggml_clean\.
+   2. Add your local .gguf file information using the layout below (ensure all folder backslashes are properly escaped with a double \\):
+   
+   [
+       {
+           "filename": "phi-4-IQ2_XS.gguf",
+           "path": "E:\\LLM\\MODELS",
+           "size": "4.17 GB"
+       }
+   ]
+   
+   3. Run build.bat to compile the source code.
+   4. Launch firegem.exe. The application will instantly open a Win32 list box window displaying your available models. Select your target profile and click the initialization button to launch your local engine.
+
+------------------------------
+
