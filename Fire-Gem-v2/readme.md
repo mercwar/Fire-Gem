@@ -1,5 +1,23 @@
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
 
-ChatGPT Image Sep 1, 2026, 03_19_26 PM
+---
+
+##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
+
+<a target="_self" title="CLICK HERE to ENTER the Tutorial FREE!" href="Fire-Gem-v2/readme.md">
+<img 
+    src="images/ChatGPT Image Sep 1, 2026, 03_19_26 PM.png" 
+    alt="Fire-Gem-v2" 
+    style="width:100%; height:auto;"
+/>
+</a>
+
 # FireGem V2
 
 ## 🔥 Overview
