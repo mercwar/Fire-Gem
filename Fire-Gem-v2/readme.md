@@ -10,13 +10,13 @@
 
 ##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
 
-<a target="_self" title="CLICK HERE to ENTER the Tutorial FREE!" href="Fire-Gem-v2/readme.md">
+
 <img 
-    src="images/ChatGPT Image Sep 1, 2026, 03_19_26 PM.png" 
+    src="../images/ChatGPT%20Image%20Sep%201%2C%202026%2C%2003_19_26%20PM.png" 
     alt="Fire-Gem-v2" 
     style="width:100%; height:auto;"
 />
-</a>
+
 
 # FireGem V2
 
