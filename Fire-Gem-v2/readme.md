@@ -12,7 +12,7 @@
 
 
 <img 
-    src="../images/ChatGPT%20Image%20Sep%201%2C%202026%2C%2003_19_26%20PM.png" 
+    src="../images/ChatGPT%20Image%20Sep%201%2C%202026%2C%2003_56_33%20PM.png" 
     alt="Fire-Gem-v2" 
     style="width:100%; height:auto;"
 />
