@@ -1,0 +1,44 @@
+[
+    {
+        "filename": "phi-4-IQ2_XS.gguf",
+        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
+        "type": "GGUF File",
+        "date_modified": "3/29/2026 8:11 PM",
+        "size": "4.17 GB"
+    },
+    {
+        "filename": "phi-4-Q4_K.gguf",
+        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
+        "type": "GGUF File",
+        "date_modified": "3/16/2026 5:31 AM",
+        "size": "8.43 GB"
+    },
+    {
+        "filename": "Qwen2.5-Coder-0.5B-f16.gguf",
+        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
+        "type": "GGUF File",
+        "date_modified": "4/4/2026 4:19 AM",
+        "size": "948 MB"
+    },
+    {
+        "filename": "qwen2.5-coder-0.5b-q8_0.gguf",
+        "path": "E:\\Apache24\\htdocs\\FIRE-GEM\\LLM\\MODELS",
+        "type": "GGUF File",
+        "date_modified": "4/3/2026 7:14 PM",
+        "size": "506 MB"
+    },
+	    {
+        "filename": "qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+        "path": "E:\\models",
+        "type": "GGUF File",
+        "date_modified": "4/4/2026 4:23 AM",
+        "size": "1.1 MB"
+    },
+    {
+        "filename": "Qwen2.5-VL-7B-Instruct-UD-IQ1_M.gguf",
+        "path": "E:\\models",
+        "type": "GGUF File",
+        "date_modified": "4/4/2026 4:30 AM",
+        "size": "2.2 GB"
+    }
+]
