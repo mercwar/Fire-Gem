@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemastore.org",
+  "component": "AVIS_LLM_BRIDGE",
+  "version": "4.0.0",
+  "path": "universal/v1/tools",
+  "endpoints": {
+    "openai": {
+      "url": "https://openai.com",
+      "default_model": "gpt-4o"
+    },
+    "gemini": {
+      "url": "https://googleapis.com",
+      "default_model": "gemini-2.5-flash"
+    }
+  },
+  "required_env": [
+    "OPENAI_API_KEY",
+    "GEMINI_API_KEY"
+  ]
+}

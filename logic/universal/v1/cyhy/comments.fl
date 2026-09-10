@@ -1,0 +1,27 @@
+# ====================================================================
+# 🏛️ CYHY EXTENSION - AVIS COMMENT TEMPLATES (FireLang Standard v1)
+# ====================================================================
+
+# [@METADATA] Defines the header semantic context for search bots
+# BLOCK_TYPE: PARSER_DIRECTIVE
+# SCOPE: SYSTEM_HOOK
+
+/**
+ * FIRE_LANG_TEMPLATE: SYSTEM_CORE_DIRECTIVE
+ * @param  [axis_vector]   Pointers to system operational boundaries
+ * @return [routing_state] Status flags of the underlying pipeline
+ */
+define_comment_template --id=SYSTEM_CORE_DIRECTIVE [
+    "# !! [ALERT]: Critical processing section below",
+    "# !! Target Axis Vector mapping parameters down to physical storage",
+    "# !! Verification Check: Re-apply scoping rules before commit"
+]
+
+/**
+ * FIRE_LANG_TEMPLATE: PARSER_TOKEN_DECLARATION
+ * @param  [token_stream]  Raw lexical components parsed by the engine
+ */
+define_comment_template --id=PARSER_TOKEN_DECLARATION [
+    "// 🛡️ [TOKENIZER]: Emitting isolated data boundary tokens",
+    "// 🛡️ Bypassing dead-end paths entirely to preserve memory footprint"
+]

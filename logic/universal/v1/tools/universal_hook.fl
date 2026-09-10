@@ -1,0 +1,12 @@
+DECL_HOOK_MODULE AVIS_LLM_ROUTING_V1
+BIND_TARGET_AXIS "logic/universal/v1/tools"
+
+ROUTE_ORCHESTRATION_INPUT [prompt_stream]
+    CHECK_ENV_TOKEN [OPENAI_API_KEY] -> fallback_abort
+    CHECK_ENV_TOKEN [GEMINI_API_KEY] -> fallback_abort
+
+    EXECUTE_BRIDGE_SUBROUTINE "bridge.js" --mode=async
+    INJECT_MAPPED_CONTEXT "manifest.json" -> TARGET_HOOK
+
+SYNCHRONIZE_PIPELINE_COMPLETE
+    LOG_METRIC_STATE "AVIS Engine Synced to Cloud Endpoints"
