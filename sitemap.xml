@@ -325,6 +325,24 @@
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/image_ad9c05cb.png</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/manifest.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/robot_directives.fl</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/RobotValidator.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/universal_hook.fl</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/README.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/environment_state.fl</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/index.html</loc>
   </url>
   <url>
