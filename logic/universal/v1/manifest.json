@@ -1,0 +1,23 @@
+{
+  "system_identity": "AVIS_UNIVERSAL_V1_ANCHOR",
+  "specification_version": "4.0.0-RELEASE-PHASE6",
+  "compliance_profile": {
+    "model_optimization": "GEMINI_DEEP_BUFFER_COMPILATION",
+    "path_enforcement": "STRICT_ABSOLUTE_ROUTING",
+    "allow_context_switching": false,
+    "allow_db_persistence": false
+  },
+  "runtime_environment": {
+    "target_operating_system": "Windows 11 Win64 Target",
+    "target_compiler_standards": "MSVC /std:c11 /O2 /W4",
+    "hardware_baseline": {
+      "processor_cores": 4,
+      "ram_allocation_gb": 16
+    }
+  },
+  "token_demarcation_keys": {
+    "block_opener": "🔥==START_BLOCK==🔥",
+    "block_closer": "🔥==END_BLOCK==🔥",
+    "attribute_key": "💥"
+  }
+}
