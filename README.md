@@ -10,6 +10,15 @@
 
 ##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
 
+#### Revision v2.01  
+
+- Fixed batch compile addresses
+- Fixed batch compile errors
+- Fixed ai header warnings
+- Fixed compiles from extracted directory
+
+#
+
 <a target="_self" title="CLICK HERE to ENTER the Tutorial FREE!" href="Fire-Gem-v2/readme.md">
 <img 
     src="images/image_c2c30bf3.png" 
