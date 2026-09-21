@@ -32,8 +32,8 @@
 🚫 Warnings:
 
 - If you modify Fire-Gem do not allow Fire-Gem to write to disk freely or you could wipe your Operating system.
-- DON'T give any LLM anything other then SUPER PROTECTED and PERFECTLY VALIDATED USER LEVEL ACCESS
-- USE ONE RESTRICTED DIRECTORY AWAY FROM YOUR OPERATING SYSTEM ON A DIFFERENT SPARE DRIVE
+- DON'T give any LLM anything other then SUPER PROTECTED and PERFECTLY VALIDATED USER LEVEL ACCESS!
+- USE ONE RESTRICTED DRIVE/DIRECTORY AWAY FROM YOUR OPERATING SYSTEM AND ON A DIFFERENT DRIVE THEN WINDOWS/LINUX!
 
 <a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
 
