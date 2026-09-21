@@ -6,9 +6,9 @@
 />
 </a>
 
-# 🎉 FireGem Implant Celebration
+# 🎉 Fire-Gem Implant Celebration
 
-##### 🔥 Fire-Gem-v2.02 for MSVC Windows 11 is here 💎 
+##### 🔥 Version 2.02 for MSVC Windows 11 is here! 💎 
 
 ---
 
