@@ -22,7 +22,8 @@
 
 
 
-###### Downlink : <a href="Fire-Gem-v2.02">Zip</a>
+###### Uplink : <a href="Fire-Gem-v2.02">Folder</a>
+###### Downlink : <a href="Fire-Gem-v2.02.zip">Zip</a>
 
 <a  href="Fire-Gem-v2.02"><img src="images/fgi.png"/></a>
 
@@ -41,7 +42,8 @@
 
 ---
 
-###### Downlink: <a  href="Fire-Gem-v2.01">Zip</a>
+###### Uplink : <a href="Fire-Gem-v2.01">Folder</a>
+###### Downlink : <a href="Fire-Gem-v2.01.zip">Zip</a>
 
 #### Revision v2.01  
 - 🛠️ Fixed batch compile addresses  
