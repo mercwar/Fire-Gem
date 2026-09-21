@@ -10,6 +10,14 @@
 
 ##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
 
+#### Revision v2.02 
+
+- Implant sucessfull !
+- Prompt fire gem with [ACTION: RunModuleCheck] "Please run a diagnostic. [ACTION: RunModuleCheck]"
+- Fire-Gem now responds with a message box
+
+#
+
 #### Revision v2.01  
 
 - Fixed batch compile addresses
