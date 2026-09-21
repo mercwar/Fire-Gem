@@ -16,15 +16,14 @@
 
 
 
-###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
-###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a>
+###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.03">Folder</a>  
+###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.03.zip">Zip</a>
 
-###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/fire-gem-test.zip">Zip</a>
-###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/fire-gem-test2.zip">Zip</a>
+
 
 <a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
 
-#### Revision v2.02  
+#### Revision v2.03  
 - 🚀 **Implant successful!**  
 - 🧩 Prompt FireGem with **[ACTION: RunModuleCheck]**  
   Example:  
@@ -36,7 +35,7 @@
 ---
 
 ###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.01">Folder</a>  
-###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.01.zip">Zip</a>
+
 
 
 #### Revision v2.01  
