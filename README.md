@@ -35,7 +35,8 @@
 ---
 
 ###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.01">Folder</a>  
-###### Downlink : <a href="https://mercwar.github.io/Fire-Gem-v2.01.zip">Zip</a>
+###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.01.zip">Zip</a>
+
 
 #### Revision v2.01  
 - 🛠️ Fixed batch compile addresses  
