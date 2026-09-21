@@ -6,26 +6,18 @@
 />
 </a>
 
----
-
-
-
 # 🎉 FireGem Implant Celebration
 
-
-#####  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
-
+##### 🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
 
 ---
 
-###### *"Congratulations to Fire-Gem for it's new implant. It's alive! Celebrate the internal message box capability by cloning the repo !"*
+###### *"Congratulations to Fire-Gem for its new implant. It's alive! Celebrate the internal message box capability by cloning the repo !"*
 
+###### Uplink : <a href="https://github.com/mercwar/Fire-Gem-v2.02">Folder</a>  
+###### Downlink : <a href="https://mercwar.github.io/Fire-Gem-v2.02.zip">Zip</a>
 
-
-###### Uplink : <a href="Fire-Gem-v2.02">Folder</a>
-###### Downlink : <a href="Fire-Gem-v2.02.zip">Zip</a>
-
-<a  href="Fire-Gem-v2.02"><img src="images/fgi.png"/></a>
+<a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
 
 #### Revision v2.02  
 - 🚀 **Implant successful!**  
@@ -36,14 +28,10 @@
   ```  
 - 💡 FireGem now responds with an **internal Win32API message box**, confirming the implant hook is active.
 
-
-
-
-
 ---
 
-###### Uplink : <a href="Fire-Gem-v2.01">Folder</a>
-###### Downlink : <a href="Fire-Gem-v2.01.zip">Zip</a>
+###### Uplink : <a href="https://github.com/mercwar/Fire-Gem-v2.01">Folder</a>  
+###### Downlink : <a href="https://mercwar.github.io/Fire-Gem-v2.01.zip">Zip</a>
 
 #### Revision v2.01  
 - 🛠️ Fixed batch compile addresses  
@@ -51,11 +39,9 @@
 - 🛠️ Fixed AI header warnings  
 - 🛠️ Fixed compiles from extracted directory  
 
----
 
 
 
-#
 
 <a target="_self" title="CLICK HERE to ENTER the Tutorial FREE!" href="Fire-Gem-v2/readme.md">
 <img 
