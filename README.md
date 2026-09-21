@@ -8,22 +8,38 @@
 
 ---
 
-##  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
+###  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
 
-#### Revision v2.02 
+###### *"Congratulations to Fire-Gem for it's new implant. It's alive! Celebrate the internal message box capability by cloning the repo !"*
 
-- Implant sucessfull !
-- Prompt Fire-Gem with [ACTION: RunModuleCheck] "Please run a diagnostic. [ACTION: RunModuleCheck]"
-- Fire-Gem now responds with an  Internal Message box from win32api
+---
 
-#
+# 🎉 FireGem Implant Celebration
+
+#### Revision v2.02  
+- 🚀 **Implant successful!**  
+- 🧩 Prompt FireGem with **[ACTION: RunModuleCheck]**  
+  Example:  
+  ```
+  Please run a diagnostic. [ACTION: RunModuleCheck]
+  ```  
+- 💡 FireGem now responds with an **internal Win32API message box**, confirming the implant hook is active.
+
+
+
+
+
+---
 
 #### Revision v2.01  
+- 🛠️ Fixed batch compile addresses  
+- 🛠️ Fixed batch compile errors  
+- 🛠️ Fixed AI header warnings  
+- 🛠️ Fixed compiles from extracted directory  
 
-- Fixed batch compile addresses
-- Fixed batch compile errors
-- Fixed ai header warnings
-- Fixed compiles from extracted directory
+---
+
+
 
 #
 
