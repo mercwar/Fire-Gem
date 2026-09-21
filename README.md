@@ -26,7 +26,7 @@
 
 ❓Why the implant doesn't go through the scanner?
 
-- Fire gem triggers native win32api , the only thing that could do is trigger any cheap virus scanner.
+- Fire gem triggers native win32api , the only thing that this could do is trigger any cheap virus scanner.
 - The Fire Gem .exe binary is exactly as compiled from the source in the project.
 
 🚫 Warnings:
