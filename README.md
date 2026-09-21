@@ -18,9 +18,22 @@
 
 ###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
 ###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a> 
-###### *Note: There is now no .exe file in the Fire-Gem-v2.02 zip, you have to download it from the folder, because the implant, if in a zip, wont go through scanners.*
 
+###### *Note: 
+- There is now no .exe file in the Fire-Gem-v2.02 zip
+- Download it from the project folder
+- The implant, if in a zip, will not go through scanners.
 
+❓Why the implant doesn't go through the scanner?
+
+- Fire gem triggers native win32api , the only thing that could do is trigger any cheap virus scanner.
+- The Fire Gem .exe binary is exactly as compiled from the source in the project.
+
+🚫 Warnings:
+
+- If you modify Fire-Gem do not allow Fire-Gem to write to disk freely or you could wipe your Operating system.
+- DON'T give any LLM anything other then SUPER PROTECTED and PERFECTLY VALIDATED USER LEVEL ACCESS
+- USE ONE RESTRICTED DIRECTORY AWAY FROM YOUR OPERATING SYSTEM ON A DIFFERENT SPARE DRIVE
 
 <a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
 
