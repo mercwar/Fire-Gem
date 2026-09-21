@@ -8,13 +8,20 @@
 
 ---
 
+
+
+# 🎉 FireGem Implant Celebration
+
 ###  🔥 Fire-Gem-v2 for MSVC Windows 11 is here 💎 
 
-###### *"Congratulations to Fire-Gem for it's new implant. It's alive! Celebrate the internal message box capability by cloning the repo !"*
 
 ---
 
-# 🎉 FireGem Implant Celebration
+###### *"Congratulations to Fire-Gem for it's new implant. It's alive! Celebrate the internal message box capability by cloning the repo !"*
+
+
+
+![fgi](images/fgi.png)
 
 #### Revision v2.02  
 - 🚀 **Implant successful!**  
