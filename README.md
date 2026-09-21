@@ -16,8 +16,8 @@
 
 
 
-###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.03">Folder</a>  
-###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.03.zip">Zip</a>
+###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
+###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a>
 
 
 
