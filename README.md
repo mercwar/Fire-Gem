@@ -14,8 +14,10 @@
 
 ###### *"Congratulations to Fire-Gem for its new implant. It's alive! Celebrate the internal message box capability by cloning the repo !"*
 
+
+
 ###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
-###### Downlink : <a href="https://mercwar.github.io/Fire-Gem-v2.02.zip">Zip</a>
+###### Downlink : <a href="github.com/mercwar/Fire-Gem/blob/main//Fire-Gem-v2.02.zip">Zip</a>
 
 <a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
 
