@@ -22,7 +22,9 @@
 
 
 
-![fgi](images/fgi.png)
+###### Downlink : <a href="Fire-Gem-v2.02">Zip</a>
+
+<a  href="Fire-Gem-v2.02"><img src="images/fgi.png"/></a>
 
 #### Revision v2.02  
 - 🚀 **Implant successful!**  
@@ -38,6 +40,8 @@
 
 
 ---
+
+###### Downlink: <a  href="Fire-Gem-v2.01">Zip</a>
 
 #### Revision v2.01  
 - 🛠️ Fixed batch compile addresses  
