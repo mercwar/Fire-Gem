@@ -13,8 +13,8 @@
 #### Revision v2.02 
 
 - Implant sucessfull !
-- Prompt fire gem with [ACTION: RunModuleCheck] "Please run a diagnostic. [ACTION: RunModuleCheck]"
-- Fire-Gem now responds with a message box
+- Prompt Fire-Gem with [ACTION: RunModuleCheck] "Please run a diagnostic. [ACTION: RunModuleCheck]"
+- Fire-Gem now responds with an  Internal Message box from win32api
 
 #
 
