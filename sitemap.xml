@@ -1,307 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.zip</loc>
-  </url>
-  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-gem-test.zip</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/build.bat</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/ROBOTS.TXT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/models.json</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM.zip</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ggml.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ggml-base.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ui_main.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ggml-cpu.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-perplexity-impl.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/cJSON/cJSON.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-server-impl.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/cJSON/cJSON.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/ggml.lib</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-batched-bench-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/ggml-cpu.lib</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/mtmd.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/llama.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/ggml-base.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/gguf.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-webgpu.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-blas.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-opt.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-sycl.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cann.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-zdnn.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-opencl.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-metal.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cpp.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/llama.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-vulkan.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-backend.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cpu.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-rpc.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-alloc.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cuda.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-et.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-virtgpu.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-hexagon.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-openvino.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-zendnn.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llm_wrapper.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ggml-cpu.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-quantize-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/json_loader.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/json_loader.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/firegem.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ui_main.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llm_wrapper.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/cJSON/cJSON.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/cJSON/cJSON.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ggml-base.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-cli-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/firegem.exp</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/mtmd.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/cJSON.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/readme.md</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-completion-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/main.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/run.bat</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-bench-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/json_loader.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llm_wrapper.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-common.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/main.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/firegem.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-batched-bench-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-fit-params-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ui_main.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/favicon.ico</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/banner.png</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/index.js</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/index.css</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/CVBGOD</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/build.bat</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/models.json</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/Fire-Gem-v2.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ggml.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-perplexity-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-server-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/lib/ggml.lib</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-completion-impl.dll</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/lib/ggml-cpu.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/lib/llama.lib</loc>
-  </url>
-  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/lib/ggml-base.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/gguf.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/lib/llama.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ui_main.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/lib/ggml.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/implant.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/json_loader.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-webgpu.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-cli-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-blas.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/implant.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/llm_wrapper.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-opt.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llm_wrapper.obj</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-sycl.h</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-et.h</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cann.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-zdnn.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-opencl.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-metal.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cpp.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/llama.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-vulkan.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-backend.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cpu.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-rpc.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-alloc.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cuda.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-et.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/implant.h</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-virtgpu.h</loc>
@@ -310,445 +73,628 @@
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/json_loader.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-hexagon.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-opencl.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-openvino.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/llm_wrapper.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/llama.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ui_main.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-vulkan.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/gguf.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cuda.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-webgpu.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-opt.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cpu.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-rpc.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cann.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-metal.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-cpp.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-alloc.h</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-zendnn.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ggml-cpu.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-blas.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-quantize-impl.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-openvino.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/json_loader.obj</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-backend.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/implant.obj</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-hexagon.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/firegem.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ui_main.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llm_wrapper.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/cJSON/cJSON.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/cJSON/cJSON.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ggml-base.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-cli-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/firegem.exp</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/mtmd.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/include/ggml-zdnn.h</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/cJSON.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-completion-impl.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-perplexity-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/run.bat</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-bench-impl.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ui_main.obj</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-common.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/main.obj</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-server-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/json_loader.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/ggml.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/main.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/build.bat</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/implant.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-quantize-impl.dll</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/llm_wrapper.c</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/json_loader.c</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/ui_main.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/implant.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/src/main.c</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/firegem.exe</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-bench-impl.dll</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-batched-bench-impl.dll</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/main.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/firegem.lib</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/Fire-Gem-v2.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/firegem.exp</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/llama-fit-params-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-gem-test2.zip</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/run.bat</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_reduce.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.01/models.json</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/CVBGOD</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_publisher.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/index.css</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_autobuild.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/banner.png</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/new%201constellation_validator.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/AVIS.datalake</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_linker.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_linker.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_validator.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/PUBLISH.index</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/new%202constellation_autobuild.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/AVIS.schema</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_reduce.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/CONSTELLATION.index</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/README.md</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/AVIS.publish.schema</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/avis.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/nexus.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.rules</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/sentinel.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/datalake.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.version</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/CVBGOD</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.identity</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.graph</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/cyborg.zip</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.binding</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_publisher.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/ROBOT.boot</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-site.sh</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/build.bat</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/models.json</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ggml.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-perplexity-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-server-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/ggml.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/ggml-cpu.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/llama.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/ggml-base.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/gguf.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ui_main.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/implant.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/prompt_formatter.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-webgpu.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-blas.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/llm_wrapper.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-opt.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-sycl.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cann.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-zdnn.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-opencl.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-metal.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cpp.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/llama.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-vulkan.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-backend.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cpu.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-rpc.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-alloc.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cuda.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-et.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-virtgpu.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/json_loader.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/dispatch.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-hexagon.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-openvino.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-zendnn.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ggml-cpu.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-quantize-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/json_loader.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/implant.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/firegem.lib</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ui_main.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llm_wrapper.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/cJSON/cJSON.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/cJSON/cJSON.h</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ggml-base.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-cli-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/firegem.exp</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/mtmd.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/cJSON.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/prompt_formatter.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-completion-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/run.bat</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-bench-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/dispatch.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-common.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/main.obj</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/dispatch.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/json_loader.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/main.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/prompt_formatter.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/implant.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/llm_wrapper.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/ui_main.c</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/firegem.exe</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-batched-bench-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-fit-params-impl.dll</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/sitemap.xml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Live/index.js</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/CODE_OF_CONDUCT.md</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/ChatGPT%20Image%20Sep%201,%202026,%2003_19_26%20PM.png</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/CONFIG_PATH.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/ChatGPT%20Image%20Sep%201,%202026,%2003_56_33%20PM.png</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/MUSIC.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/cvbgod</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN_EXEC.BAT</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/image_c2c30bf3.png</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/midi/JP-YGATC.mid</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/fg-v2.png</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_REM_DRV.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI.tmp</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/inc.ini</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/BAK_CONFIG.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/LOG_CONFIG.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/LOAD_CONFIG.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/SAVE_LOG.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/INTRO.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/CONFIG_ROOT.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/LOG/ACK_AI_OP.LOG</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI.bak</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/SCAN_DIR.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/SCAN_FILE.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/CREATE_STRUCT.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/fire-list.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/ggml-cpu.a</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/ggml-base.a</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/ggml.a</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/libllama.a</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_dispatcher.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/BIN/FIREGEM.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/fire-list.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/INCLUDE/avis_core.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_llama.cpp</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/DATA/avis_core.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/DATA/robot_memory.xml</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/fire-list.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/FIRE-GEM.bat</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/LOG/assistant_build.log</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/MODELS/README.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/FIRE-GEM.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/README.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_llama.o</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_terminal.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN.BAT</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/main.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-gem-v2.02-.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-site.yml</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-gem.yml</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-unzip.yml</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/Fire-Unzip.yml</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/LICENSE</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-site.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/CVBGOD</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/cyborg.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.rules</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.version</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.graph</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/avis.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/nexus.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/datalake.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.binding</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/sentinel.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/custom/firegem.identity</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/PUBLISH.index</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_autobuild.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_publisher.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_validator.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_reduce.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_reduce.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_linker.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/AVIS.publish.schema</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/CONSTELLATION.index</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_linker.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/README.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/new%202constellation_autobuild.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/new%201constellation_validator.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/constellation_publisher.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/AVIS.datalake</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/AVIS.schema</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Constellation/ROBOT.boot</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/index.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/favi-con.ico</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/favicon.ico</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-gem-test2.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/README.md</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/fgi.png</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/ChatGPT%20Image%20Sep%201,%202026,%2003_56_33%20PM.png</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/image_ad9c05cb.png</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/cyhy/EditorIntegration.java</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/image_c2c30bf3.png</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/cyhy/syntax_parser.php</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/ChatGPT%20Image%20Sep%201,%202026,%2003_19_26%20PM.png</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/cyhy/comments.fl</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/fg-v2.png</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/images/cvbgod</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/sitemap.xml</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.zip</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ggml-base.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llm_wrapper.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ggml-cpu.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/cJSON/cJSON.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/cJSON/cJSON.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-batched-bench-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/mtmd.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-completion-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/json_loader.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/ggml-cpu.lib</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/ggml-base.lib</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/llama.lib</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/lib/ggml.lib</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/json_loader.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llm_wrapper.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/json_loader.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ui_main.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-cli-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llm_wrapper.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-sycl.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-et.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-virtgpu.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-opencl.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/llama.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-vulkan.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/gguf.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cuda.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-webgpu.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-opt.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cpu.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-rpc.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cann.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-metal.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-cpp.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-alloc.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-zendnn.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-blas.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-openvino.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-backend.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-hexagon.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/include/ggml-zdnn.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/cJSON.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-perplexity-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ui_main.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ui_main.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-common.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-server-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/ggml.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/readme.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/build.bat</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-quantize-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/firegem.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-bench-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/main.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/firegem.lib</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/firegem.exp</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/llama-fit-params-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/run.bat</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/models.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2/main.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/manifest.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/environment_state.fl</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/tools/manifest.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/tools/bridge.php</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/tools/AIBridge.java</loc>
@@ -763,180 +709,234 @@
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/tools/bridge.js</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/tools/bridge.php</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/manifest.json</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/robot_directives.fl</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/universal_hook.fl</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/RobotValidator.java</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/universal_hook.fl</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/cyhy/syntax_parser.php</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/cyhy/EditorIntegration.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/cyhy/comments.fl</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/robot_directives.fl</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/README.md</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/logic/universal/v1/environment_state.fl</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ggml-base.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/index.html</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ggml-cpu.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/ROBOTS.TXT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/cJSON/cJSON.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/fire-gem-v2.02-.zip</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/cJSON/cJSON.c</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-batched-bench-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/MODELS/README.md</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/mtmd.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_terminal.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-completion-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/FIRE-GEM.sh</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/ggml-cpu.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/INCLUDE/avis_core.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/ggml-base.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/ggml-cpu.a</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/llama.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/ggml-base.a</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/lib/ggml.lib</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/libllama.a</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/json_loader.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/lib/ggml.a</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-cli-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_llama.cpp</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/implant.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/fire-list.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llm_wrapper.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/fire-list.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-sycl.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/BIN/FIREGEM.exe</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-et.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/LOG/assistant_build.log</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_llama.o</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/implant.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/main.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-virtgpu.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/DATA/robot_memory.xml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/json_loader.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/DATA/avis_core.h</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-opencl.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/avis_dispatcher.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/llm_wrapper.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/README.md</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/llama.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/FIRE-GEM.bat</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ui_main.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI.tmp</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-vulkan.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/LOG_CONFIG.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/prompt_formatter.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/LOAD_CONFIG.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/gguf.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN_EXEC.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cuda.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/inc.ini</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-webgpu.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-opt.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/midi/JP-YGATC.mid</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cpu.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/SAVE_LOG.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-rpc.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/LOG/ACK_AI_OP.LOG</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/dispatch.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/BAK_CONFIG.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cann.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/CONFIG_ROOT.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-metal.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/SCAN_DIR.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-cpp.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_REM_DRV.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-alloc.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/MUSIC.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-zendnn.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/CONFIG_PATH.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-blas.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/INTRO.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-openvino.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/AVIS_PRJ_SCAN.INI.bak</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-backend.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/CREATE_STRUCT.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-hexagon.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/AVIS_PRJ_SCAN/SCAN_FILE.BAT</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/include/ggml-zdnn.h</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM/fire-list.c</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/cJSON.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/README.md</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-perplexity-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/FIREGEM.zip</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ui_main.obj</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/favi-con.ico</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-common.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-unzip.yml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-server-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/Fire-Unzip.yml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/ggml.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-gem.yml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/build.bat</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/.github/workflows/fire-site.yml</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-quantize-impl.dll</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/Fire-Gem/blob/main/LICENSE</loc>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/llm_wrapper.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/dispatch.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/json_loader.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/ui_main.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/implant.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/prompt_formatter.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/src/main.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/prompt_formatter.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/dispatch.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/firegem.exe</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-bench-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/main.obj</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/firegem.lib</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/firegem.exp</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/llama-fit-params-impl.dll</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/run.bat</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/Fire-Gem/blob/main/Fire-Gem-v2.02/models.json</loc>
   </url>
 </urlset>
