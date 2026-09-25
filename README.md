@@ -10,7 +10,20 @@
 
 ##### 🔥💎  Version 2.02 for MSVC Windows 11 is here 
 
----
+<a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
+
+
+#
+
+#### Revision v2.02  
+- 🚀 **Implant successful!**  
+- 🧩 Prompt FireGem with **[ACTION: RunModuleCheck]**  
+  Example:  
+  ```
+  Please run a diagnostic. [ACTION: RunModuleCheck]
+  ```  
+- 💡 FireGem now responds with an **internal Win32API message box**, confirming the implant hook is active.
+
 
 ###### *"Congratulations to Fire-Gem for its new implant. It's alive! Celebrate the internal message box capability by cloning the repo !"*
 
@@ -36,24 +49,10 @@
 - DON'T give any LLM anything other then SUPER PROTECTED and PERFECTLY VALIDATED USER LEVEL ACCESS!
 - USE ONE RESTRICTED DRIVE/DIRECTORY AWAY FROM YOUR OPERATING SYSTEM OR ON A DIFFERENT DRIVE THEN WINDOWS/LINUX!
 
-#
-
-<a href="https://mercwar.github.io/Fire-Gem-v2.02.zip"><img src="images/fgi.png"/></a>
-
-#### Revision v2.02  
-- 🚀 **Implant successful!**  
-- 🧩 Prompt FireGem with **[ACTION: RunModuleCheck]**  
-  Example:  
-  ```
-  Please run a diagnostic. [ACTION: RunModuleCheck]
-  ```  
-- 💡 FireGem now responds with an **internal Win32API message box**, confirming the implant hook is active.
-
----
-
 ###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.01">Folder</a>  
 
 
+---
 
 #### Revision v2.01  
 - 🛠️ Fixed batch compile addresses  
