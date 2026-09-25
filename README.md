@@ -17,7 +17,8 @@
 
 #### Revision v2.02  
 - 🚀 **Implant successful!**  
-- 🧩 Prompt FireGem with **[ACTION: RunModuleCheck]**  
+- 🧩 Prompt FireGem with **[ACTION: RunModuleCheck]**
+  
   Example:  
   ```
   Please run a diagnostic. [ACTION: RunModuleCheck]
@@ -29,8 +30,9 @@
 
 
 
-###### Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
-###### Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a> 
+###### 
+Uplink : <a href="https://github.com/mercwar/Fire-Gem/tree/main/Fire-Gem-v2.02">Folder</a>  
+Downlink : <a href="https://github.com/mercwar/Fire-Gem/raw/main/Fire-Gem-v2.02.zip">Zip</a> 
 
 ###### *Note: 
 - There is now no .exe file in the Fire-Gem-v2.02 zip
