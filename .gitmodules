@@ -1,9 +1,5 @@
 [submodule "AVIS-DATALAKE"]
 	path = AVIS-DATALAKE
-	url = https://github.com
-	branch = mercwar
-
-[submodule "AVIS-DATALAKE"]
-	path = main
-	url = https://github.com
-	branch = 
+	url = https://github.com/mercwar/AVIS-DATALAKE.git
+	branch = main
+	update = none
