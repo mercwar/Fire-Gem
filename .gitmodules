@@ -1,0 +1,6 @@
+
+[submodule "AVIS-DATALAKE"]
+	path = AVIS-DATALAKE
+	url = https://github.com
+	branch = main
+	shallow = true
